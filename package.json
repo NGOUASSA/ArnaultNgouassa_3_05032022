@@ -1,0 +1,19 @@
+{
+  "name": "Projet_3",
+  "version": "1.0.0",
+  "description": "Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass assets/sass/index.scss assets/CSS/style.css -w",
+    "sass1": "node-sass assets/sass/index1.scss assets/CSS/style1.css -w",
+    "prefix": "postcss assets/CSS/style.css --use autoprefixer -d assets/CSS/prefixed/",
+    "prefix1": "postcss assets/CSS/style1.css --use autoprefixer -d assets/CSS/prefixed/",
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
