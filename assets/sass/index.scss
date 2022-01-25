@@ -21,7 +21,6 @@ body {
             > i {
             }
         }
-        > h1 {
             > a {
                 > img {
                     height: 50px;
@@ -29,7 +28,7 @@ body {
                     margin: auto;
                 }
             }
-        }
+        
     }
     /* NAV */
     > nav {
@@ -51,7 +50,7 @@ body {
             text-align: center;
             background: #f6f6f6;
             padding: 1px 0 55px;
-            > h2 {
+            > h1 {
                 font-weight: bold;
                 font-size: xx-large;
             }
@@ -82,7 +81,7 @@ body {
                 padding: 0 20px;
                 @media screen and (min-width: 992px) {
                     display: flex;
-                    justify-content: space-around; 
+                    justify-content: space-around;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
                     display: flex;
@@ -96,11 +95,11 @@ body {
                     margin: 20px 0;
                     height: 70px;
                     border-radius: 20px;
-                    background: #f6f6f6; 
+                    background: #f6f6f6;
                     margin-left: 15px;
-                    @media  screen and (min-width: 992px) {
+                    @media screen and (min-width: 992px) {
                         height: 100px;
-                        width: 30%; 
+                        width: 30%;
                     }
                     @media screen and (min-width: 768px) and (max-width: 992px) {
                         height: 100px;
@@ -114,9 +113,9 @@ body {
                         position: relative;
                         right: 15px;
                         color: white;
-                        @media  screen and (min-width: 992px) {
+                        @media screen and (min-width: 992px) {
                             font-size: 1.5em;
-                            padding: 3px 10px; 
+                            padding: 3px 10px;
                         }
                         @media screen and (min-width: 768px) and (max-width: 992px) {
                             font-size: 1.5em;
@@ -124,9 +123,10 @@ body {
                         }
                     }
                     > i {
-                        @media  screen and (min-width: 992px) {
+                        font-size: 1.3em;
+                        @media screen and (min-width: 992px) {
                             margin-right: 10px;
-                            font-size: 2em; 
+                            font-size: 2em;
                         }
                         @media screen and (min-width: 768px) and (max-width: 992px) {
                             margin-right: 10px;
@@ -138,9 +138,9 @@ body {
                     }
                     > h3 {
                         margin-right: 100px;
-                        @media  screen and (min-width: 992px) {
+                        @media screen and (min-width: 992px) {
                             font-size: 1.1em;
-                            margin-right: 18px;  
+                            margin-right: 18px;
                         }
                         @media screen and (min-width: 768px) and (max-width: 992px) {
                             font-size: 1.1em;
@@ -151,6 +151,9 @@ body {
                         cursor: pointer;
                         background: #eaeaea;
                         color: #9356dc;
+                        > h3 {
+                            color: #000;
+                        }
                     }
                 }
             }
@@ -161,35 +164,35 @@ body {
             flex-flow: column;
             background: #f6f6f6;
             margin-top: 70px;
-            padding: 20px;
-            @media  screen and (min-width: 992px) {
+            padding: 40px 20px; 
+            @media screen and (min-width: 992px) {
                 flex-flow: wrap;
                 justify-content: space-between;
-                padding-top: 90px;  
+                padding-top: 90px;
             }
             @media screen and (min-width: 768px) and (max-width: 992px) {
                 flex-flow: wrap;
                 justify-content: space-between;
                 padding-top: 90px;
             }
+            > h2 {
+                margin-top: 30px;
+                @media screen and (min-width: 992px) {
+                    position: absolute;
+                    margin-top: -40px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    position: absolute;
+                    margin-top: -40px;
+                }
+            }
             > nav {
                 position: relative;
-                @media  screen and (min-width: 992px) {
+                @media screen and (min-width: 992px) {
                     width: 48%;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
                     width: 48%;
-                }
-                > h3 {
-                    margin-top: 30px;
-                    @media  screen and (min-width: 992px) {
-                        position: absolute;
-                        margin-top: -40px;
-                    }
-                    @media screen and (min-width: 768px) and (max-width: 992px) {
-                        position: absolute;
-                        margin-top: -40px;
-                    }
                 }
                 > span {
                     position: absolute;
@@ -197,16 +200,16 @@ body {
                     color: green;
                     padding: 4px 10px;
                     font-weight: bold;
-                    margin-left: 72%;
-                    margin-top: 7%;
+                    right: 14%;
+                    top: 16%;
                     border-radius: 2px;
                     @media  screen and (min-width: 992px) {
-                        margin-left: 72%;
-                        margin-top: 14%;
+                        right: 13%;
+                        top: 22%;
                     }
                     @media screen and (min-width: 768px) and (max-width: 992px) {
-                        margin-left: 330px;
-                        margin-top: 62px;
+                        right: 10%;
+                        top: 19%;
                     }
                 }
                 > a {
@@ -222,17 +225,27 @@ body {
                             border-radius: 15px 15px 0 0;
                         }
                         > figcaption {
-                            > h2 {
-                                margin-top: 10px; 
+                            > h3 {
+                                margin-top: 10px;
                                 margin-left: 10px;
                                 color: #000000;
-                            } 
+                            }
                             > i {
                                 float: right;
                                 position: relative;
                                 bottom: 40px;
                                 right: 19px;
                                 font-size: 1.5em;
+                                font-weight: 100 !important;
+                                transition: font-weight 0.5s;
+                                color: gray;
+                                &:hover {
+                                    background: linear-gradient(#ff79da, #9356dc);
+                                    background-clip: border-box;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    font-weight: 900 !important;
+                                }
                             }
                             > p {
                                 padding-bottom: 15px;
@@ -243,7 +256,7 @@ body {
                                 color: #000000;
                             }
                         }
-                        @media  screen and (min-width: 992px) {
+                        @media screen and (min-width: 992px) {
                             margin: 20px 0;
                         }
                     }
@@ -257,8 +270,7 @@ body {
         padding: 5px;
         > h3 {
             font-family: "Shrikhand", sans-serif;
-            font-size: 1.2em;
-            font-weight: lighter;
+            font-size: 2.5em;
             color: #ffffff;
             margin: 0;
             padding-left: 30px;

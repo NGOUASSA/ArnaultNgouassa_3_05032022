@@ -130,12 +130,15 @@ body {
         overflow: hidden; }
         @media screen and (min-width: 992px) {
           body > main > section > div.menu > ul {
-            margin: 10px 25px;
-            width: 83%; } }
+            width: 85%;
+            margin: 10px 20px; } }
         body > main > section > div.menu > ul > li > h2 {
           margin-bottom: 0;
           margin-top: 10px;
           font-size: 1.5em; }
+          @media screen and (min-width: 992px) {
+            body > main > section > div.menu > ul > li > h2 {
+              font-size: 1.4em; } }
         body > main > section > div.menu > ul > li > p {
           font-size: 1.2em;
           margin-top: 10px; }
@@ -145,6 +148,10 @@ body {
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap; }
+            @media screen and (min-width: 992px) {
+              body > main > section > div.menu > ul > li > p > span {
+                font-size: .8em;
+                width: 89%; } }
           body > main > section > div.menu > ul > li > p > b {
             position: relative;
             bottom: 5px; }
