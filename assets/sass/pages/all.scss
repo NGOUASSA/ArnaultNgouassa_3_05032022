@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+a {
+}
+
+p {
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    /* HEADER */
+    > header {
+        > a {
+            > i {
+            }
+        }
+        > a {
+            > img {
+            }
+        }
+    }
+    /* NAV */
+    > nav {
+        > form {
+            > i {
+                padding-right: 1em;
+                font-size: 3em;
+            }
+            > input {
+                border: none;
+                background: transparent;
+            }
+        }
+        /* SECTION 1 */
+        > section.reservation {
+            > h1 {
+            }
+            > p {
+            }
+            > button {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    /* SECTION 2 */
+    > main {
+        border-radius: 50px 50px 0 0;
+        > section.functioning {
+            > h2 {
+            }
+            > ul {
+                @media screen and (min-width: 992px) {
+                }
+                > li {
+                    height: 115px;
+                    @media screen and (min-width: 992px) {
+                        width: 29%;
+                        height: 130px;
+                    }
+                    > div {
+                        background: #9356dc;
+                        border-radius: 50px;
+                        padding: 5px 10px;
+                        position: relative;
+                        right: 15px;
+                        color: white;
+                        @media screen and (min-width: 992px) {
+                            font-size: 1.5em;
+                            padding: 3px 10px;
+                        }
+                    }
+                    > i {
+                        font-size: 3.3em;
+                        @media screen and (min-width: 768px) {
+                            margin-right: -10px;
+                        }
+                        @media screen and (min-width: 992px) {
+                            margin-right: -5px;
+                            font-size: 3em;
+                            margin-left: -20px;
+                        }
+                     }
+                    > i.fas.fa-list-ul {
+                        margin-right: 10px;
+                    }
+                    > h3 {
+                        @media screen and (min-width: 992px) {
+                        }
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #eaeaea;
+                        color: #9356dc;
+                        > h3 {
+                        }
+                    }
+                }
+            }
+        }
+        /* SECTION 3 */
+        > section.restaurants {
+            > h2 {
+                @media screen and (min-width: 992px) {
+                    position: absolute;
+                    margin-top: -40px;
+                }
+            }
+            > nav {
+                @media screen and (min-width: 992px) {
+                    width: 48%;
+                }
+                > span {
+                    @media screen and (min-width: 992px) {
+                        right: 13%;
+                        top: 22%;
+                    }
+                }
+                > a {
+                    text-decoration: none;
+                    > figure {
+                        background: white;
+                        margin: 0;
+                        border-radius: 15px;
+                        > img {
+                        }
+                        > figcaption {
+                            > h3 {
+                            }
+                            > i {
+                                &:hover {
+                                    background: linear-gradient(#ff79da, #9356dc);
+                                    background-clip: border-box;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    font-weight: 900 !important;
+                                }
+                            }
+                            > p {
+                            }
+                        }
+                        @media screen and (min-width: 992px) {
+                            margin: 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*FOOTER*/
+    > footer {
+        > h3 {
+        }
+        > ul {
+            > li {
+                > a {
+                    > i {
+                    }
+                    > p.utensils {
+                    }
+                    > p.hands {
+                        padding-left: 20px;
+                        margin: 0;
+                    }
+                    > p {
+                    }
+                }
+            }
+        }
+    }
+}

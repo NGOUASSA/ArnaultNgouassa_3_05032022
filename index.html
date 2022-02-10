@@ -20,24 +20,24 @@
 
     <!--NAV-->
 
-    <nav>
-        <form action="post">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" value="Paris, Belleville">
+    <nav class="nav">
+        <form class="form nav__form" action="post">
+            <i class="form__icon fas fa-map-marker-alt"></i>
+            <input class="form__input" type="text" value="Paris, Belleville">
         </form>
 
         <!--SECTION 1-->
 
-        <section class="reservation">
-            <h1>
+        <section class="section nav__reservation">
+            <h1 class="section__h1">
                 Réservez le menu qui<br />
                 vous convient
             </h1>
-            <p>
-                Découvrez les restaurants d'exception,<br />
+            <p class="section__p">
+                Découvrez des restaurants d'exception,<br />
                 sélectionnés par vos soins.
             </p>
-            <button>Explorez nos restaurants</button>
+            <button class="section__button">Explorer nos restaurants</button>
 
         </section>
 
@@ -46,25 +46,25 @@
 
     <!--MAIN-->
 
-    <main>
+    <main class="main">
 
         <!--SECTION 2-->
 
         <section class="functioning">
-            <h2>Fonctionnement</h2>
-            <ul>
+            <h2 class="functioning__h2">Fonctionnement</h2>
+            <ul class="functioning__ul">
                 <li>
-                    <div>1</div>
+                    <span>1</span>
                     <i class="fas fa-mobile-alt"></i>
                     <h3>Choisissez un restaurant</h3>
                 </li>
                 <li>
-                    <div class="ul">2</div>
+                    <span>2</span>
                     <i class="fas fa-list-ul"></i>
                     <h3>Composez votre menu</h3>
                 </li>
                 <li>
-                    <div>3</div>
+                    <span>3</span>
                     <i class="fas fa-store"></i>
                     <h3>Dégustez au restaurant</h3>
                 </li>
@@ -74,16 +74,16 @@
         <!--SECTION 3-->
 
         <section class="restaurants">
-            <h2>Restaurants</h2>
-            <nav>
-                <span>Nouveau</span>
-                <a href="laPaletteDuGout.html">
-                    <figure>
-                        <img src="assets\images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                        <figcaption>
-                            <h3>La palette du goût</h3>
-                            <i class="fa fa-heart"></i>
-                            <p>Ménilmontant</p>
+            <h2 class="restaurants__h2">Restaurants</h2>
+            <nav class="navResto restaurants__nav">
+                <span class="navResto__span">Nouveau</span>
+                <a class="navResto__a" href="laPaletteDuGout.html">
+                    <figure class="figure">
+                        <img class="figure__img" src="assets\images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                        <figcaption class="figcaption figure__figcaption">
+                            <h3 class="figcaption__h3">La palette du goût</h3>
+                            <i figcaption__i class="fa fa-heart"></i>
+                            <p class="figcaption__p">Ménilmontant</p>
                         </figcaption>
                     </figure>
                 </a>

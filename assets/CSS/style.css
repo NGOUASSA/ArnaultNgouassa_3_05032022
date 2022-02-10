@@ -1,244 +1,888 @@
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+/*@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";*/
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+a,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/**    ************      *******/
+/* NAV */
+.nav {
+  /* SECTION 1 */
+}
+.nav__form {
+  text-align: center;
+  background: #808080;
+  padding: 1em 0;
+  padding-left: 85px;
+}
+.nav__form .form__icon {
+  font-size: 2.5em;
+}
+.nav__form .form__input {
+  font-weight: 600;
+  font-size: 1.9em;
+  margin-bottom: 5px;
+}
+.nav__reservation {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 1px 0 100px;
+}
+.nav__reservation .section__h1 {
+  font-size: 4em;
+  line-height: 1em;
+}
+.nav__reservation .section__p {
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 45px;
+  color: gray;
+  position: relative;
+  bottom: 45px;
+}
+.nav__reservation .section__button {
+  padding: 30px 50px;
+  border-radius: 50px;
+  margin-top: -30px;
+  background: linear-gradient(to left, #9356dc, #ff79da);
+  border: none;
+  color: white;
+  font-size: 2.5em;
+}
+.nav__reservation .section__button:hover {
+  cursor: pointer;
+}
+
+/* SECTION 2 */
+.main {
+  border-radius: 25px 25px 0 0;
+  position: relative;
+}
+.main .functioning {
+  position: relative;
+  bottom: 45px;
+}
+.main .functioning__h2 {
+  margin: 410px 20px 20px 50px;
+  font-size: 4.5em;
+}
+.main .functioning__ul {
+  padding: 0 20px;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .main .functioning__ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+}
+.main .functioning__ul > li {
+  margin: 40px 0;
+  border-radius: 20px;
+  background: #f6f6f6;
+  margin-left: 15px;
+  padding: 50px;
+  box-shadow: 1px 2px 3px 2px #eaeaea;
+}
+.main .functioning__ul > li > span {
+  background: #9356dc;
+  border-radius: 50px;
+  padding: 0px 10px;
+  position: relative;
+  right: 70px;
+  color: white;
+  font-size: 2em;
+  bottom: 45px;
+}
+@media screen and (min-width: 768px) {
+  .main .functioning__ul > li > span {
+    margin-right: -30px;
+  }
+}
+.main .functioning__ul > li > i {
+  font-size: 2em;
+  position: relative;
+  bottom: 30px;
+}
+@media screen and (min-width: 992px) {
+  .main .functioning__ul > li > i {
+    margin-right: 10px;
+    font-size: 2em;
+  }
+}
+.main .functioning__ul > li > h3 {
+  font-size: 1.5em;
+  display: inline-block;
+  margin-left: 45px;
+  position: relative;
+  bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .main .functioning__ul > li > h3 {
+    font-size: 2.1em;
+    margin-left: 35px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main .functioning__ul > li > h3 {
+    font-size: 1.6em;
+    margin-left: 25px;
+  }
+}
+.main .functioning__ul > li:hover {
+  cursor: pointer;
+  background: #eaeaea;
+  color: #9356dc;
+}
+.main .functioning__ul > li:hover > h3 {
+  color: #000;
+}
+
+/* SECTION 3 */
+.restaurants {
+  display: flex;
+  flex-flow: column;
+  background: #f6f6f6;
+  padding: 138px 20px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  /****    ZONE REFACTO      *******/
+  /*FOOTER*/
+}
+@media screen and (min-width: 992px) {
+  .restaurants {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-top: 90px;
+  }
+  .restaurants__h2 {
+    position: absolute;
+    margin-top: -85px;
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurants__h2 {
+    position: absolute;
+    margin-top: -30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants__nav {
+    position: relative;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurants__nav {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants__nav .navResto__span {
+    position: absolute;
+    background: #99e2d0;
+    color: green;
+    font-size: medium;
+    padding: 4px 10px;
+    font-weight: bold;
+    right: 3%;
+    top: 5%;
+    border-radius: 2px;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurants__nav .navResto__span {
+    right: 13%;
+    top: 22%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .restaurants__nav .navResto__a {
+    text-decoration: none;
+  }
+  .restaurants__nav .navResto__a .figure {
+    background: white;
+    margin: -25px 0;
+    border-radius: 15px;
+  }
+  .restaurants__nav .navResto__a .figure__img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .restaurants__nav .navResto__a .figure__figure .figcaption {
+    margin: 75px 0;
+  }
+  .restaurants__nav .navResto__a .figure__figure .figcaption__h3 {
+    margin-left: 20px;
+    margin-bottom: -45px;
+    color: #000000;
+    font-size: 2em;
+    position: relative;
+    bottom: 55px;
+  }
+  .restaurants__nav .navResto__a .figure__figure .figcaption__i {
+    float: right;
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+    font-size: 3em;
+    font-weight: 100 !important;
+    transition: font-weight 0.5s;
+    color: gray;
+  }
+  .restaurants__nav .navResto__a .figure__figure .figcaption__i:hover {
+    background: linear-gradient(#ff79da, #9356dc);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900 !important;
+  }
+  .restaurants__nav .navResto__a .figure__figure .figcaption__p {
+    padding-bottom: 15px;
+    margin-left: 20px;
+    font-size: 2em;
+    color: #000000;
+  }
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  .restaurants__nav .navResto__a .figure {
+    margin: 20px 0;
+  }
+}
+.restaurants body {
+  margin: 0;
+  /* HEADER */
+}
+.restaurants body > header {
+  box-shadow: 0 0 10px 1px;
+  padding: 4em;
+  position: relative;
+}
+.restaurants body > header > a > img {
+  height: 40px;
+}
+.restaurants > footer {
+  background: #000;
+  padding: 5px;
+}
+.restaurants > footer > h3 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-left: 30px;
+  margin-bottom: 85px;
+  position: relative;
+  top: 35px;
+}
+.restaurants > footer > ul {
+  list-style-type: none;
+  margin-left: 30px;
+  position: relative;
+  bottom: 20px;
+}
+.restaurants > footer > ul > li {
+  font-size: 1.7em;
+}
+.restaurants > footer > ul > li > a {
+  display: flex;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.restaurants > footer > ul > li > a > i {
+  font-size: 1.5em;
+}
+.restaurants > footer > ul > li > a > p.utensils {
+  padding-left: 27px;
+  margin: 5px;
+}
+.restaurants > footer > ul > li > a > p.hands {
+  padding-left: 20px;
+  margin: 0;
+}
+.restaurants > footer > ul > li > a > p {
+  margin: 0;
+}
+
 a {
   list-style-type: none;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-p {
-  font-family: "Roboto", sans-serif; }
+* {
+  box-sizing: border-box;
+}
+
+/* 1-  ******************************/
+.appetizer__plat {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 2em;
+  border-bottom: 4px solid #99e2d0;
+  padding: 3px;
+  /*color: gray;*/
+  margin-top: 60px;
+}
+@media screen and (min-width: 992px) {
+  .appetizer__plat {
+    margin-top: 180px;
+    margin-left: 30px;
+  }
+}
+
+.appetizer__plat {
+  color: red;
+}
+.appetizer__menu {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  .appetizer__menu {
+    width: 100%;
+  }
+}
+.appetizer__menu > ul {
+  position: relative;
+  padding: 1px 1em;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .appetizer__menu > ul {
+    margin: 10px 25px;
+    width: 83%;
+  }
+}
+.appetizer__menu > ul > li {
+  background: #ffffff;
+  height: 80px;
+  border-radius: 20px;
+  margin-top: 15px;
+  position: relative;
+}
+.appetizer__menu > ul > li > h2 {
+  font-size: 2.5em;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+.appetizer__menu > ul > li > p {
+  font-size: 2.5em;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: grey;
+}
+.appetizer__menu > ul > li > p > span {
+  display: inline-block;
+  width: 88%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.appetizer__menu > ul > li > p > b {
+  position: relative;
+  bottom: 5px;
+  color: #000;
+}
+
+/*** 2- ******************************* ***
+        ***********************************/
+body {
+  margin: 0;
+  /* HEADER */
+  /* IMG */
+  /* MAIN */
+  /* FOOTER */
+}
+body > header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body > header > a {
+  position: relative;
+}
+body > header > a > i.fas.fa-arrow-left {
+  color: #000000;
+  position: absolute;
+  bottom: 15px;
+  font-size: 1.8em;
+  margin-left: -210px;
+}
+@media screen and (min-width: 992px) {
+  body > header > a > i.fas.fa-arrow-left {
+    left: -200px;
+  }
+}
+body > header > a > img {
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+  body > header > a > img {
+    width: 100%;
+  }
+}
+body > img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  body > img {
+    height: 860px;
+  }
+}
+body > main {
+  margin-top: -285px;
+  margin-bottom: -60px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 0;
+  /* SECTION */
+  /*** 3- ************************** ***
+         ********************************
+         *******************************/
+  /* BUTTON */
+}
+body > main > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 185px;
+}
+@media screen and (min-width: 768px) {
+  body > main > div {
+    margin-top: -696px;
+    width: 100%;
+    margin-left: -175px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > main > div {
+    margin-bottom: 539px;
+  }
+}
+body > main > div > h1 {
+  font-family: "Shrikhand";
+  font-size: 3em;
+  margin-left: 25px;
+  margin-top: 55px;
+}
+@media screen and (min-width: 992px) {
+  body > main > div > h1 {
+    margin-top: 225px;
+    position: absolute;
+    margin-left: 30px;
+  }
+}
+body > main > div > i {
+  margin-top: 50px;
+  margin-left: 690px;
+  position: absolute;
+  font-size: 2.8em;
+}
+body > main > div > i:hover {
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900 !important;
+}
+@media screen and (min-width: 768px) {
+  body > main > div > i {
+    margin-left: 805px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body > main > section {
+    flex-flow: wrap;
+  }
+}
+body > main > section.dish > p {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 2em;
+  border-bottom: 4px solid #99e2d0;
+  padding: 3px;
+  color: gray;
+  margin-top: 60px;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.dish > p {
+    margin-top: 180px;
+    margin-left: 30px;
+  }
+}
+body > main > section.dish > div.menu {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.dish > div.menu {
+    width: 100%;
+  }
+}
+body > main > section.dish > div.menu > ul {
+  position: relative;
+  padding: 1px 1em;
+  margin: 10px 10px;
+  cursor: pointer;
+  list-style-type: none;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.dish > div.menu > ul {
+    margin: 10px 25px;
+    width: 83%;
+  }
+}
+body > main > section.dish > div.menu > ul > li {
+  height: 80px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+body > main > section.dish > div.menu > ul > li > h2 {
+  margin-top: 10px;
+  font-size: 2.5em;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+body > main > section.dish > div.menu > ul > li > p {
+  font-size: 2.5em;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: grey;
+}
+body > main > section.dish > div.menu > ul > li > p > span {
+  display: inline-block;
+  width: 88%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body > main > section.dish > div.menu > ul > li > p > b {
+  position: relative;
+  bottom: 5px;
+  color: #000;
+}
+body > main > section.desserts > p {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 2em;
+  border-bottom: 4px solid #99e2d0;
+  padding: 3px;
+  color: gray;
+  margin-top: 60px;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.desserts > p {
+    margin-top: 180px;
+    margin-left: 30px;
+  }
+}
+body > main > section.desserts > span {
+  right: 5px;
+  position: relative;
+  font-size: 2em;
+  color: gray;
+}
+body > main > section.desserts > div.menu {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.desserts > div.menu {
+    width: 100%;
+  }
+}
+body > main > section.desserts > div.menu > ul {
+  position: relative;
+  padding: 1px 1em;
+  margin: 10px 10px;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.desserts > div.menu > ul {
+    margin: 10px 25px;
+    width: 83%;
+  }
+}
+body > main > section.desserts > div.menu > ul > li {
+  border-radius: 20px;
+  height: 80px;
+  background: #ffffff;
+  position: relative;
+}
+body > main > section.desserts > div.menu > ul > li > h2 {
+  margin-top: 10px;
+  font-size: 2.5em;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+body > main > section.desserts > div.menu > ul > li > p {
+  font-size: 2.5em;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: grey;
+}
+body > main > section.desserts > div.menu > ul > li > p > span {
+  display: inline-block;
+  width: 88%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: width 0.5s;
+}
+body > main > section.desserts > div.menu > ul > li > p > b {
+  position: relative;
+  bottom: 5px;
+  color: #000;
+}
+body > main > section.desserts > div.menu > ul > li::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #99f2d0;
+  transition: width 0.4s;
+}
+body > main > section.desserts > div.menu > ul > li::after {
+  position: absolute;
+  right: -10%;
+  top: calc(40% - 0.5em);
+  transform: rotate(0deg);
+  background: white;
+  color: #99f2d0;
+  border-radius: 50px;
+  padding: 0.4em;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
+  transition: right 0.4s, transform 0.8s;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.desserts > div.menu > ul > li::after {
+    right: -8%;
+  }
+}
+body > main > section.desserts > div.menu > ul > li:hover::before {
+  width: 25%;
+}
+body > main > section.desserts > div.menu > ul > li:hover::after {
+  right: 5%;
+  transform: rotate(360deg);
+}
+body > main > section.desserts > div.menu > ul > li:hover > p > span {
+  width: 60%;
+}
+body > main > button {
+  height: 40px;
+  width: 20%;
+  border-radius: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  color: white;
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  font-size: 1.8em;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 968px) {
+  body > main > button {
+    margin-left: 387px;
+    margin-top: 432px;
+    position: absolute;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > main > button {
+    width: 30%;
+    margin-left: -765px;
+  }
+}
+body > footer > h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-left: 30px;
+  margin-bottom: 85px;
+  position: relative;
+  top: 35px;
+}
+body > footer > ul {
+  list-style-type: none;
+}
+body > footer > ul > li > a {
+  display: flex;
+  color: #ffffff;
+  margin-top: 7px;
+}
+body > footer > ul > li > a > p.utensils {
+  padding-left: 27px;
+  margin: 0;
+}
+body > footer > ul > li > a > p.hands {
+  padding-left: 20px;
+  margin: 0;
+}
+body > footer > ul > li > a > p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   /* HEADER */
   /* NAV */
   /* SECTION 2 */
-  /*FOOTER*/ }
-  body > header {
-    box-shadow: 0 0 10px 1px;
-    padding: 1em;
-    position: relative; }
-    body > header > a > img {
-      height: 50px;
-      display: block;
-      margin: auto; }
-  body > nav {
-    /* SECTION 1 */ }
-    body > nav > form {
-      text-align: center;
-      background: #eaeaea;
-      padding: 1em 0;
-      padding-left: 85px; }
-      body > nav > form > i {
-        padding-right: 1em; }
-      body > nav > form > input {
-        border: none;
-        background: transparent; }
-    body > nav > section.reservation {
-      text-align: center;
-      background: #f6f6f6;
-      padding: 1px 0 55px; }
-      body > nav > section.reservation > h1 {
-        font-weight: bold;
-        font-size: xx-large; }
-      body > nav > section.reservation > p {
-        font-weight: lighter;
-        font-size: large; }
-      body > nav > section.reservation > button {
-        padding: 10px 20px;
-        border-radius: 50px;
-        margin-top: 10px;
-        background: linear-gradient(to left, #9356dc, #ff79da);
-        border: none;
-        color: white; }
-        body > nav > section.reservation > button:hover {
-          cursor: pointer; }
-  body > main {
-    /* SECTION 3 */ }
-    body > main > section.functioning > h2 {
-      margin: 40px 20px 20px; }
-    body > main > section.functioning > ul {
-      padding: 0 20px; }
-      @media screen and (min-width: 992px) {
-        body > main > section.functioning > ul {
-          display: flex;
-          justify-content: space-around; } }
-      @media screen and (min-width: 768px) and (max-width: 992px) {
-        body > main > section.functioning > ul {
-          display: flex;
-          justify-content: space-around;
-          flex-flow: wrap; } }
-      body > main > section.functioning > ul > li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px 0;
-        height: 70px;
-        border-radius: 20px;
-        background: #f6f6f6;
-        margin-left: 15px; }
-        @media screen and (min-width: 992px) {
-          body > main > section.functioning > ul > li {
-            height: 100px;
-            width: 30%; } }
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-          body > main > section.functioning > ul > li {
-            height: 100px;
-            width: 40%; } }
-        body > main > section.functioning > ul > li > div {
-          background: #9356dc;
-          border-radius: 50px;
-          padding: 5px 10px;
-          position: relative;
-          right: 15px;
-          color: white; }
-          @media screen and (min-width: 992px) {
-            body > main > section.functioning > ul > li > div {
-              font-size: 1.5em;
-              padding: 3px 10px; } }
-          @media screen and (min-width: 768px) and (max-width: 992px) {
-            body > main > section.functioning > ul > li > div {
-              font-size: 1.5em;
-              padding: 3px 10px; } }
-        body > main > section.functioning > ul > li > i {
-          font-size: 1.3em; }
-          @media screen and (min-width: 992px) {
-            body > main > section.functioning > ul > li > i {
-              margin-right: 10px;
-              font-size: 2em; } }
-          @media screen and (min-width: 768px) and (max-width: 992px) {
-            body > main > section.functioning > ul > li > i {
-              margin-right: 10px;
-              font-size: 2em; } }
-        body > main > section.functioning > ul > li > i.fas.fa-list-ul {
-          margin-right: 10px; }
-        body > main > section.functioning > ul > li > h3 {
-          margin-right: 100px; }
-          @media screen and (min-width: 992px) {
-            body > main > section.functioning > ul > li > h3 {
-              font-size: 1.1em;
-              margin-right: 18px; } }
-          @media screen and (min-width: 768px) and (max-width: 992px) {
-            body > main > section.functioning > ul > li > h3 {
-              font-size: 1.1em;
-              margin-right: 40px; } }
-        body > main > section.functioning > ul > li:hover {
-          cursor: pointer;
-          background: #eaeaea;
-          color: #9356dc; }
-          body > main > section.functioning > ul > li:hover > h3 {
-            color: #000; }
-    body > main > section.restaurants {
-      display: flex;
-      flex-flow: column;
-      background: #f6f6f6;
-      margin-top: 70px;
-      padding: 40px 20px; }
-      @media screen and (min-width: 992px) {
-        body > main > section.restaurants {
-          flex-flow: wrap;
-          justify-content: space-between;
-          padding-top: 90px; } }
-      @media screen and (min-width: 768px) and (max-width: 992px) {
-        body > main > section.restaurants {
-          flex-flow: wrap;
-          justify-content: space-between;
-          padding-top: 90px; } }
-      body > main > section.restaurants > h2 {
-        margin-top: 30px; }
-        @media screen and (min-width: 992px) {
-          body > main > section.restaurants > h2 {
-            position: absolute;
-            margin-top: -40px; } }
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-          body > main > section.restaurants > h2 {
-            position: absolute;
-            margin-top: -40px; } }
-      body > main > section.restaurants > nav {
-        position: relative; }
-        @media screen and (min-width: 992px) {
-          body > main > section.restaurants > nav {
-            width: 48%; } }
-        @media screen and (min-width: 768px) and (max-width: 992px) {
-          body > main > section.restaurants > nav {
-            width: 48%; } }
-        body > main > section.restaurants > nav > span {
-          position: absolute;
-          background: #99e2d0;
-          color: green;
-          padding: 4px 10px;
-          font-weight: bold;
-          right: 14%;
-          top: 16%;
-          border-radius: 2px; }
-          @media screen and (min-width: 992px) {
-            body > main > section.restaurants > nav > span {
-              right: 13%;
-              top: 22%; } }
-          @media screen and (min-width: 768px) and (max-width: 992px) {
-            body > main > section.restaurants > nav > span {
-              right: 10%;
-              top: 19%; } }
-        body > main > section.restaurants > nav > a {
-          text-decoration: none; }
-          body > main > section.restaurants > nav > a > figure {
-            background: white;
-            margin: 0;
-            border-radius: 15px; }
-            body > main > section.restaurants > nav > a > figure > img {
-              height: 220px;
-              width: 100%;
-              object-fit: cover;
-              border-radius: 15px 15px 0 0; }
-            body > main > section.restaurants > nav > a > figure > figcaption > h3 {
-              margin-top: 10px;
-              margin-left: 10px;
-              color: #000000; }
-            body > main > section.restaurants > nav > a > figure > figcaption > i {
-              float: right;
-              position: relative;
-              bottom: 40px;
-              right: 19px;
-              font-size: 1.5em;
-              font-weight: 100 !important;
-              transition: font-weight 0.5s;
-              color: gray; }
-              body > main > section.restaurants > nav > a > figure > figcaption > i:hover {
-                background: linear-gradient(#ff79da, #9356dc);
-                background-clip: border-box;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: 900 !important; }
-            body > main > section.restaurants > nav > a > figure > figcaption > p {
-              padding-bottom: 15px;
-              position: relative;
-              left: 10px;
-              bottom: 10px;
-              font-size: 1em;
-              color: #000000; }
-            @media screen and (min-width: 992px) {
-              body > main > section.restaurants > nav > a > figure {
-                margin: 20px 0; } }
-  body > footer {
-    background: #000;
-    padding: 5px; }
-    body > footer > h3 {
-      font-family: "Shrikhand", sans-serif;
-      font-size: 2.5em;
-      color: #ffffff;
-      margin: 0;
-      padding-left: 30px;
-      padding-top: 25px; }
-    body > footer > ul {
-      list-style-type: none; }
-      body > footer > ul > li > a {
-        display: flex;
-        color: #ffffff;
-        margin-top: 7px; }
-        body > footer > ul > li > a > p.utensils {
-          padding-left: 27px;
-          margin: 0; }
-        body > footer > ul > li > a > p.hands {
-          padding-left: 20px;
-          margin: 0; }
-        body > footer > ul > li > a > p {
-          margin: 0; }
+  /*FOOTER*/
+}
+body > nav {
+  /* SECTION 1 */
+}
+body > nav > form > i {
+  padding-right: 1em;
+  font-size: 3em;
+}
+body > nav > form > input {
+  border: none;
+  background: transparent;
+}
+body > nav > section.reservation > button:hover {
+  cursor: pointer;
+}
+body > main {
+  border-radius: 50px 50px 0 0;
+  /* SECTION 3 */
+}
+body > main > section.functioning > ul > li {
+  height: 115px;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.functioning > ul > li {
+    width: 29%;
+    height: 130px;
+  }
+}
+body > main > section.functioning > ul > li > div {
+  background: #9356dc;
+  border-radius: 50px;
+  padding: 5px 10px;
+  position: relative;
+  right: 15px;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.functioning > ul > li > div {
+    font-size: 1.5em;
+    padding: 3px 10px;
+  }
+}
+body > main > section.functioning > ul > li > i {
+  font-size: 3.3em;
+}
+@media screen and (min-width: 768px) {
+  body > main > section.functioning > ul > li > i {
+    margin-right: -10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > main > section.functioning > ul > li > i {
+    margin-right: -5px;
+    font-size: 3em;
+    margin-left: -20px;
+  }
+}
+body > main > section.functioning > ul > li > i.fas.fa-list-ul {
+  margin-right: 10px;
+}
+body > main > section.functioning > ul > li:hover {
+  cursor: pointer;
+  background: #eaeaea;
+  color: #9356dc;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.restaurants > h2 {
+    position: absolute;
+    margin-top: -40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > main > section.restaurants > nav {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > main > section.restaurants > nav > span {
+    right: 13%;
+    top: 22%;
+  }
+}
+body > main > section.restaurants > nav > a {
+  text-decoration: none;
+}
+body > main > section.restaurants > nav > a > figure {
+  background: white;
+  margin: 0;
+  border-radius: 15px;
+}
+body > main > section.restaurants > nav > a > figure > figcaption > i:hover {
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900 !important;
+}
+@media screen and (min-width: 992px) {
+  body > main > section.restaurants > nav > a > figure {
+    margin: 20px 0;
+  }
+}
+body > footer > ul > li > a > p.hands {
+  padding-left: 20px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

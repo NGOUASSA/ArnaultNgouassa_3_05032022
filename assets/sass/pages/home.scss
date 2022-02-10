@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+a,
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+p,
+ h1,
+ h2,
+ h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+  }
+/**    ************      *******/
+/* NAV */
+.nav {
+    &__form {
+        text-align: center;
+        background: #808080;
+        padding: 1em 0;
+        padding-left: 85px;
+        .form {
+            &__icon {
+                font-size: 2.5em;
+            }
+            &__input {
+                font-weight: 600;
+                font-size: 1.9em;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    /* SECTION 1 */
+    &__reservation {
+        text-align: center;
+        background: #f6f6f6;
+        padding: 1px 0 100px;
+        .section {
+            &__h1 {
+                font-size: 4em;
+                line-height: 1em;
+            }
+            &__p{
+                font-weight: 400;
+                font-size: 2.5em;
+                line-height: 45px;
+                color: gray;
+                position: relative;
+                bottom: 45px;
+            }
+            &__button {
+                padding: 30px 50px;
+                border-radius: 50px;
+                margin-top: -30px;
+                background: linear-gradient(to left, #9356dc, #ff79da);
+                border: none;
+                color: white;
+                font-size: 2.5em;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+/* SECTION 2 */
+.main {
+    border-radius: 25px 25px 0 0;
+    position: relative;
+    .functioning {
+        position: relative;
+            bottom: 45px;
+        &__h2 {
+            margin: 410px 20px 20px 50px;
+            font-size: 4.5em;
+        }
+        &__ul {
+            padding: 0 20px;
+            margin-top: 50px;
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: space-around;
+                flex-flow: wrap;
+            }
+            > li {
+                margin: 40px 0;
+                border-radius: 20px;
+                background: #f6f6f6;
+                margin-left: 15px;
+                padding: 50px;
+                box-shadow: 1px 2px 3px 2px #eaeaea;
+                @media screen and (min-width: 992px) {
+                }
+
+                > span {
+                    background: #9356dc;
+                    border-radius: 50px;
+                    padding: 0px 10px;
+                    position: relative;
+                    right: 70px;
+                    color: white;
+                    font-size: 2em;
+                    bottom: 45px;
+                    @media screen and (min-width: 768px) {
+                        margin-right: -30px;
+                    }
+                }
+                > i {
+                    font-size: 2em;
+                    position: relative;
+                    bottom: 30px;
+                    @media screen and (min-width: 992px) {
+                        margin-right: 10px;
+                        font-size: 2em;
+                    }
+                }
+                > h3 {
+                    font-size: 1.5em;
+                    display: inline-block;
+                    margin-left: 45px;
+                    position: relative;
+                    bottom: 30px;
+                    @media screen and (min-width: 768px) {
+                        font-size: 2.1em;
+                        margin-left: 35px;
+                    }
+                    @media screen and (min-width: 992px) {
+                        font-size: 1.6em;
+                        margin-left: 25px;  
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    background: #eaeaea;
+                    color: #9356dc;
+                    > h3 {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+    }
+}
+/* SECTION 3 */
+.restaurants {
+    display: flex;
+    flex-flow: column;
+    background: #f6f6f6;
+    padding: 138px 20px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        
+    }
+    @media screen and (min-width: 992px) {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        padding-top: 90px;
+    &__h2 {
+        position: absolute;
+        margin-top: -85px;
+        font-size: 2.5em;
+        @media screen and (min-width: 992px) {
+            position: absolute;
+            margin-top: -30px;
+        }
+    }
+    &__nav {
+        position: relative;
+        @media screen and (min-width: 992px) {
+            width: 48%;
+        }
+        .navResto {
+            &__span {
+                position: absolute;
+                background: #99e2d0;
+                color: green;
+                font-size: medium;
+                padding: 4px 10px;
+                font-weight: bold;
+                right: 3%;
+                top: 5%;
+                border-radius: 2px;
+                @media screen and (min-width: 992px) {
+                    right: 13%;
+                    top: 22%;
+                }
+            }
+            &__a {
+                text-decoration: none;
+.figure {
+    background: white;
+    margin: -25px 0;
+    border-radius: 15px;
+    &__img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    &__figure {
+.figcaption {
+    margin: 75px 0;
+    &__h3 {
+        margin-left: 20px;
+        margin-bottom: -45px;
+        color: #000000;
+        font-size: 2em;
+        position: relative;
+        bottom: 55px;
+    }
+    &__i {
+        float: right;
+        position: relative;
+        bottom: 30px;
+        right: 20px;
+        font-size: 3em;
+        font-weight: 100 !important;
+        transition: font-weight 0.5s;
+        color: gray;
+        &:hover {
+            background: linear-gradient(#ff79da, #9356dc);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900 !important;
+        }
+    }
+    &__p {
+        padding-bottom: 15px;
+        margin-left: 20px;
+        font-size: 2em;
+        color: #000000;
+    }
+
+}
+
+
+
+}            
+                    @media screen and (min-width: 992px) {
+                        margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+   
+
+
+
+
+/****    ZONE REFACTO      *******/
+
+body {
+    margin: 0;
+    /* HEADER */
+    > header {
+        box-shadow: 0 0 10px 1px;
+        padding: 4em;
+        position: relative;
+        > a {
+            > i {
+            }
+        }
+        > a {
+            > img {
+                height: 40px;
+            }
+        }
+    }    
+}
+    /*FOOTER*/
+    > footer {
+        background: #000;
+        padding: 5px;
+        > h3 {
+            font-family: "Shrikhand", sans-serif;
+            font-size: 2.5em;
+            font-weight: lighter;
+            color: #ffffff;
+            padding-left: 30px;
+            margin-bottom: 85px;
+            position: relative;
+            top: 35px;
+        }
+        > ul {
+            list-style-type: none;
+            margin-left: 30px;
+            position: relative;
+            bottom: 20px;
+            > li {
+                font-size: 1.7em;
+                > a {
+                    display: flex;
+                    color: #ffffff;
+                    margin-bottom: 10px;
+                    > i {
+                        font-size: 1.5em;
+                    }
+                    > p.utensils {
+                        padding-left: 27px;
+                        margin: 5px;
+                    }
+                    > p.hands {
+                        padding-left: 20px;
+                        margin: 0;
+                    }
+                    > p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
