@@ -13,6 +13,10 @@ h3 {
 h4 {
     font-family: "Shrikhand", sans-serif;
 }
+
+* {
+    box-sizing: border-box;
+  }
 /*****  ZONE DE TRAVAIL *******
 
 
@@ -39,7 +43,14 @@ body {
         }
         > a {
             > img {
-                height: 40px;
+                height: 50px;
+                margin: 40px 0 15px 31%;
+                @media screen and (min-width: 992px) {
+                    margin-left: 37%;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    margin-left: 35%;
+                }
             }
         }
     }
@@ -148,7 +159,7 @@ body {
                         @media screen and (min-width: 992px) {
                             font-size: 1.2em;
                             position: relative;
-                            top: 20px;
+                            top: 0px;
                             padding: 5px 11px;
                         }
                         @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -162,7 +173,7 @@ body {
                         @media screen and (min-width: 992px) {
                             font-size: 2em;
                             position: relative;
-                            top: 25px;
+                            top: 5px;
                             left: 10px;
                         }
                         @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -177,10 +188,10 @@ body {
                         display: inline-block;
                         margin-left: 45px;
                         @media screen and (min-width: 992px) {
-                            font-size: 0.85em;
+                            font-size: 1em;
                             position: relative;
                             right: 10px;
-                            top: 20px;
+                            top: 0px;
                         }
                         @media screen and (min-width: 768px) and (max-width: 992px) {
                             font-size: 1.2em;
@@ -202,15 +213,11 @@ body {
         }
         /* SECTION 3 */
         > .mainHome__sectionRestaurants {
-            display: flex;
-            flex-flow: column;
             background: #f6f6f6;
             padding: 138px 20px;
             margin-top: 120px;
             padding-bottom: 65px;
             @media screen and (min-width: 992px) {
-                flex-flow: wrap;
-                justify-content: space-between;
                 padding-top: 90px;
             }
             @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -225,6 +232,7 @@ body {
                 @media screen and (min-width: 992px) {
                     position: absolute;
                     margin-top: -30px;
+                    margin-left: 20px;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
                     position: absolute;
@@ -233,18 +241,22 @@ body {
                 }
             }
             > .restaurants__ul {
-                position: relative;
+                display: flex;
+                flex-flow: column;
                 margin-top: 55px;
                 padding: 0;
                 @media screen and (min-width: 992px) {
-                    width: 100%;
+                    flex-flow: wrap;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
                         width: 100%;
                 }
                 > .li {
-                    margin: 0;
                     position: relative;
+                    @media screen and (min-width: 992px) {
+                        flex-basis: 50%;
+                        padding: 20px;
+                    }
                     > .span {
                         position: absolute;
                         background: #99e2d0;
@@ -256,15 +268,15 @@ body {
                         top: 10px;
                         border-radius: 2px;
                         @media screen and (min-width: 992px) {
-                        }
-                        @media screen and (min-width: 768px) and (max-width: 992px) {
+                            right: 30px;
+                            top: 5px;
                         }
                     }
                     > .a {
                         text-decoration: none;
                         > .figure {
                             background: white;
-                            margin: -25px 0;
+                            margin: -10px 0;
                             border-radius: 20px;
                             > .img {
                                 height: 300px;
@@ -308,7 +320,10 @@ body {
                                 }
                             }
                             @media screen and (min-width: 992px) {
-                                margin: 20px 0;
+                                margin: -30px 0;
+                            }
+                            @media screen and (min-width: 768px) and (max-width: 992px) {
+                                margin: -10px 0;
                             }
                         }
                     }
