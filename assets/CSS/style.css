@@ -29,20 +29,6 @@ h4 {
   box-sizing: border-box;
 }
 
-/*****  ZONE DE TRAVAIL *******
-
-
-
-
-
-
-
-
-
-
-
-
-*****************************/
 body {
   margin: 0;
   /* HEADER */
@@ -50,60 +36,60 @@ body {
   /* SECTION 2 */
   /*FOOTER*/
 }
-body > .headerHome {
+body .headerHome {
   box-shadow: 0 0 10px 1px #808080;
   position: relative;
 }
-body > .headerHome > a > img {
+body .headerHome > a > img {
   height: 50px;
   margin: 40px 0 15px 31%;
 }
 @media screen and (min-width: 992px) {
-  body > .headerHome > a > img {
+  body .headerHome > a > img {
     margin-left: 37%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .headerHome > a > img {
+  body .headerHome > a > img {
     margin-left: 35%;
   }
 }
-body > .nav {
+body .nav {
   /* SECTION 1 */
 }
-body > .nav > .form {
+body .nav__form {
   text-align: center;
   background: #ccc;
   padding: 1.5em 0;
   padding-left: 85px;
 }
-body > .nav > .form > .form__i {
+body .nav__form .form__i {
   font-size: xx-large;
 }
-body > .nav > .form > .form__input {
+body .nav__form .form__input {
   font-weight: 600;
   font-size: 1.4em;
   margin-bottom: 5px;
 }
-body > .nav > .reservation {
+body .nav__section {
   text-align: center;
   background: #f6f6f6;
   padding: 1px 0 55px;
 }
-body > .nav > .reservation > .reservation__h1 {
+body .nav__section .reservation__h1 {
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 3em;
   margin-top: 65px;
   margin-bottom: 30px;
   line-height: 1em;
 }
-body > .nav > .reservation > .reservation__p {
+body .nav__section .reservation__p {
   font-weight: bold;
   font-size: large;
   margin-top: 10px;
   line-height: 1.5em;
 }
-body > .nav > .reservation > .reservation__button {
+body .nav__section .reservation__button {
   padding: 15px 20px;
   border-radius: 50px;
   margin-top: 35px;
@@ -112,51 +98,51 @@ body > .nav > .reservation > .reservation__button {
   color: white;
   font-size: medium;
 }
-body > .nav > .reservation > .reservation__button:hover {
+body .nav__section .reservation__button:hover {
   cursor: pointer;
 }
-body > .mainHome {
+body .mainHome {
   border-radius: 25px 25px 0 0;
   margin-top: -30px;
   /* SECTION 3 */
 }
-body > .mainHome > .mainHome__sectionFunctioning {
+body .mainHome__sectionFunctioning {
   position: relative;
   bottom: 0px;
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__h2 {
+body .mainHome__sectionFunctioning .functioning__h2 {
   margin: 110px 20px 50px 50px;
   font-size: 2.2em;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__h2 {
+  body .mainHome__sectionFunctioning .functioning__h2 {
     display: flex;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__h2 {
+  body .mainHome__sectionFunctioning .functioning__h2 {
     margin-top: 115px;
     margin-bottom: 0;
   }
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul {
+body .mainHome__sectionFunctioning .functioning__ul {
   padding: 0 20px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul {
+  body .mainHome__sectionFunctioning .functioning__ul {
     display: flex;
     justify-content: space-around;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul {
+  body .mainHome__sectionFunctioning .functioning__ul {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
   }
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li {
+body .mainHome__sectionFunctioning .functioning__ul > li {
   margin: 40px 0;
   margin: 40px 0;
   border-radius: 20px;
@@ -166,16 +152,16 @@ body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li {
   box-shadow: 2px 2px 15px 2px #ccc;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li {
+  body .mainHome__sectionFunctioning .functioning__ul > li {
     width: 30%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li {
+  body .mainHome__sectionFunctioning .functioning__ul > li {
     width: 45%;
   }
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > span {
+body .mainHome__sectionFunctioning .functioning__ul > li > span {
   background: #9356dc;
   border-radius: 50px;
   padding: 5px 10px;
@@ -186,7 +172,7 @@ body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > span 
   bottom: 10px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > span {
+  body .mainHome__sectionFunctioning .functioning__ul > li > span {
     font-size: 1.2em;
     position: relative;
     top: 0px;
@@ -194,17 +180,17 @@ body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > span 
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > span {
+  body .mainHome__sectionFunctioning .functioning__ul > li > span {
     font-size: 1.5em;
     padding: 3px 10px;
     bottom: -5px;
   }
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > i {
+body .mainHome__sectionFunctioning .functioning__ul > li > i {
   font-size: 2em;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > i {
+  body .mainHome__sectionFunctioning .functioning__ul > li > i {
     font-size: 2em;
     position: relative;
     top: 5px;
@@ -212,20 +198,20 @@ body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > i {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > i {
+  body .mainHome__sectionFunctioning .functioning__ul > li > i {
     position: relative;
     right: 20px;
     top: 10px;
     font-size: 2em;
   }
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > h3 {
+body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
   font-size: 1.6em;
   display: inline-block;
   margin-left: 45px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > h3 {
+  body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
     font-size: 1em;
     position: relative;
     right: 10px;
@@ -233,84 +219,84 @@ body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > h3 {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li > h3 {
+  body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
     font-size: 1.2em;
     margin-left: unset;
     position: relative;
     bottom: -5px;
   }
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li:hover {
+body .mainHome__sectionFunctioning .functioning__ul > li:hover {
   cursor: pointer;
   background: #eaeaea;
   color: #9356dc;
 }
-body > .mainHome > .mainHome__sectionFunctioning > .functioning__ul > li:hover > h3 {
+body .mainHome__sectionFunctioning .functioning__ul > li:hover > h3 {
   color: #000;
 }
-body > .mainHome > .mainHome__sectionRestaurants {
+body .mainHome__sectionRestaurants {
   background: #f6f6f6;
   padding: 138px 20px;
   margin-top: 120px;
   padding-bottom: 65px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants {
+  body .mainHome__sectionRestaurants {
     padding-top: 90px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants {
+  body .mainHome__sectionRestaurants {
     flex-flow: wrap;
     justify-content: space-between;
     padding-top: 90px;
   }
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__h2 {
+body .mainHome__sectionRestaurants .restaurants__h2 {
   position: absolute;
   margin-top: -50px;
   font-size: 2.5em;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__h2 {
+  body .mainHome__sectionRestaurants .restaurants__h2 {
     position: absolute;
     margin-top: -30px;
     margin-left: 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__h2 {
+  body .mainHome__sectionRestaurants .restaurants__h2 {
     position: absolute;
     margin-top: -50px;
     font-size: large;
   }
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul {
+body .mainHome__sectionRestaurants .restaurants__ul {
   display: flex;
   flex-flow: column;
   margin-top: 55px;
   padding: 0;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul {
+  body .mainHome__sectionRestaurants .restaurants__ul {
     flex-flow: wrap;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul {
+  body .mainHome__sectionRestaurants .restaurants__ul {
     width: 100%;
   }
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li {
+body .mainHome__sectionRestaurants .restaurants__ul > .li {
   position: relative;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li {
+  body .mainHome__sectionRestaurants .restaurants__ul > .li {
     flex-basis: 50%;
     padding: 20px;
   }
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .span {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
   position: absolute;
   background: #99e2d0;
   color: green;
@@ -322,29 +308,29 @@ body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .spa
   border-radius: 2px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .span {
+  body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
     right: 30px;
     top: 5px;
   }
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a {
   text-decoration: none;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
   background: white;
   margin: -10px 0;
   border-radius: 20px;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure > .img {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img {
   height: 300px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure > .figcaption {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption {
   margin: 60px 0;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure > .figcaption > .h3 {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .h3 {
   margin-left: 20px;
   margin-bottom: -45px;
   color: #000000;
@@ -352,7 +338,7 @@ body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a >
   position: relative;
   bottom: 40px;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure > .figcaption > .i {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .i {
   float: right;
   position: relative;
   bottom: 30px;
@@ -362,14 +348,14 @@ body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a >
   transition: font-weight 0.5s;
   color: gray;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure > .figcaption > .i:hover {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .i:hover {
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900 !important;
 }
-body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure > .figcaption > .p {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .p {
   padding-bottom: 26px;
   margin-left: 20px;
   margin-top: 20px;
@@ -377,12 +363,12 @@ body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a >
   color: #000000;
 }
 @media screen and (min-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure {
+  body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
     margin: -30px 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainHome > .mainHome__sectionRestaurants > .restaurants__ul > .li > .a > .figure {
+  body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
     margin: -10px 0;
   }
 }
@@ -440,77 +426,21 @@ a {
 }
 
 /* 1-  ******************************/
-.appetizer__plat {
-  display: inline-block;
-  margin-left: 20px;
+body > .mainMenu .appetizer__plat {
+  /* display: inline-block; */
+  margin-left: 30px;
   font-size: 2em;
   border-bottom: 4px solid #99e2d0;
   padding: 3px;
-  /*color: gray;*/
-  margin-top: 60px;
-}
-@media screen and (min-width: 992px) {
-  .appetizer__plat {
-    margin-top: 180px;
-    margin-left: 30px;
-  }
-}
-
-.appetizer__plat {
-  color: red;
-}
-.appetizer__menu {
-  display: flex;
-  flex-flow: column;
+  color: gray;
   margin-top: 20px;
+  width: 85px;
 }
 @media screen and (min-width: 992px) {
-  .appetizer__menu {
-    width: 100%;
+  body > .mainMenu .appetizer__plat {
+    margin-left: 30px;
+    margin-bottom: 105px;
   }
-}
-.appetizer__menu > ul {
-  position: relative;
-  padding: 1px 1em;
-  margin: 10px 10px;
-  cursor: pointer;
-}
-@media screen and (min-width: 992px) {
-  .appetizer__menu > ul {
-    margin: 10px 25px;
-    width: 83%;
-  }
-}
-.appetizer__menu > ul > li {
-  background: #ffffff;
-  height: 80px;
-  border-radius: 20px;
-  margin-top: 15px;
-  position: relative;
-}
-.appetizer__menu > ul > li > h2 {
-  font-size: 2.5em;
-  position: relative;
-  left: 10px;
-  top: 15px;
-}
-.appetizer__menu > ul > li > p {
-  font-size: 2.5em;
-  margin-top: 15px;
-  margin-left: 10px;
-  color: grey;
-}
-.appetizer__menu > ul > li > p > span {
-  display: inline-block;
-  width: 88%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.appetizer__menu > ul > li > p > b {
-  position: relative;
-  bottom: 5px;
-  color: #000;
 }
 
 /*** 2- ******************************* ***
@@ -522,35 +452,27 @@ body {
   /* MAIN */
   /* FOOTER */
 }
-body > .headerMenu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-body > .headerMenu > a {
-  position: relative;
-}
-body > .headerMenu > a > i.fas.fa-arrow-left {
+body .headerMenu > a > i.fas.fa-arrow-left {
   color: #000000;
-  position: absolute;
-  bottom: 15px;
   font-size: 1.8em;
-  margin-left: -210px;
+  position: relative;
+  left: 40px;
+  bottom: 35px;
 }
-@media screen and (min-width: 992px) {
-  body > .headerMenu > a > i.fas.fa-arrow-left {
-    left: -200px;
-  }
-}
-body > .headerMenu > a > img {
+body .headerMenu > a > img {
   height: 50px;
-  margin-right: 10px;
+  margin-left: 180px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 992px) {
-  body > .headerMenu > a > img {
-    width: 100%;
+  body .headerMenu > a > img {
+    margin-left: 420px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body .headerMenu > a > img {
+    margin-left: 310px;
   }
 }
 body > img {
@@ -560,55 +482,66 @@ body > img {
 }
 @media screen and (min-width: 992px) {
   body > img {
-    height: 860px;
+    height: auto;
+    margin-bottom: 440px;
   }
 }
 body > .mainMenu {
   margin-top: -285px;
   margin-bottom: -60px;
-  padding-bottom: 60px;
+  padding-bottom: 145px;
+  background: #f6f6f6;
   position: relative;
-  z-index: 0;
-  /* SECTION */
-  /*** 3- ************************** ***
-         ********************************
-         *******************************/
-  /* BUTTON */
+  /* SECTION 1 */
+  /* SECTION 2*/
+  /* SECTION 3 */
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu {
+    display: flex;
+    margin-top: -600px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body > .mainMenu {
+    margin-top: -240px;
+  }
 }
 body > .mainMenu > div {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 185px;
-}
-@media screen and (min-width: 768px) {
-  body > .mainMenu > div {
-    margin-top: -696px;
-    width: 100%;
-    margin-left: -175px;
-  }
+  margin-top: 180px;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > div {
-    margin-bottom: 539px;
+    margin-top: -590px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body > .mainMenu > div {
+    width: 100%;
+    margin-left: -175px;
   }
 }
 body > .mainMenu > div > h1 {
   font-family: "Shrikhand";
   font-size: 3em;
-  margin-left: 25px;
+  margin-left: 35px;
   margin-top: 55px;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > div > h1 {
-    margin-top: 225px;
-    position: absolute;
-    margin-left: 30px;
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body > .mainMenu > div > h1 {
+    margin-left: 215px;
   }
 }
 body > .mainMenu > div > i {
-  margin-top: 50px;
-  margin-left: 690px;
+  margin-top: 15px;
+  margin-left: 650px;
   position: absolute;
   font-size: 2.8em;
 }
@@ -619,70 +552,190 @@ body > .mainMenu > div > i:hover {
   -webkit-text-fill-color: transparent;
   font-weight: 900 !important;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   body > .mainMenu > div > i {
-    margin-left: 805px;
+    margin-left: 1070px;
   }
 }
-@media screen and (min-width: 768px) {
-  body > .mainMenu > section {
-    flex-flow: wrap;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body > .mainMenu > div > i {
+    margin-left: 980px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer {
+    width: 33%;
+    margin-top: 150px;
+    margin-left: -375px;
+  }
+}
+body > .mainMenu .appetizer__menu {
+  display: flex;
+  flex-flow: column;
+  margin-top: -55px;
+}
+body > .mainMenu .appetizer__menu > ul {
+  position: relative;
+  padding: 1px 1em;
+  margin: -60px 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer__menu > ul {
+    padding: 1px 0;
+  }
+}
+body > .mainMenu .appetizer__menu > ul > li {
+  background: #ffffff;
+  height: 115px;
+  border-radius: 20px;
+  position: relative;
+  padding-right: 30px;
+}
+body > .mainMenu .appetizer__menu > ul > li > h2 {
+  font-size: 2.5em;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer__menu > ul > li > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+}
+body > .mainMenu .appetizer__menu > ul > li > p {
+  font-size: 2.5em;
+  margin-top: -20px;
+  margin-left: 15px;
+  color: grey;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer__menu > ul > li > p {
+    font-size: 2.5em;
+  }
+}
+body > .mainMenu .appetizer__menu > ul > li > p > span {
+  display: inline-block;
+  width: 88%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  transition: width 0.5s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer__menu > ul > li > p > span {
+    font-size: 0.4em;
+    font-weight: bold;
+  }
+}
+body > .mainMenu .appetizer__menu > ul > li > p > b {
+  position: relative;
+  bottom: 5px;
+  color: #000;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer__menu > ul > li > p > b {
+    font-size: 20px;
+  }
+}
+body > .mainMenu .appetizer__menu > ul > li::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #99f2d0;
+  transition: width 0.4s;
+  border-radius: 0 20px 20px 0;
+}
+body > .mainMenu .appetizer__menu > ul > li::after {
+  position: absolute;
+  right: -10%;
+  top: calc(40% - 0.5em);
+  transform: rotate(0deg);
+  background: white;
+  color: #99f2d0;
+  border-radius: 50px;
+  padding: 0.4em;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
+  transition: right 0.4s, transform 0.8s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer__menu > ul > li::after {
+    right: -8%;
+  }
+}
+body > .mainMenu .appetizer__menu > ul > li:hover::before {
+  width: 20%;
+}
+body > .mainMenu .appetizer__menu > ul > li:hover::after {
+  right: 5%;
+  transform: rotate(360deg);
+}
+body > .mainMenu .appetizer__menu > ul > li:hover > p > span {
+  width: 70%;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish {
+    width: 33%;
+    margin-top: 120px;
   }
 }
 body > .mainMenu > section.dish > p {
+  width: 80px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: 2em;
   border-bottom: 4px solid #99e2d0;
   padding: 3px;
   color: gray;
-  margin-top: 60px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > p {
-    margin-top: 180px;
-    margin-left: 30px;
-  }
+  margin-top: 55px;
 }
 body > .mainMenu > section.dish > div.menu {
   display: flex;
   flex-flow: column;
   margin-top: 20px;
 }
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > div.menu {
-    width: 100%;
-  }
-}
 body > .mainMenu > section.dish > div.menu > ul {
   position: relative;
   padding: 1px 1em;
-  margin: 10px 10px;
+  margin: -60px 10px;
   cursor: pointer;
-  list-style-type: none;
+  overflow: hidden;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > section.dish > div.menu > ul {
-    margin: 10px 25px;
-    width: 83%;
+    padding: 1px 0;
   }
 }
 body > .mainMenu > section.dish > div.menu > ul > li {
-  height: 80px;
+  height: 115px;
   background: #ffffff;
   border-radius: 20px;
+  position: relative;
+  padding-right: 30px;
 }
 body > .mainMenu > section.dish > div.menu > ul > li > h2 {
-  margin-top: 10px;
   font-size: 2.5em;
   position: relative;
-  left: 10px;
+  left: 15px;
   top: 15px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish > div.menu > ul > li > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
 }
 body > .mainMenu > section.dish > div.menu > ul > li > p {
   font-size: 2.5em;
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-top: -20px;
+  margin-left: 15px;
   color: grey;
 }
 body > .mainMenu > section.dish > div.menu > ul > li > p > span {
@@ -691,26 +744,79 @@ body > .mainMenu > section.dish > div.menu > ul > li > p > span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 30px;
+  transition: width 0.5s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish > div.menu > ul > li > p > span {
+    font-size: 0.4em;
+    font-weight: bold;
+  }
 }
 body > .mainMenu > section.dish > div.menu > ul > li > p > b {
   position: relative;
   bottom: 5px;
   color: #000;
 }
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish > div.menu > ul > li > p > b {
+    font-size: 20px;
+  }
+}
+body > .mainMenu > section.dish > div.menu > ul > li::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #99f2d0;
+  transition: width 0.4s;
+  border-radius: 0 20px 20px 0;
+}
+body > .mainMenu > section.dish > div.menu > ul > li::after {
+  position: absolute;
+  right: -10%;
+  top: calc(40% - 0.5em);
+  transform: rotate(0deg);
+  background: white;
+  color: #99f2d0;
+  border-radius: 50px;
+  padding: 0.4em;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
+  transition: right 0.4s, transform 0.8s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish > div.menu > ul > li::after {
+    right: -8%;
+  }
+}
+body > .mainMenu > section.dish > div.menu > ul > li:hover::before {
+  width: 20%;
+}
+body > .mainMenu > section.dish > div.menu > ul > li:hover::after {
+  right: 5%;
+  transform: rotate(360deg);
+}
+body > .mainMenu > section.dish > div.menu > ul > li:hover > p > span {
+  width: 70%;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts {
+    width: 33%;
+    margin-top: 45px;
+  }
+}
 body > .mainMenu > section.desserts > p {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: 2em;
   border-bottom: 4px solid #99e2d0;
   padding: 3px;
   color: gray;
-  margin-top: 60px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > p {
-    margin-top: 180px;
-    margin-left: 30px;
-  }
+  margin-top: 130px;
+  width: 80px;
 }
 body > .mainMenu > section.desserts > span {
   right: 5px;
@@ -723,39 +829,41 @@ body > .mainMenu > section.desserts > div.menu {
   flex-flow: column;
   margin-top: 20px;
 }
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > div.menu {
-    width: 100%;
-  }
-}
 body > .mainMenu > section.desserts > div.menu > ul {
   position: relative;
   padding: 1px 1em;
-  margin: 10px 10px;
+  margin: -60px 10px;
+  cursor: pointer;
+  overflow: hidden;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > section.desserts > div.menu > ul {
-    margin: 10px 25px;
-    width: 83%;
+    padding: 1px 0;
   }
 }
 body > .mainMenu > section.desserts > div.menu > ul > li {
   border-radius: 20px;
-  height: 80px;
   background: #ffffff;
   position: relative;
+  height: 115px;
+  padding-right: 30px;
 }
 body > .mainMenu > section.desserts > div.menu > ul > li > h2 {
-  margin-top: 10px;
   font-size: 2.5em;
   position: relative;
-  left: 10px;
+  left: 15px;
   top: 15px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts > div.menu > ul > li > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
 }
 body > .mainMenu > section.desserts > div.menu > ul > li > p {
   font-size: 2.5em;
-  margin-top: 15px;
-  margin-left: 10px;
+  margin-top: -20px;
+  margin-left: 15px;
   color: grey;
 }
 body > .mainMenu > section.desserts > div.menu > ul > li > p > span {
@@ -764,12 +872,24 @@ body > .mainMenu > section.desserts > div.menu > ul > li > p > span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 30px;
   transition: width 0.5s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts > div.menu > ul > li > p > span {
+    font-size: 0.4em;
+    font-weight: bold;
+  }
 }
 body > .mainMenu > section.desserts > div.menu > ul > li > p > b {
   position: relative;
   bottom: 5px;
   color: #000;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts > div.menu > ul > li > p > b {
+    font-size: 20px;
+  }
 }
 body > .mainMenu > section.desserts > div.menu > ul > li::before {
   content: "";
@@ -780,6 +900,7 @@ body > .mainMenu > section.desserts > div.menu > ul > li::before {
   bottom: 0;
   background: #99f2d0;
   transition: width 0.4s;
+  border-radius: 0 20px 20px 0;
 }
 body > .mainMenu > section.desserts > div.menu > ul > li::after {
   position: absolute;
@@ -793,7 +914,6 @@ body > .mainMenu > section.desserts > div.menu > ul > li::after {
   font-family: "Font Awesome 5 Pro";
   content: "\f00c";
   transition: right 0.4s, transform 0.8s;
-  font-size: 1.5em;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > section.desserts > div.menu > ul > li::after {
@@ -801,43 +921,47 @@ body > .mainMenu > section.desserts > div.menu > ul > li::after {
   }
 }
 body > .mainMenu > section.desserts > div.menu > ul > li:hover::before {
-  width: 25%;
+  width: 20%;
 }
 body > .mainMenu > section.desserts > div.menu > ul > li:hover::after {
   right: 5%;
   transform: rotate(360deg);
 }
 body > .mainMenu > section.desserts > div.menu > ul > li:hover > p > span {
-  width: 60%;
+  width: 70%;
 }
 body > .mainMenu > button {
-  height: 40px;
-  width: 20%;
+  height: 90px;
+  width: 45%;
   border-radius: 60px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 120px;
   color: white;
   background: linear-gradient(to top, #9356dc, #ff79da);
   font-size: 1.8em;
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 968px) {
-  body > .mainMenu > button {
-    margin-left: 387px;
-    margin-top: 432px;
-    position: absolute;
-  }
-}
 @media screen and (min-width: 992px) {
   body > .mainMenu > button {
-    width: 30%;
-    margin-left: -765px;
+    margin-left: -725px;
+    margin-top: 690px;
+    width: 25%;
   }
 }
-body > .footerMenu > h2 {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body > .mainMenu > button {
+    margin-left: 230px;
+    margin-top: 120px;
+  }
+}
+body .footerMenu {
+  background: #000;
+  padding-bottom: 3em;
+}
+body .footerMenu > h2 {
   font-family: "Shrikhand", sans-serif;
   font-size: 2.5em;
   font-weight: lighter;
@@ -845,25 +969,26 @@ body > .footerMenu > h2 {
   padding-left: 30px;
   margin-bottom: 85px;
   position: relative;
-  top: 35px;
+  top: 60px;
 }
-body > .footerMenu > ul {
+body .footerMenu > ul {
   list-style-type: none;
 }
-body > .footerMenu > ul > li > a {
+body .footerMenu > ul > li > a {
   display: flex;
   color: #ffffff;
   margin-top: 7px;
 }
-body > .footerMenu > ul > li > a > p.utensils {
+body .footerMenu > ul > li > a > p.utensils {
   padding-left: 27px;
   margin: 0;
+  line-height: 2em;
 }
-body > .footerMenu > ul > li > a > p.hands {
+body .footerMenu > ul > li > a > p.hands {
   padding-left: 20px;
   margin: 0;
 }
-body > .footerMenu > ul > li > a > p {
+body .footerMenu > ul > li > a > p {
   margin: 0;
 }
 
