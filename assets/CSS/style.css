@@ -426,8 +426,8 @@ a {
 }
 
 /* 1-  ******************************/
-body > .mainMenu .appetizer__plat {
-  /* display: inline-block; */
+body > .mainMenu > section.desserts .menu__plat, body > .mainMenu > section.dish .menu__plat, body > .mainMenu .appetizer .menu__plat {
+  display: inline-block;
   margin-left: 30px;
   font-size: 2em;
   border-bottom: 4px solid #99e2d0;
@@ -437,7 +437,7 @@ body > .mainMenu .appetizer__plat {
   width: 85px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__plat {
+  body > .mainMenu > section.desserts .menu__plat, body > .mainMenu > section.dish .menu__plat, body > .mainMenu .appetizer .menu__plat {
     margin-left: 30px;
     margin-bottom: 105px;
   }
@@ -480,18 +480,13 @@ body > img {
   height: 500px;
   width: 100%;
 }
-@media screen and (min-width: 992px) {
-  body > img {
-    height: auto;
-    margin-bottom: 440px;
-  }
-}
 body > .mainMenu {
-  margin-top: -285px;
   margin-bottom: -60px;
-  padding-bottom: 145px;
+  padding-bottom: 135px;
   background: #f6f6f6;
   position: relative;
+  border-radius: 50px 50px 0 0;
+  margin-top: -105px;
   /* SECTION 1 */
   /* SECTION 2*/
   /* SECTION 3 */
@@ -499,7 +494,8 @@ body > .mainMenu {
 @media screen and (min-width: 992px) {
   body > .mainMenu {
     display: flex;
-    margin-top: -600px;
+    margin-top: -20px;
+    padding-bottom: 310px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -507,308 +503,66 @@ body > .mainMenu {
     margin-top: -240px;
   }
 }
-body > .mainMenu > div {
+body > .mainMenu .heart {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 180px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > div {
-    margin-top: -590px;
+  body > .mainMenu .heart {
+    position: absolute;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainMenu > div {
-    width: 100%;
-    margin-left: -175px;
-  }
-}
-body > .mainMenu > div > h1 {
+body > .mainMenu .heart__h1 {
   font-family: "Shrikhand";
   font-size: 3em;
   margin-left: 35px;
-  margin-top: 55px;
+  padding-top: 25px;
+}
+body > .mainMenu .heart__i {
+  margin-top: 40px;
+  margin-right: 75px;
+  font-size: 2.5em;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > div > h1 {
-    display: block;
+  body > .mainMenu .heart__i {
+    padding-left: 600px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainMenu > div > h1 {
-    margin-left: 215px;
+  body > .mainMenu .heart__i {
+    margin-right: 105px;
   }
 }
-body > .mainMenu > div > i {
-  margin-top: 15px;
-  margin-left: 650px;
-  position: absolute;
-  font-size: 2.8em;
-}
-body > .mainMenu > div > i:hover {
+body > .mainMenu .heart__i:hover {
   background: linear-gradient(#ff79da, #9356dc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900 !important;
 }
-@media screen and (min-width: 992px) {
-  body > .mainMenu > div > i {
-    margin-left: 1070px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainMenu > div > i {
-    margin-left: 980px;
+  body > .mainMenu .heart__i {
+    right: 105px;
   }
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .appetizer {
-    width: 33%;
-    margin-top: 150px;
-    margin-left: -375px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 10px;
   }
 }
-body > .mainMenu .appetizer__menu {
-  display: flex;
-  flex-flow: column;
-  margin-top: -55px;
-}
-body > .mainMenu .appetizer__menu > ul {
-  position: relative;
-  padding: 1px 1em;
-  margin: -60px 10px;
-  cursor: pointer;
-  overflow: hidden;
+body > .mainMenu .appetizer .menu {
+  margin-top: -110px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__menu > ul {
-    padding: 1px 0;
+  body > .mainMenu .appetizer .menu {
+    margin-top: 0;
   }
 }
-body > .mainMenu .appetizer__menu > ul > li {
-  background: #ffffff;
-  height: 115px;
-  border-radius: 20px;
-  position: relative;
-  padding-right: 30px;
-}
-body > .mainMenu .appetizer__menu > ul > li > h2 {
-  font-size: 2.5em;
-  position: relative;
-  left: 15px;
-  top: 15px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__menu > ul > li > h2 {
-    font-size: 1.5em;
-    line-height: 2em;
-  }
-}
-body > .mainMenu .appetizer__menu > ul > li > p {
-  font-size: 2.5em;
-  margin-top: -20px;
-  margin-left: 15px;
-  color: grey;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__menu > ul > li > p {
-    font-size: 2.5em;
-  }
-}
-body > .mainMenu .appetizer__menu > ul > li > p > span {
-  display: inline-block;
-  width: 88%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 30px;
-  transition: width 0.5s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__menu > ul > li > p > span {
-    font-size: 0.4em;
-    font-weight: bold;
-  }
-}
-body > .mainMenu .appetizer__menu > ul > li > p > b {
-  position: relative;
-  bottom: 5px;
-  color: #000;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__menu > ul > li > p > b {
-    font-size: 20px;
-  }
-}
-body > .mainMenu .appetizer__menu > ul > li::before {
-  content: "";
-  width: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #99f2d0;
-  transition: width 0.4s;
-  border-radius: 0 20px 20px 0;
-}
-body > .mainMenu .appetizer__menu > ul > li::after {
-  position: absolute;
-  right: -10%;
-  top: calc(40% - 0.5em);
-  transform: rotate(0deg);
-  background: white;
-  color: #99f2d0;
-  border-radius: 50px;
-  padding: 0.4em;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
-  transition: right 0.4s, transform 0.8s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer__menu > ul > li::after {
-    right: -8%;
-  }
-}
-body > .mainMenu .appetizer__menu > ul > li:hover::before {
-  width: 20%;
-}
-body > .mainMenu .appetizer__menu > ul > li:hover::after {
-  right: 5%;
-  transform: rotate(360deg);
-}
-body > .mainMenu .appetizer__menu > ul > li:hover > p > span {
-  width: 70%;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish {
-    width: 33%;
-    margin-top: 120px;
-  }
-}
-body > .mainMenu > section.dish > p {
+body > .mainMenu .appetizer .menu__p {
   width: 80px;
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 2em;
-  border-bottom: 4px solid #99e2d0;
-  padding: 3px;
-  color: gray;
-  margin-top: 55px;
-}
-body > .mainMenu > section.dish > div.menu {
-  display: flex;
-  flex-flow: column;
-  margin-top: 20px;
-}
-body > .mainMenu > section.dish > div.menu > ul {
-  position: relative;
-  padding: 1px 1em;
-  margin: -60px 10px;
-  cursor: pointer;
-  overflow: hidden;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > div.menu > ul {
-    padding: 1px 0;
-  }
-}
-body > .mainMenu > section.dish > div.menu > ul > li {
-  height: 115px;
-  background: #ffffff;
-  border-radius: 20px;
-  position: relative;
-  padding-right: 30px;
-}
-body > .mainMenu > section.dish > div.menu > ul > li > h2 {
-  font-size: 2.5em;
-  position: relative;
-  left: 15px;
-  top: 15px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > div.menu > ul > li > h2 {
-    font-size: 1.5em;
-    line-height: 2em;
-  }
-}
-body > .mainMenu > section.dish > div.menu > ul > li > p {
-  font-size: 2.5em;
-  margin-top: -20px;
-  margin-left: 15px;
-  color: grey;
-}
-body > .mainMenu > section.dish > div.menu > ul > li > p > span {
-  display: inline-block;
-  width: 88%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 30px;
-  transition: width 0.5s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > div.menu > ul > li > p > span {
-    font-size: 0.4em;
-    font-weight: bold;
-  }
-}
-body > .mainMenu > section.dish > div.menu > ul > li > p > b {
-  position: relative;
-  bottom: 5px;
-  color: #000;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > div.menu > ul > li > p > b {
-    font-size: 20px;
-  }
-}
-body > .mainMenu > section.dish > div.menu > ul > li::before {
-  content: "";
-  width: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #99f2d0;
-  transition: width 0.4s;
-  border-radius: 0 20px 20px 0;
-}
-body > .mainMenu > section.dish > div.menu > ul > li::after {
-  position: absolute;
-  right: -10%;
-  top: calc(40% - 0.5em);
-  transform: rotate(0deg);
-  background: white;
-  color: #99f2d0;
-  border-radius: 50px;
-  padding: 0.4em;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
-  transition: right 0.4s, transform 0.8s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish > div.menu > ul > li::after {
-    right: -8%;
-  }
-}
-body > .mainMenu > section.dish > div.menu > ul > li:hover::before {
-  width: 20%;
-}
-body > .mainMenu > section.dish > div.menu > ul > li:hover::after {
-  right: 5%;
-  transform: rotate(360deg);
-}
-body > .mainMenu > section.dish > div.menu > ul > li:hover > p > span {
-  width: 70%;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts {
-    width: 33%;
-    margin-top: 45px;
-  }
-}
-body > .mainMenu > section.desserts > p {
   display: inline-block;
   margin-left: 30px;
   font-size: 2em;
@@ -816,57 +570,58 @@ body > .mainMenu > section.desserts > p {
   padding: 3px;
   color: gray;
   margin-top: 130px;
-  width: 80px;
 }
-body > .mainMenu > section.desserts > span {
-  right: 5px;
-  position: relative;
-  font-size: 2em;
-  color: gray;
-}
-body > .mainMenu > section.desserts > div.menu {
-  display: flex;
-  flex-flow: column;
-  margin-top: 20px;
-}
-body > .mainMenu > section.desserts > div.menu > ul {
+body > .mainMenu .appetizer .menu__ul {
   position: relative;
   padding: 1px 1em;
   margin: -60px 10px;
   cursor: pointer;
   overflow: hidden;
+  margin-top: -65px;
+  cursor: pointer;
+  overflow: hidden;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: -40px;
+  cursor: pointer;
+  overflow: hidden;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > div.menu > ul {
+  body > .mainMenu .appetizer .menu__ul {
     padding: 1px 0;
   }
 }
-body > .mainMenu > section.desserts > div.menu > ul > li {
-  border-radius: 20px;
+body > .mainMenu .appetizer .menu__ul > li {
   background: #ffffff;
-  position: relative;
   height: 115px;
+  border-radius: 20px;
+  position: relative;
   padding-right: 30px;
 }
-body > .mainMenu > section.desserts > div.menu > ul > li > h2 {
+body > .mainMenu .appetizer .menu__ul > li > h2 {
   font-size: 2.5em;
   position: relative;
   left: 15px;
   top: 15px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > div.menu > ul > li > h2 {
+  body > .mainMenu .appetizer .menu__ul > li > h2 {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
-body > .mainMenu > section.desserts > div.menu > ul > li > p {
+body > .mainMenu .appetizer .menu__ul > li > p {
   font-size: 2.5em;
   margin-top: -20px;
   margin-left: 15px;
   color: grey;
 }
-body > .mainMenu > section.desserts > div.menu > ul > li > p > span {
+@media screen and (min-width: 992px) {
+  body > .mainMenu .appetizer .menu__ul > li > p {
+    font-size: 2.5em;
+  }
+}
+body > .mainMenu .appetizer .menu__ul > li > p > span {
   display: inline-block;
   width: 88%;
   text-overflow: ellipsis;
@@ -876,22 +631,22 @@ body > .mainMenu > section.desserts > div.menu > ul > li > p > span {
   transition: width 0.5s;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > div.menu > ul > li > p > span {
+  body > .mainMenu .appetizer .menu__ul > li > p > span {
     font-size: 0.4em;
     font-weight: bold;
   }
 }
-body > .mainMenu > section.desserts > div.menu > ul > li > p > b {
+body > .mainMenu .appetizer .menu__ul > li > p > b {
   position: relative;
   bottom: 5px;
   color: #000;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > div.menu > ul > li > p > b {
+  body > .mainMenu .appetizer .menu__ul > li > p > b {
     font-size: 20px;
   }
 }
-body > .mainMenu > section.desserts > div.menu > ul > li::before {
+body > .mainMenu .appetizer .menu__ul > li::before {
   content: "";
   width: 0;
   position: absolute;
@@ -902,7 +657,7 @@ body > .mainMenu > section.desserts > div.menu > ul > li::before {
   transition: width 0.4s;
   border-radius: 0 20px 20px 0;
 }
-body > .mainMenu > section.desserts > div.menu > ul > li::after {
+body > .mainMenu .appetizer .menu__ul > li::after {
   position: absolute;
   right: -10%;
   top: calc(40% - 0.5em);
@@ -916,18 +671,285 @@ body > .mainMenu > section.desserts > div.menu > ul > li::after {
   transition: right 0.4s, transform 0.8s;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts > div.menu > ul > li::after {
+  body > .mainMenu .appetizer .menu__ul > li::after {
     right: -8%;
   }
 }
-body > .mainMenu > section.desserts > div.menu > ul > li:hover::before {
+body > .mainMenu .appetizer .menu__ul > li:hover::before {
   width: 20%;
 }
-body > .mainMenu > section.desserts > div.menu > ul > li:hover::after {
+body > .mainMenu .appetizer .menu__ul > li:hover::after {
   right: 5%;
   transform: rotate(360deg);
 }
-body > .mainMenu > section.desserts > div.menu > ul > li:hover > p > span {
+body > .mainMenu .appetizer .menu__ul > li:hover > p > span {
+  width: 70%;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+body > .mainMenu > section.dish .menu {
+  margin-top: -110px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu {
+    margin-top: 0;
+  }
+}
+body > .mainMenu > section.dish .menu__p {
+  width: 80px;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 2em;
+  border-bottom: 4px solid #99e2d0;
+  padding: 3px;
+  color: gray;
+  margin-top: 180px;
+}
+body > .mainMenu > section.dish .menu__ul {
+  position: relative;
+  padding: 1px 1em;
+  margin: -60px 10px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: -40px;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu__ul {
+    padding: 1px 0;
+  }
+}
+body > .mainMenu > section.dish .menu__ul > li {
+  background: #ffffff;
+  height: 115px;
+  border-radius: 20px;
+  position: relative;
+  padding-right: 30px;
+}
+body > .mainMenu > section.dish .menu__ul > li > h2 {
+  font-size: 2.5em;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu__ul > li > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+}
+body > .mainMenu > section.dish .menu__ul > li > p {
+  font-size: 2.5em;
+  margin-top: -20px;
+  margin-left: 15px;
+  color: grey;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu__ul > li > p {
+    font-size: 2.5em;
+  }
+}
+body > .mainMenu > section.dish .menu__ul > li > p > span {
+  display: inline-block;
+  width: 88%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  transition: width 0.5s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu__ul > li > p > span {
+    font-size: 0.4em;
+    font-weight: bold;
+  }
+}
+body > .mainMenu > section.dish .menu__ul > li > p > b {
+  position: relative;
+  bottom: 5px;
+  color: #000;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu__ul > li > p > b {
+    font-size: 20px;
+  }
+}
+body > .mainMenu > section.dish .menu__ul > li::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #99f2d0;
+  transition: width 0.4s;
+  border-radius: 0 20px 20px 0;
+}
+body > .mainMenu > section.dish .menu__ul > li::after {
+  position: absolute;
+  right: -10%;
+  top: calc(40% - 0.5em);
+  transform: rotate(0deg);
+  background: white;
+  color: #99f2d0;
+  border-radius: 50px;
+  padding: 0.4em;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
+  transition: right 0.4s, transform 0.8s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.dish .menu__ul > li::after {
+    right: -8%;
+  }
+}
+body > .mainMenu > section.dish .menu__ul > li:hover::before {
+  width: 20%;
+}
+body > .mainMenu > section.dish .menu__ul > li:hover::after {
+  right: 5%;
+  transform: rotate(360deg);
+}
+body > .mainMenu > section.dish .menu__ul > li:hover > p > span {
+  width: 70%;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts {
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 10px;
+  }
+}
+body > .mainMenu > section.desserts .menu {
+  margin-top: -110px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu {
+    margin-top: 0;
+  }
+}
+body > .mainMenu > section.desserts .menu__p {
+  width: 80px;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 2em;
+  border-bottom: 4px solid #99e2d0;
+  padding: 3px;
+  color: gray;
+  margin-top: 180px;
+}
+body > .mainMenu > section.desserts .menu__ul {
+  position: relative;
+  padding: 1px 1em;
+  margin: -60px 10px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: -40px;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu__ul {
+    padding: 1px 0;
+  }
+}
+body > .mainMenu > section.desserts .menu__ul > li {
+  background: #ffffff;
+  height: 115px;
+  border-radius: 20px;
+  position: relative;
+  padding-right: 30px;
+}
+body > .mainMenu > section.desserts .menu__ul > li > h2 {
+  font-size: 2.5em;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu__ul > li > h2 {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+}
+body > .mainMenu > section.desserts .menu__ul > li > p {
+  font-size: 2.5em;
+  margin-top: -20px;
+  margin-left: 15px;
+  color: grey;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu__ul > li > p {
+    font-size: 2.5em;
+  }
+}
+body > .mainMenu > section.desserts .menu__ul > li > p > span {
+  display: inline-block;
+  width: 88%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 30px;
+  transition: width 0.5s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu__ul > li > p > span {
+    font-size: 0.4em;
+    font-weight: bold;
+  }
+}
+body > .mainMenu > section.desserts .menu__ul > li > p > b {
+  position: relative;
+  bottom: 5px;
+  color: #000;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu__ul > li > p > b {
+    font-size: 20px;
+  }
+}
+body > .mainMenu > section.desserts .menu__ul > li::before {
+  content: "";
+  width: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #99f2d0;
+  transition: width 0.4s;
+  border-radius: 0 20px 20px 0;
+}
+body > .mainMenu > section.desserts .menu__ul > li::after {
+  position: absolute;
+  right: -10%;
+  top: calc(40% - 0.5em);
+  transform: rotate(0deg);
+  background: white;
+  color: #99f2d0;
+  border-radius: 50px;
+  padding: 0.4em;
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
+  transition: right 0.4s, transform 0.8s;
+}
+@media screen and (min-width: 992px) {
+  body > .mainMenu > section.desserts .menu__ul > li::after {
+    right: -8%;
+  }
+}
+body > .mainMenu > section.desserts .menu__ul > li:hover::before {
+  width: 20%;
+}
+body > .mainMenu > section.desserts .menu__ul > li:hover::after {
+  right: 5%;
+  transform: rotate(360deg);
+}
+body > .mainMenu > section.desserts .menu__ul > li:hover > p > span {
   width: 70%;
 }
 body > .mainMenu > button {
@@ -937,7 +959,7 @@ body > .mainMenu > button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 120px;
+  margin-top: 135px;
   color: white;
   background: linear-gradient(to top, #9356dc, #ff79da);
   font-size: 1.8em;
@@ -946,9 +968,10 @@ body > .mainMenu > button {
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > button {
-    margin-left: -725px;
-    margin-top: 690px;
     width: 25%;
+    position: absolute;
+    left: 38%;
+    bottom: 4em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -959,7 +982,11 @@ body > .mainMenu > button {
 }
 body .footerMenu {
   background: #000;
-  padding-bottom: 3em;
+}
+@media screen and (min-width: 992px) {
+  body .footerMenu {
+    margin-top: 50px;
+  }
 }
 body .footerMenu > h2 {
   font-family: "Shrikhand", sans-serif;
@@ -972,17 +999,21 @@ body .footerMenu > h2 {
   top: 60px;
 }
 body .footerMenu > ul {
-  list-style-type: none;
+  margin-bottom: 0;
+  padding-bottom: 60px;
+  line-height: 2em;
 }
 body .footerMenu > ul > li > a {
   display: flex;
   color: #ffffff;
   margin-top: 7px;
 }
+body .footerMenu > ul > li > a > i {
+  position: relative;
+  top: 5px;
+}
 body .footerMenu > ul > li > a > p.utensils {
   padding-left: 27px;
-  margin: 0;
-  line-height: 2em;
 }
 body .footerMenu > ul > li > a > p.hands {
   padding-left: 20px;
@@ -1018,7 +1049,6 @@ body > nav > section.reservation > button:hover {
   cursor: pointer;
 }
 body > .mainMenu {
-  border-radius: 50px 50px 0 0;
   /* SECTION 3 */
 }
 body > .mainMenu > section.functioning > ul > li {

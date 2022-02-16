@@ -33,14 +33,14 @@ a {
 }
 %appetizer {
     &__plat {
-    /* display: inline-block; */
-    margin-left: 30px;
-    font-size: 2em;
-    border-bottom: 4px solid #99e2d0;
-    padding: 3px;
-    color: gray;
-    margin-top: 20px;
-    width: 85px;
+        display: inline-block;
+        margin-left: 30px;
+        font-size: 2em;
+        border-bottom: 4px solid #99e2d0;
+        padding: 3px;
+        color: gray;
+        margin-top: 20px;
+        width: 85px;
         @media screen and (min-width: 992px) {
             margin-left: 30px;
             margin-bottom: 105px;
@@ -89,22 +89,22 @@ body {
         height: 500px;
         width: 100%;
         @media screen and (min-width: 992px) {
-            height: auto;
-            margin-bottom: 440px;
         }
     }
 
     /* MAIN */
 
     > .mainMenu {
-        margin-top: -285px;
         margin-bottom: -60px;
-        padding-bottom: 145px;
+        padding-bottom: 135px;
         background: #f6f6f6;
         position: relative;
+        border-radius: 50px 50px 0 0;
+        margin-top: -105px;
         @media screen and (min-width: 992px) {
             display: flex;
-            margin-top: -600px;
+            margin-top: -20px;
+            padding-bottom: 310px;
         }
         @media screen and (min-width: 768px) and (max-width: 992px) {
             margin-top: -240px;
@@ -112,34 +112,31 @@ body {
 
         /* SECTION 1 */
 
-        > div {
+        .heart {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            margin-top: 180px;
             @media screen and (min-width: 992px) {
-                margin-top: -590px;
+                position: absolute;
             }
-            @media screen and (min-width: 768px) and (max-width: 992px) {
-                width: 100%;
-                margin-left: -175px;
-            }
-            > h1 {
+            &__h1 {
                 font-family: "Shrikhand";
                 font-size: 3em;
                 margin-left: 35px;
-                margin-top: 55px;
-                @media screen and (min-width: 992px) {
-                    display: block;
-                }
-                @media screen and (min-width: 768px) and (max-width: 992px) {
-                    margin-left: 215px;
-                }
+                padding-top: 25px;
+                    @media screen and (min-width: 768px) and (max-width: 992px) {
+                    }
             }
-            > i {
-                margin-top: 15px;
-                margin-left: 650px;
-                position: absolute;
-                font-size: 2.8em;
+            &__i {
+                margin-top: 40px;
+                margin-right: 75px;
+                font-size: 2.5em;
+                @media screen and (min-width: 992px) {
+                    padding-left: 600px;
+                                        }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    margin-right: 105px;
+                }
                 &:hover {
                     background: linear-gradient(#ff79da, #9356dc);
                     background-clip: border-box;
@@ -148,131 +145,145 @@ body {
                     font-weight: 900 !important;
                 }
                 @media screen and (min-width: 992px) {
-                    margin-left: 1070px;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
-                    margin-left: 980px;
+                    right: 105px;
                 }
             }
         }
         .appetizer {
-            @include appetizer(
-                (
-                    /*color: red,*/
-                )
-            );
             @media screen and (min-width: 992px) {
-                width: 33%;
-                margin-top: 150px;
-                margin-left: -375px;
+                width: 100%;
+                margin-top: 100px;
+                margin-left: 10px;
             }
-            &__plat {
-            }
-            &__menu {
-                display: flex;
-                flex-flow: column;
-                margin-top: -55px;
+            .menu {
+                margin-top: -110px;
+                @include appetizer(
+                    (
+                        /*color: red,*/
+                    )
+                );
                 @media screen and (min-width: 992px) {
+                    margin-top: 0;
                 }
-                > ul {
+                &__p {
+                    width: 80px;
+                    display: inline-block;
+                    margin-left: 30px;
+                    font-size: 2em;
+                    border-bottom: 4px solid #99e2d0;
+                    padding: 3px;
+                    color: gray;
+                    margin-top: 130px;
+                }
+                &__ul {
                     position: relative;
                     padding: 1px 1em;
                     margin: -60px 10px;
                     cursor: pointer;
                     overflow: hidden;
-                    @media screen and (min-width: 992px) {
-                        padding: 1px 0;
-                    }
-                    > li {
-                        background: #ffffff;
-                        height: 115px;
-                        border-radius: 20px;
-                        position: relative;
-                        padding-right: 30px;
+                    margin-top: -65px;
+                    cursor: pointer;
+                    overflow: hidden;
+                        cursor: pointer;
+                        overflow: hidden;
+                        margin-top: -40px;
+                        cursor: pointer;
+                        overflow: hidden;
                         @media screen and (min-width: 992px) {
+                            padding: 1px 0;
                         }
-                        > h2 {
-                            font-size: 2.5em;
+                        > li {
+                            background: #ffffff;
+                            height: 115px;
+                            border-radius: 20px;
                             position: relative;
-                            left: 15px;
-                            top: 15px;
+                            padding-right: 30px;
                             @media screen and (min-width: 992px) {
-                                font-size: 1.5em;
-                                line-height: 2em;
                             }
-                        }
-                        > p {
-                            font-size: 2.5em;
-                            margin-top: -20px;
-                            margin-left: 15px;
-                            color: grey;
-                            @media screen and (min-width: 992px) {
-                                font-size: 2.5em;                                
-                            }
-                            > span {
-                                display: inline-block;
-                                width: 88%;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                white-space: nowrap;
-                                font-size: 30px;
-                                transition: width .5s;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 0.4em;
-                                    font-weight: bold;
-                                }
-                            }
-                            > b {
+                            > h2 {
+                                font-size: 2.5em;
                                 position: relative;
-                                bottom: 5px;
-                                color: #000;
+                                left: 15px;
+                                top: 15px;
                                 @media screen and (min-width: 992px) {
-                                    font-size: 20px;
+                                    font-size: 1.5em;
+                                    line-height: 2em;
                                 }
-                            }
-                        }
-                        &::before {
-                            content: "";
-                            width: 0;
-                            position: absolute;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                            background: #99f2d0;
-                            transition: width 0.4s;
-                            border-radius: 0 20px 20px 0;
-                        }
-                        &::after {
-                            position: absolute;
-                            right: -10%;
-                            top: calc(40% - 1em / 2);
-                            transform: rotate(0deg);
-                            background: white;
-                            color: #99f2d0;
-                            border-radius: 50px;
-                            padding: 0.4em;
-                            font-family: "Font Awesome 5 Pro";
-                            content: "";
-                            transition: right 0.4s, transform 0.8s;
-                            @media screen and (min-width: 992px) {
-                                right: -8%;
-                            }
-                        }
-                        &:hover {
-                            &::before {
-                                width: 20%;
-                            }
-                            &::after {
-                                right: 5%;
-                                transform: rotate(360deg);
                             }
                             > p {
+                                font-size: 2.5em;
+                                margin-top: -20px;
+                                margin-left: 15px;
+                                color: grey;
+                                @media screen and (min-width: 992px) {
+                                    font-size: 2.5em;                                
+                                }
                                 > span {
-                                    width: 70%;
+                                    display: inline-block;
+                                    width: 88%;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    font-size: 30px;
+                                    transition: width .5s;
+                                    @media screen and (min-width: 992px) {
+                                        font-size: 0.4em;
+                                        font-weight: bold;
+                                    }
+                                }
+                                > b {
+                                    position: relative;
+                                    bottom: 5px;
+                                    color: #000;
+                                    @media screen and (min-width: 992px) {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                width: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: #99f2d0;
+                                transition: width 0.4s;
+                                border-radius: 0 20px 20px 0;
+                            }
+                            &::after {
+                                position: absolute;
+                                right: -10%;
+                                top: calc(40% - 1em / 2);
+                                transform: rotate(0deg);
+                                background: white;
+                                color: #99f2d0;
+                                border-radius: 50px;
+                                padding: 0.4em;
+                                font-family: "Font Awesome 5 Pro";
+                                content: "";
+                                transition: right 0.4s, transform 0.8s;
+                                @media screen and (min-width: 992px) {
+                                    right: -8%;
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                    width: 20%;
+                                }
+                                &::after {
+                                    right: 5%;
+                                    transform: rotate(360deg);
+                                }
+                                > p {
+                                    > span {
+                                        width: 70%;
+                                    }
                                 }
                             }
                         }
-                    }
                 }
             }
         }
@@ -281,121 +292,131 @@ body {
 
         > section.dish {
             @media screen and (min-width: 992px) {
-                width: 33%;
-                margin-top: 120px;
+                width: 100%;
+                margin-top: 50px;
             }
-            > p {
-                width: 80px;
-                display: inline-block;
-                margin-left: 30px;
-                font-size: 2em;
-                border-bottom: 4px solid #99e2d0;
-                padding: 3px;
-                color: gray;
-                margin-top: 55px;
-            }
-            > div.menu {
-                display: flex;
-                flex-flow: column;
-                margin-top: 20px;
+            .menu {
+                margin-top: -110px;
+                @include appetizer(
+                    (
+                        /*color: red,*/
+                    )
+                );
                 @media screen and (min-width: 992px) {
+                    margin-top: 0;
                 }
-                > ul {
-                    position: relative;
-                    padding: 1px 1em;
-                    margin: -60px 10px;
-                    cursor: pointer;
-                    overflow: hidden;
-                    @media screen and (min-width: 992px) {
-                        padding: 1px 0;
-                    }
-                    > li {
-                        height: 115px;
-                        background: #ffffff;
-                        border-radius: 20px;
+                &__p {
+                    width: 80px;
+                    display: inline-block;
+                    margin-left: 30px;
+                    font-size: 2em;
+                    border-bottom: 4px solid #99e2d0;
+                    padding: 3px;
+                    color: gray;
+                    margin-top: 180px;
+                }
+                &__ul {
                         position: relative;
-                        padding-right: 30px;
+                        padding: 1px 1em;
+                        margin: -60px 10px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        margin-top: -40px;
+                        cursor: pointer;
+                        overflow: hidden;
                         @media screen and (min-width: 992px) {
-                        }                        
-                        > h2 {
-                            font-size: 2.5em;
+                            padding: 1px 0;
+                        }
+                        > li {
+                            background: #ffffff;
+                            height: 115px;
+                            border-radius: 20px;
                             position: relative;
-                            left: 15px;
-                            top: 15px;
+                            padding-right: 30px;
                             @media screen and (min-width: 992px) {
-                                font-size: 1.5em;
-                                line-height: 2em;
                             }
-                        }
-                        > p {
-                            font-size: 2.5em;
-                            margin-top: -20px;
-                            margin-left: 15px;
-                            color: grey;
-                            > span {
-                                display: inline-block;
-                                width: 88%;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                white-space: nowrap;
-                                font-size: 30px;
-                                transition: width .5s;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 0.4em;
-                                    font-weight: bold;
-                                }
-                            }
-                            > b {
+                            > h2 {
+                                font-size: 2.5em;
                                 position: relative;
-                                bottom: 5px;
-                                color: #000;
+                                left: 15px;
+                                top: 15px;
                                 @media screen and (min-width: 992px) {
-                                    font-size: 20px;
+                                    font-size: 1.5em;
+                                    line-height: 2em;
                                 }
-                            }
-                        }
-                        &::before {
-                            content: "";
-                            width: 0;
-                            position: absolute;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                            background: #99f2d0;
-                            transition: width 0.4s;
-                            border-radius: 0 20px 20px 0;
-                        }
-                        &::after {
-                            position: absolute;
-                            right: -10%;
-                            top: calc(40% - 1em / 2);
-                            transform: rotate(0deg);
-                            background: white;
-                            color: #99f2d0;
-                            border-radius: 50px;
-                            padding: 0.4em;
-                            font-family: "Font Awesome 5 Pro";
-                            content: "";
-                            transition: right 0.4s, transform 0.8s;
-                            @media screen and (min-width: 992px) {
-                                right: -8%;
-                            }
-                        }
-                        &:hover {
-                            &::before {
-                                width: 20%;
-                            }
-                            &::after {
-                                right: 5%;
-                                transform: rotate(360deg);
                             }
                             > p {
+                                font-size: 2.5em;
+                                margin-top: -20px;
+                                margin-left: 15px;
+                                color: grey;
+                                @media screen and (min-width: 992px) {
+                                    font-size: 2.5em;                                
+                                }
                                 > span {
-                                    width: 70%;
+                                    display: inline-block;
+                                    width: 88%;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    font-size: 30px;
+                                    transition: width .5s;
+                                    @media screen and (min-width: 992px) {
+                                        font-size: 0.4em;
+                                        font-weight: bold;
+                                    }
+                                }
+                                > b {
+                                    position: relative;
+                                    bottom: 5px;
+                                    color: #000;
+                                    @media screen and (min-width: 992px) {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                width: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: #99f2d0;
+                                transition: width 0.4s;
+                                border-radius: 0 20px 20px 0;
+                            }
+                            &::after {
+                                position: absolute;
+                                right: -10%;
+                                top: calc(40% - 1em / 2);
+                                transform: rotate(0deg);
+                                background: white;
+                                color: #99f2d0;
+                                border-radius: 50px;
+                                padding: 0.4em;
+                                font-family: "Font Awesome 5 Pro";
+                                content: "";
+                                transition: right 0.4s, transform 0.8s;
+                                @media screen and (min-width: 992px) {
+                                    right: -8%;
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                    width: 20%;
+                                }
+                                &::after {
+                                    right: 5%;
+                                    transform: rotate(360deg);
+                                }
+                                > p {
+                                    > span {
+                                        width: 70%;
+                                    }
                                 }
                             }
                         }
-                    }
                 }
             }
         }
@@ -404,127 +425,132 @@ body {
 
         > section.desserts {
             @media screen and (min-width: 992px) {
-                width: 33%;
-                margin-top: 45px;
+                width: 100%;
+                margin-top: 50px;
+                margin-right: 10px;
             }
-            > p {
-                display: inline-block;
-                margin-left: 30px;
-                font-size: 2em;
-                border-bottom: 4px solid #99e2d0;
-                padding: 3px;
-                color: gray;
-                margin-top: 130px;
-                width: 80px;
-           }
-            > span {
-                right: 5px;
-                position: relative;
-                font-size: 2em;
-                color: gray;
-            }
-            > div.menu {
-                display: flex;
-                flex-flow: column;
-                margin-top: 20px;
+            .menu {
+                margin-top: -110px;
+                @include appetizer(
+                    (
+                        /*color: red,*/
+                    )
+                );
                 @media screen and (min-width: 992px) {
+                    margin-top: 0;
                 }
-                > ul {
-                    position: relative;
-                    padding: 1px 1em;
-                    margin: -60px 10px;
-                    cursor: pointer;
-                    overflow: hidden;
-                    @media screen and (min-width: 992px) {
-                        padding: 1px 0;
-                    }
-                    > li {
-                        border-radius: 20px;
-                        background: #ffffff;
+                &__p {
+                    width: 80px;
+                    display: inline-block;
+                    margin-left: 30px;
+                    font-size: 2em;
+                    border-bottom: 4px solid #99e2d0;
+                    padding: 3px;
+                    color: gray;
+                    margin-top: 180px;
+                }
+                &__ul {
                         position: relative;
-                        height: 115px;
-                        padding-right: 30px;
+                        padding: 1px 1em;
+                        margin: -60px 10px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        margin-top: -40px;
+                        cursor: pointer;
+                        overflow: hidden;
                         @media screen and (min-width: 992px) {
-                        }                        
-                        > h2 {
-                            font-size: 2.5em;
+                            padding: 1px 0;
+                        }
+                        > li {
+                            background: #ffffff;
+                            height: 115px;
+                            border-radius: 20px;
                             position: relative;
-                            left: 15px;
-                            top: 15px;
+                            padding-right: 30px;
                             @media screen and (min-width: 992px) {
-                                font-size: 1.5em;
-                                line-height: 2em;
                             }
-                        }
-                        > p {
-                            font-size: 2.5em;
-                            margin-top: -20px;
-                            margin-left: 15px;
-                            color: grey;
-                            > span {
-                                display: inline-block;
-                                width: 88%;
-                                text-overflow: ellipsis;
-                                overflow: hidden;
-                                white-space: nowrap;
-                                font-size: 30px;
-                                transition: width .5s;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 0.4em;
-                                    font-weight: bold;
-                                }
-                            }
-                            > b {
+                            > h2 {
+                                font-size: 2.5em;
                                 position: relative;
-                                bottom: 5px;
-                                color: #000;
+                                left: 15px;
+                                top: 15px;
                                 @media screen and (min-width: 992px) {
-                                    font-size: 20px;
+                                    font-size: 1.5em;
+                                    line-height: 2em;
                                 }
-                            }
-                        }
-                        &::before {
-                            content: "";
-                            width: 0;
-                            position: absolute;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                            background: #99f2d0;
-                            transition: width 0.4s;
-                            border-radius: 0 20px 20px 0;
-                        }
-                        &::after {
-                            position: absolute;
-                            right: -10%;
-                            top: calc(40% - 1em / 2);
-                            transform: rotate(0deg);
-                            background: white;
-                            color: #99f2d0;
-                            border-radius: 50px;
-                            padding: 0.4em;
-                            font-family: "Font Awesome 5 Pro";
-                            content: "";
-                            transition: right 0.4s, transform 0.8s;
-                            @media screen and (min-width: 992px) {
-                                right: -8%;
-                            }
-                        }
-                        &:hover {
-                            &::before {
-                                width: 20%;
-                            }
-                            &::after {
-                                right: 5%;
-                                transform: rotate(360deg);
                             }
                             > p {
+                                font-size: 2.5em;
+                                margin-top: -20px;
+                                margin-left: 15px;
+                                color: grey;
+                                @media screen and (min-width: 992px) {
+                                    font-size: 2.5em;                                
+                                }
                                 > span {
-                                    width: 70%;
+                                    display: inline-block;
+                                    width: 88%;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    font-size: 30px;
+                                    transition: width .5s;
+                                    @media screen and (min-width: 992px) {
+                                        font-size: 0.4em;
+                                        font-weight: bold;
+                                    }
+                                }
+                                > b {
+                                    position: relative;
+                                    bottom: 5px;
+                                    color: #000;
+                                    @media screen and (min-width: 992px) {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                width: 0;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: #99f2d0;
+                                transition: width 0.4s;
+                                border-radius: 0 20px 20px 0;
+                            }
+                            &::after {
+                                position: absolute;
+                                right: -10%;
+                                top: calc(40% - 1em / 2);
+                                transform: rotate(0deg);
+                                background: white;
+                                color: #99f2d0;
+                                border-radius: 50px;
+                                padding: 0.4em;
+                                font-family: "Font Awesome 5 Pro";
+                                content: "";
+                                transition: right 0.4s, transform 0.8s;
+                                @media screen and (min-width: 992px) {
+                                    right: -8%;
+                                }
+                            }
+                            &:hover {
+                                &::before {
+                                    width: 20%;
+                                }
+                                &::after {
+                                    right: 5%;
+                                    transform: rotate(360deg);
+                                }
+                                > p {
+                                    > span {
+                                        width: 70%;
+                                    }
                                 }
                             }
                         }
-                    }
                 }
             }
         }
@@ -535,16 +561,17 @@ body {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 120px;
+            margin-top: 135px;
             color: white;
             background: linear-gradient(to top, #9356dc, #ff79da);
             font-size: 1.8em;
             border: none;
             cursor: pointer;
             @media screen and (min-width: 992px) {
-                margin-left: -725px;
-                margin-top: 690px;
                 width: 25%;
+                position: absolute;
+                left: 38%;
+                bottom: 4em;
             }
             @media screen and (min-width: 768px) and (max-width: 992px) {
                 margin-left: 230px;
@@ -557,7 +584,9 @@ body {
 
     .footerMenu {
         background: #000;
-        padding-bottom: 3em;
+        @media screen and (min-width: 992px) {
+            margin-top: 50px;
+        }
         > h2 {
             font-family: "Shrikhand", sans-serif;
             font-size: 2.5em;
@@ -569,18 +598,20 @@ body {
             top: 60px;
         }
         > ul {
-            list-style-type: none;
+            margin-bottom: 0;
+            padding-bottom: 60px;
+            line-height: 2em;
             > li {
                 > a {
                     display: flex;
                     color: #ffffff;
                     margin-top: 7px;
                     > i {
+                        position: relative;
+                        top: 5px;
                     }
                     > p.utensils {
                         padding-left: 27px;
-                        margin: 0;
-                        line-height: 2em;
                     }
                     > p.hands {
                         padding-left: 20px;
