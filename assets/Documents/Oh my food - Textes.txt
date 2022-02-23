@@ -1,89 +1,45 @@
-﻿La palette du goût
+﻿*******************************************
+À la française
 
 Entrées
-Fricassée d'escargot
-Au piment d'Espelette 
+Tartare de poulpe acidulé
+Aux zestes d'orange
 25€
 
-Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire
+Velouté de légumes d'antan
+Carotte, panais, topinambour
 35€
 
-Oeuf au plat
-Assaisonné à la truffe sur lit de caviar
-20€
-
-
-Plats
-Filet de boeuf aux herbes
-Accompagné de sa ribambelle de légumes
-40€
-
-Parmentier de queue de boeuf
-À la truffe noire sur sa purée de panais
-35€
-
-Filet de turbot
-Aux agrumes
-44€
-        
-Desserts
-Paris-Brest
-Revisité
-18€
-
-Macaron au chocolat d'exception 
-Et glace à la vanille de Madagascar
-22€
-
-Mousse au chocolat 
-Au piment d'Espelette et à la truffe noire
-23€  
-  
----     
-
-Le délice des sens
-
-Entrées
-Tartare de thon
-Assaisonné au yuzu
-25€
-
-Bouchée de homard croustillant 
-Et sa farandole de petits légumes
-35€
-
-Velouté de cèpes 
-Aux truffes
-20€
-        
-Plats
-Poulet rôti aux herbes de Provence 
-Et sa crème de truffe
-40€
-
-Langouste rôtie 
-Et ses légumes de saison
-35€
-
-Côte de boeuf Angus 
-Et sa purée de panais
-44€
-
-Desserts
-Farandole de desserts
-Du chef
-18€
-
-Crème brulée 
+Soupe à l'oignon
 Revisitée
+20€
+
+Plats
+Coquilles Saint-Jacques
+Accompagnées d'une purée de panais
+40€
+
+Magret de canard
+Et parmentier de pommes de terre
+35€
+
+Pigeonneau d’Ille-et-Vilaine
+Sur son lit de gnocchis aux légumes
+44€
+
+Desserts
+Pétales de violettes glacés
+Et purée de noisettes
+18€
+
+Fondant au chocolat
+Revisité
 22€
 
-Tiramisu 
-À la noisette
+Millefeuille croustillant
+Myrtilles et pâte d’amande
 23€
-
----
+*******************************************
 
 La note enchantée
 
@@ -132,43 +88,97 @@ Déstructurée
 
 ---
 
-À la française
+*******************************************
+
+La palette du goût
 
 Entrées
-Tartare de poulpe acidulé
-Aux zestes d'orange
+Fricassée d'escargot
+Au piment d'Espelette 
 25€
 
-Velouté de légumes d'antan
-Carotte, panais, topinambour
+Foie gras de canard mi-cuit
+Et ses copeaux de truffe noire
 35€
 
-Soupe à l'oignon
-Revisitée
+Oeuf au plat
+Assaisonné à la truffe sur lit de caviar
 20€
 
+
 Plats
-Coquilles Saint-Jacques
-Accompagnées d'une purée de panais
+Filet de boeuf aux herbes
+Accompagné de sa ribambelle de légumes
 40€
 
-Magret de canard
-Et parmentier de pommes de terre
+Parmentier de queue de boeuf
+À la truffe noire sur sa purée de panais
 35€
 
-Pigeonneau d’Ille-et-Vilaine
-Sur son lit de gnocchis aux légumes
+Filet de turbot
+Aux agrumes
+44€
+        
+Desserts
+Paris-Brest
+Revisité
+18€
+
+Macaron au chocolat d'exception 
+Et glace à la vanille de Madagascar
+22€
+
+Mousse au chocolat 
+Au piment d'Espelette et à la truffe noire
+23€  
+  
+---    
+
+*********************************************
+ 
+
+Le délice des sens
+
+Entrées
+Tartare de thon
+Assaisonné au yuzu
+25€
+
+Bouchée de homard croustillant 
+Et sa farandole de petits légumes
+35€
+
+Velouté de cèpes 
+Aux truffes
+20€
+        
+Plats
+Poulet rôti aux herbes de Provence 
+Et sa crème de truffe
+40€
+
+Langouste rôtie 
+Et ses légumes de saison
+35€
+
+Côte de boeuf Angus 
+Et sa purée de panais
 44€
 
 Desserts
-Pétales de violettes glacés
-Et purée de noisettes
+Farandole de desserts
+Du chef
 18€
 
-Fondant au chocolat
-Revisité
+Crème brulée 
+Revisitée
 22€
 
-Millefeuille croustillant
-Myrtilles et pâte d’amande
+Tiramisu 
+À la noisette
 23€
+
+---
+
+
+

@@ -30,7 +30,6 @@ h4 {
 }
 
 body {
-  margin: 0;
   /* HEADER */
   /* NAV */
   /* SECTION 2 */
@@ -42,7 +41,7 @@ body .headerHome {
 }
 body .headerHome > a > img {
   height: 50px;
-  margin: 40px 0 15px 31%;
+  margin: 30px 0 10px 31%;
 }
 @media screen and (min-width: 992px) {
   body .headerHome > a > img {
@@ -69,7 +68,6 @@ body .nav__form .form__i {
 body .nav__form .form__input {
   font-weight: 600;
   font-size: 1.4em;
-  margin-bottom: 5px;
 }
 body .nav__section {
   text-align: center;
@@ -79,31 +77,32 @@ body .nav__section {
 body .nav__section .reservation__h1 {
   font-weight: bold;
   font-size: 3em;
-  margin-top: 65px;
-  margin-bottom: 30px;
   line-height: 1em;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 body .nav__section .reservation__p {
-  font-weight: bold;
-  font-size: large;
-  margin-top: 10px;
-  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 1em;
 }
 body .nav__section .reservation__button {
-  padding: 15px 20px;
+  font-family: "roboto", sans-serif;
+  padding: 20px 85px;
   border-radius: 50px;
-  margin-top: 35px;
-  background: linear-gradient(to left, #9356dc, #ff79da);
+  background: linear-gradient(#ff79da, #9356DC);
   border: none;
   color: white;
   font-size: medium;
+  box-shadow: 4px 4px 6px #bbb;
+  transition: background 300ms;
 }
 body .nav__section .reservation__button:hover {
-  cursor: pointer;
+  box-shadow: 6px 6px 8px #3d3c40;
+  opacity: 0.6;
 }
 body .mainHome {
-  border-radius: 25px 25px 0 0;
-  margin-top: -30px;
+  margin-bottom: -25px;
   /* SECTION 3 */
 }
 body .mainHome__sectionFunctioning {
@@ -111,19 +110,13 @@ body .mainHome__sectionFunctioning {
   bottom: 0px;
 }
 body .mainHome__sectionFunctioning .functioning__h2 {
-  margin: 110px 20px 50px 50px;
   font-size: 2.2em;
+  margin: 50px 0 30px 20px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__h2 {
     display: flex;
     justify-content: space-around;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body .mainHome__sectionFunctioning .functioning__h2 {
-    margin-top: 115px;
-    margin-bottom: 0;
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul {
@@ -143,13 +136,11 @@ body .mainHome__sectionFunctioning .functioning__ul {
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li {
-  margin: 40px 0;
-  margin: 40px 0;
   border-radius: 20px;
   background: #f6f6f6;
-  margin-left: 15px;
   padding: 20px;
   box-shadow: 2px 2px 15px 2px #ccc;
+  margin: 0 5px 25px 15px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li {
@@ -169,7 +160,7 @@ body .mainHome__sectionFunctioning .functioning__ul > li > span {
   right: 35px;
   color: white;
   font-size: 1.2em;
-  bottom: 10px;
+  bottom: 5px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > span {
@@ -188,13 +179,14 @@ body .mainHome__sectionFunctioning .functioning__ul > li > span {
 }
 body .mainHome__sectionFunctioning .functioning__ul > li > i {
   font-size: 2em;
+  margin-right: 25px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > i {
     font-size: 2em;
     position: relative;
     top: 5px;
-    left: 10px;
+    left: -5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -208,7 +200,6 @@ body .mainHome__sectionFunctioning .functioning__ul > li > i {
 body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
   font-size: 1.6em;
   display: inline-block;
-  margin-left: 45px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
@@ -221,7 +212,6 @@ body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
     font-size: 1.2em;
-    margin-left: unset;
     position: relative;
     bottom: -5px;
   }
@@ -236,9 +226,11 @@ body .mainHome__sectionFunctioning .functioning__ul > li:hover > h3 {
 }
 body .mainHome__sectionRestaurants {
   background: #f6f6f6;
-  padding: 138px 20px;
-  margin-top: 120px;
-  padding-bottom: 65px;
+  padding: 95px 20px;
+  padding-bottom: 3em;
+  margin-top: 70px;
+  position: relative;
+  position: relative;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants {
@@ -254,26 +246,23 @@ body .mainHome__sectionRestaurants {
 }
 body .mainHome__sectionRestaurants .restaurants__h2 {
   position: absolute;
-  margin-top: -50px;
   font-size: 2.2em;
+  margin-bottom: 7px;
+  top: 25px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__h2 {
-    position: absolute;
-    margin-top: -30px;
-    margin-left: 20px;
+    left: 35px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__h2 {
     position: absolute;
-    margin-top: -50px;
   }
 }
 body .mainHome__sectionRestaurants .restaurants__ul {
   display: flex;
   flex-flow: column;
-  margin-top: 55px;
   padding: 0;
 }
 @media screen and (min-width: 992px) {
@@ -288,6 +277,7 @@ body .mainHome__sectionRestaurants .restaurants__ul {
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li {
   position: relative;
+  margin-top: 10px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__ul > .li {
@@ -309,7 +299,7 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
     right: 30px;
-    top: 5px;
+    top: 30px;
   }
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a {
@@ -317,8 +307,8 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a {
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
   background: white;
-  margin: -10px 0;
   border-radius: 20px;
+  margin: -5px;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img {
   height: 300px;
@@ -326,93 +316,207 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img 
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
-body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption {
-  margin: 60px 0;
-}
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .h3 {
-  margin-left: 20px;
-  margin-bottom: -45px;
   color: #000000;
-  font-size: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px;
   position: relative;
-  bottom: 40px;
+  top: 0;
+  left: 5px;
 }
-body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .i {
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart {
   float: right;
   position: relative;
   bottom: 30px;
-  right: 20px;
+  right: 25px;
   font-size: 3em;
-  font-weight: 100 !important;
-  transition: font-weight 0.5s;
-  color: gray;
+  color: #000;
 }
-body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .i:hover {
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: border-box;
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart::before {
+  position: absolute;
+}
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart::after {
+  content: "\f004";
+  position: relative;
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900 !important;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity 2s;
+}
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart:hover::after {
+  opacity: 1;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .p {
-  padding-bottom: 26px;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #000000;
+  margin: 20px 15px;
+  position: relative;
+  bottom: 10px;
 }
-@media screen and (min-width: 992px) {
-  body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
-    margin: -30px 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
-    margin: -10px 0;
-  }
-}
-body > .footerHome {
+body .footerHome {
   background: #000;
-  padding: 5px;
-  margin-top: 0px;
 }
-body > .footerHome > h4 {
+body .footerHome > h2 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: lighter;
   color: #ffffff;
-  padding-left: 30px;
-  margin-bottom: 20px;
+  padding-left: 25px;
   position: relative;
-  top: -30px;
+  top: 35px;
 }
-body > .footerHome > ul {
-  list-style-type: none;
-  margin-left: 30px;
-  position: relative;
-  bottom: 20px;
+body .footerHome > ul {
+  padding-bottom: 25px;
+  margin-top: 50px;
+  margin-left: -15px;
 }
-body > .footerHome > ul > li {
-  font-size: 1.7em;
+body .footerHome > ul > li {
+  font-size: 0.9em;
+  line-height: 0.5;
 }
-body > .footerHome > ul > li > a {
-  display: flex;
+body .footerHome > ul > li > a {
   color: #ffffff;
-  margin-bottom: 10px;
 }
-body > .footerHome > ul > li > a > i {
-  font-size: 1.5em;
+body .footerHome > ul > li > a > p.utensils {
+  margin: 10px 0;
 }
-body > .footerHome > ul > li > a > p.utensils {
-  padding-left: 27px;
-  margin: 5px;
+body .footerHome > ul > li > a > p.utensils > i {
+  margin-right: 20px;
 }
-body > .footerHome > ul > li > a > p.hands {
-  padding-left: 20px;
+body .footerHome > ul > li > a > p.hands {
+  margin: 10px 0;
+}
+body .footerHome > ul > li > a > p.hands > i {
+  margin-right: 10px;
+}
+body .loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background: blueviolet;
+  animation: 3s loader 1 forwards;
+  /*change this to resize*/
+}
+body .loader .c {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  position: relative;
+  width: 5em;
+  width: 5em;
 }
-body > .footerHome > ul > li > a > p {
-  margin: 0;
+body .loader .c li {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+  animation: anim 1s ease-in-out infinite;
+  will-change: transform, filter;
+}
+body .loader .c li:nth-child(1) {
+  width: 1em;
+  height: 1em;
+}
+body .loader .c li:nth-child(1):after {
+  content: "";
+  display: block;
+  font-size: 25%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 1em 0 0 rgba(72, 157, 138, 0.2), -1em 0 0 rgba(50, 70, 80, 0.2), 0 1em 0 rgba(211, 75, 76, 0.2), 0 -1em 0 rgba(232, 169, 97, 0.2);
+}
+body .loader .c li:nth-child(2) {
+  animation-delay: 0.1s;
+  width: 2em;
+  height: 2em;
+}
+body .loader .c li:nth-child(2):after {
+  content: "";
+  display: block;
+  font-size: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 1.5em 0 0 rgba(72, 157, 138, 0.4), -1.5em 0 0 rgba(50, 70, 80, 0.4), 0 1.5em 0 rgba(211, 75, 76, 0.4), 0 -1.5em 0 rgba(232, 169, 97, 0.4);
+}
+body .loader .c li:nth-child(3) {
+  animation-delay: 0.15s;
+  width: 3em;
+  height: 3em;
+}
+body .loader .c li:nth-child(3):after {
+  content: "";
+  display: block;
+  font-size: 75%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 2em 0 0 rgba(72, 157, 138, 0.6), -2em 0 0 rgba(50, 70, 80, 0.6), 0 2em 0 rgba(211, 75, 76, 0.6), 0 -2em 0 rgba(232, 169, 97, 0.6);
+}
+body .loader .c li:nth-child(4) {
+  animation-delay: 0.2s;
+  width: 4em;
+  height: 4em;
+}
+body .loader .c li:nth-child(4):after {
+  content: "";
+  display: block;
+  font-size: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 2.5em 0 0 rgba(72, 157, 138, 0.8), -2.5em 0 0 rgba(50, 70, 80, 0.8), 0 2.5em 0 rgba(211, 75, 76, 0.8), 0 -2.5em 0 rgba(232, 169, 97, 0.8);
+}
+body .loader .c li:nth-child(5) {
+  animation-delay: 0.25s;
+  width: 5em;
+  height: 5em;
+}
+body .loader .c li:nth-child(5):after {
+  content: "";
+  display: block;
+  font-size: 125%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 3em 0 0 #489D8A, -3em 0 0 #324650, 0 3em 0 #D34B4C, 0 -3em 0 #E8A961;
+}
+@keyframes anim {
+  50% {
+    filter: blur(2px);
+  }
+  90%, 100% {
+    transform: rotate(1turn);
+    filter: blur(0);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 a {
@@ -425,54 +529,40 @@ a {
 }
 
 /* 1-  ******************************/
-body > .mainMenu > section.desserts .menu__plat, body > .mainMenu > section.dish .menu__plat, body > .mainMenu .appetizer .menu__plat {
+body > .mainMenu .menu__plat {
   display: inline-block;
-  margin-left: 30px;
   font-size: 2em;
-  border-bottom: 4px solid #99e2d0;
+  border-bottom: 4px solid #99E2D0;
   padding: 3px;
   color: gray;
-  margin-top: 20px;
   width: 85px;
 }
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__plat, body > .mainMenu > section.dish .menu__plat, body > .mainMenu .appetizer .menu__plat {
-    margin-left: 30px;
-    margin-bottom: 105px;
-  }
-}
-
 /*** 2- ******************************* ***
         ***********************************/
 body {
-  margin: 0;
   /* HEADER */
   /* IMG */
   /* MAIN */
   /* FOOTER */
 }
+body .headerMenu {
+  margin-top: 35px;
+}
+body .headerMenu > a {
+  position: relative;
+}
 body .headerMenu > a > i.fas.fa-arrow-left {
   color: #000000;
   font-size: 1.8em;
-  position: relative;
-  left: 40px;
-  bottom: 35px;
+  position: absolute;
+  left: 35px;
+  top: 10px;
 }
 body .headerMenu > a > img {
   height: 50px;
-  margin-left: 180px;
-  margin-top: 40px;
+  margin: 0 auto;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 992px) {
-  body .headerMenu > a > img {
-    margin-left: 410px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body .headerMenu > a > img {
-    margin-left: 315px;
-  }
+  display: block;
 }
 body > img {
   object-fit: cover;
@@ -480,177 +570,172 @@ body > img {
   width: 100%;
 }
 body > .mainMenu {
-  margin-bottom: -60px;
-  padding-bottom: 135px;
   background: #f6f6f6;
   position: relative;
   border-radius: 50px 50px 0 0;
-  margin-top: -105px;
+  margin-top: -9em;
+  margin-bottom: -2em;
+  padding: 0 1.3em;
+  padding-bottom: 3em;
   /* SECTION 1 */
-  /* SECTION 2*/
-  /* SECTION 3 */
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu {
     display: flex;
-    margin-top: -20px;
-    padding-bottom: 310px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainMenu {
-    margin-top: -240px;
+    justify-content: space-between;
+    margin-top: -1em;
+    padding-bottom: 15em;
   }
 }
 body > .mainMenu .heart {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-family: "Shrikhand";
+  font-size: 3em;
+  padding-top: 25px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .heart {
     position: absolute;
-    justify-content: flex-start;
+    padding-top: 25px;
   }
 }
-body > .mainMenu .heart__h1 {
-  font-family: "Shrikhand";
-  font-size: 3em;
-  padding-top: 25px;
-  margin-left: 35px;
+body > .mainMenu .heart .fa-heart {
+  font-size: 1em;
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
 }
-body > .mainMenu .heart__i {
-  margin-top: 15px;
-  margin-right: 90px;
-  font-size: 2.5em;
+body > .mainMenu .heart .fa-heart::before {
+  position: absolute;
 }
-body > .mainMenu .heart__i:hover {
-  background: linear-gradient(#ff79da, #9356dc);
-  background-clip: border-box;
+body > .mainMenu .heart .fa-heart::after {
+  content: "\f004";
+  position: relative;
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900 !important;
+  font-weight: 900;
+  opacity: 0;
+  transition: opacity 2s;
+}
+body > .mainMenu .heart .fa-heart:hover::after {
+  opacity: 1;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .heart__i {
-    padding-left: 550px;
+  body > .mainMenu .heart .fa-heart {
+    float: unset;
+    padding-left: 9em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainMenu .heart__i {
-    margin-right: 105px;
+  body > .mainMenu .heart .fa-heart {
+    margin-right: 55px;
+  }
+}
+body > .mainMenu .menu {
+  animation: 3s menu 1 forwards;
+  overflow: hidden;
+}
+@keyframes menu {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  90% {
+    opacity: 0.9;
+    height: 400px;
+  }
+  100% {
+    opacity: 1;
+    height: 525px;
   }
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer {
-    width: 100%;
-    margin-top: 160px;
-    margin-left: 10px;
+  body > .mainMenu .menu {
+    width: 32%;
+    margin-top: 10em;
   }
 }
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu {
-    margin-top: 0;
-  }
-}
-body > .mainMenu .appetizer .menu__p {
+body > .mainMenu .menu__p {
   width: 80px;
-  display: inline-block;
-  margin-left: 30px;
   font-size: 2em;
-  border-bottom: 4px solid #99e2d0;
-  padding: 3px;
+  border-bottom: 4px solid #99E2D0;
   color: gray;
-  margin-top: 20px;
+  margin-top: 15px;
 }
-body > .mainMenu .appetizer .menu__ul {
-  position: relative;
-  padding: 1px 1em;
-  margin: -60px 10px;
+body > .mainMenu .menu__ul {
   cursor: pointer;
-  overflow: hidden;
-  margin-top: -65px;
-  cursor: pointer;
-  overflow: hidden;
-  cursor: pointer;
-  overflow: hidden;
-  margin-top: -40px;
-  cursor: pointer;
-  overflow: hidden;
+  padding: 0;
 }
-@media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul {
-    padding: 1px 0;
-  }
+body > .mainMenu .menu__ul > li > * {
+  font-size: 1.7em;
+  margin: 10px 0;
+  line-height: 1.5em;
 }
-body > .mainMenu .appetizer .menu__ul > li {
+body > .mainMenu .menu__ul > li {
   background: #ffffff;
-  height: 115px;
   border-radius: 20px;
   position: relative;
-  padding-right: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul > li {
-    margin-top: 30px;
+  body > .mainMenu .menu__ul > li {
+    padding-right: 35px;
   }
 }
-body > .mainMenu .appetizer .menu__ul > li > h2 {
-  font-size: 2em;
+body > .mainMenu .menu__ul > li > h2 {
   position: relative;
   left: 15px;
-  top: 10px;
-  line-height: 1.7em;
+  top: 20px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul > li > h2 {
-    font-size: 1.1em;
-    line-height: 2em;
-    top: 20px;
+  body > .mainMenu .menu__ul > li > h2 {
+    font-size: 1.3em;
+    line-height: 1em;
+    top: 10px;
   }
 }
-body > .mainMenu .appetizer .menu__ul > li > p {
-  font-size: 2.5em;
-  margin-top: -20px;
-  margin-left: 15px;
+body > .mainMenu .menu__ul > li > p {
   color: grey;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul > li > p {
-    font-size: 2.5em;
+  body > .mainMenu .menu__ul > li > p {
+    margin: 0;
   }
 }
-body > .mainMenu .appetizer .menu__ul > li > p > span {
+body > .mainMenu .menu__ul > li > p > span {
   display: inline-block;
   width: 88%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 30px;
+  font-size: 25px;
   transition: width 0.5s;
+  margin-left: 20px;
+  position: relative;
+  top: 15px;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul > li > p > span {
-    font-size: 0.32em;
+  body > .mainMenu .menu__ul > li > p > span {
+    font-size: 0.55em;
     font-weight: bold;
     width: 89%;
-    padding-top: 35px;
+    top: 5px;
   }
 }
-body > .mainMenu .appetizer .menu__ul > li > p > b {
+body > .mainMenu .menu__ul > li > p > b {
   position: relative;
   bottom: 5px;
   color: #000;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul > li > p > b {
-    font-size: 15px;
-    left: 15px;
-    bottom: 2px;
+  body > .mainMenu .menu__ul > li > p > b {
+    position: absolute;
   }
 }
-body > .mainMenu .appetizer .menu__ul > li::before {
+body > .mainMenu .menu__ul > li::before {
   content: "";
   width: 0;
   position: absolute;
@@ -661,10 +746,10 @@ body > .mainMenu .appetizer .menu__ul > li::before {
   transition: width 0.4s;
   border-radius: 0 20px 20px 0;
 }
-body > .mainMenu .appetizer .menu__ul > li::after {
+body > .mainMenu .menu__ul > li::after {
   position: absolute;
   right: -10%;
-  top: calc(40% - 0.5em);
+  top: calc(40% - 0.1em);
   transform: rotate(0deg);
   background: white;
   color: #99f2d0;
@@ -675,378 +760,73 @@ body > .mainMenu .appetizer .menu__ul > li::after {
   transition: right 0.4s, transform 0.8s;
 }
 @media screen and (min-width: 992px) {
-  body > .mainMenu .appetizer .menu__ul > li::after {
+  body > .mainMenu .menu__ul > li::after {
     right: -8%;
   }
 }
-body > .mainMenu .appetizer .menu__ul > li:hover::before {
+body > .mainMenu .menu__ul > li:hover::before {
   width: 20%;
 }
-body > .mainMenu .appetizer .menu__ul > li:hover::after {
-  right: 5%;
+body > .mainMenu .menu__ul > li:hover::after {
+  right: 7%;
   transform: rotate(360deg);
 }
-body > .mainMenu .appetizer .menu__ul > li:hover > p > span {
-  width: 70%;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish {
-    width: 100%;
-  }
-}
-body > .mainMenu > section.dish .menu {
-  margin-top: -110px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu {
-    margin-top: 0;
-  }
-}
-body > .mainMenu > section.dish .menu__p {
-  width: 80px;
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 2em;
-  border-bottom: 4px solid #99e2d0;
-  padding: 3px;
-  color: gray;
-  margin-top: 180px;
-}
-body > .mainMenu > section.dish .menu__ul {
-  position: relative;
-  padding: 1px 1em;
-  margin: -60px 10px;
-  cursor: pointer;
-  overflow: hidden;
-  margin-top: -40px;
-  cursor: pointer;
-  overflow: hidden;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul {
-    padding: 1px 0;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li {
-  background: #ffffff;
-  height: 115px;
-  border-radius: 20px;
-  position: relative;
-  padding-right: 30px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul > li {
-    margin-top: 30px;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li > h2 {
-  font-size: 2em;
-  position: relative;
-  left: 15px;
-  top: 10px;
-  line-height: 1.7em;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul > li > h2 {
-    font-size: 1.1em;
-    line-height: 2em;
-    top: 20px;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li > p {
-  font-size: 2.5em;
-  margin-top: -20px;
-  margin-left: 15px;
-  color: grey;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul > li > p {
-    font-size: 2.5em;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li > p > span {
-  display: inline-block;
-  width: 88%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 30px;
-  transition: width 0.5s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul > li > p > span {
-    font-size: 0.32em;
-    font-weight: bold;
-    width: 89%;
-    padding-top: 35px;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li > p > b {
-  position: relative;
-  bottom: 5px;
-  color: #000;
-  font-size: 0.8em;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul > li > p > b {
-    font-size: 15px;
-    left: 15px;
-    bottom: 2px;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li::before {
-  content: "";
-  width: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #99f2d0;
-  transition: width 0.4s;
-  border-radius: 0 20px 20px 0;
-}
-body > .mainMenu > section.dish .menu__ul > li::after {
-  position: absolute;
-  right: -10%;
-  top: calc(40% - 0.5em);
-  transform: rotate(0deg);
-  background: white;
-  color: #99f2d0;
-  border-radius: 50px;
-  padding: 0.4em;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
-  transition: right 0.4s, transform 0.8s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.dish .menu__ul > li::after {
-    right: -8%;
-  }
-}
-body > .mainMenu > section.dish .menu__ul > li:hover::before {
-  width: 20%;
-}
-body > .mainMenu > section.dish .menu__ul > li:hover::after {
-  right: 5%;
-  transform: rotate(360deg);
-}
-body > .mainMenu > section.dish .menu__ul > li:hover > p > span {
-  width: 70%;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts {
-    width: 100%;
-    margin-right: 10px;
-  }
-}
-body > .mainMenu > section.desserts .menu {
-  margin-top: -110px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu {
-    margin-top: 0;
-  }
-}
-body > .mainMenu > section.desserts .menu__p {
-  width: 80px;
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 2em;
-  border-bottom: 4px solid #99e2d0;
-  padding: 3px;
-  color: gray;
-  margin-top: 180px;
-}
-body > .mainMenu > section.desserts .menu__ul {
-  position: relative;
-  padding: 1px 1em;
-  margin: -60px 10px;
-  cursor: pointer;
-  overflow: hidden;
-  margin-top: -40px;
-  cursor: pointer;
-  overflow: hidden;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul {
-    padding: 1px 0;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li {
-  background: #ffffff;
-  height: 115px;
-  border-radius: 20px;
-  position: relative;
-  padding-right: 30px;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul > li {
-    margin-top: 30px;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li > h2 {
-  font-size: 2em;
-  position: relative;
-  left: 15px;
-  top: 10px;
-  line-height: 1.7em;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul > li > h2 {
-    font-size: 1.1em;
-    line-height: 2em;
-    top: 20px;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li > p {
-  font-size: 2.5em;
-  margin-top: -20px;
-  margin-left: 15px;
-  color: grey;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul > li > p {
-    font-size: 2.5em;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li > p > span {
-  display: inline-block;
-  width: 88%;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 30px;
-  transition: width 0.5s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul > li > p > span {
-    font-size: 0.32em;
-    font-weight: bold;
-    width: 89%;
-    padding-top: 35px;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li > p > b {
-  position: relative;
-  bottom: 5px;
-  color: #000;
-  font-size: 0.8em;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul > li > p > b {
-    font-size: 15px;
-    left: 15px;
-    bottom: 2px;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li::before {
-  content: "";
-  width: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #99f2d0;
-  transition: width 0.4s;
-  border-radius: 0 20px 20px 0;
-}
-body > .mainMenu > section.desserts .menu__ul > li::after {
-  position: absolute;
-  right: -10%;
-  top: calc(40% - 0.5em);
-  transform: rotate(0deg);
-  background: white;
-  color: #99f2d0;
-  border-radius: 50px;
-  padding: 0.4em;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
-  transition: right 0.4s, transform 0.8s;
-}
-@media screen and (min-width: 992px) {
-  body > .mainMenu > section.desserts .menu__ul > li::after {
-    right: -8%;
-  }
-}
-body > .mainMenu > section.desserts .menu__ul > li:hover::before {
-  width: 20%;
-}
-body > .mainMenu > section.desserts .menu__ul > li:hover::after {
-  right: 5%;
-  transform: rotate(360deg);
-}
-body > .mainMenu > section.desserts .menu__ul > li:hover > p > span {
+body > .mainMenu .menu__ul > li:hover > p > span {
   width: 70%;
 }
 body > .mainMenu > button {
-  height: 90px;
-  width: 45%;
   border-radius: 60px;
+  padding: 25PX 80PX;
+  margin: 55px AUTO 30px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 135px;
   color: white;
-  background: linear-gradient(to top, #9356dc, #ff79da);
+  background: linear-gradient(to top, #9356DC, #FF79DA);
   font-size: 1.8em;
   border: none;
   cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > button {
-    width: 25%;
     position: absolute;
-    left: 38%;
-    bottom: 4em;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body > .mainMenu > button {
-    margin-left: 230px;
-    margin-top: 120px;
+    bottom: 0;
+    margin: 135px 14.3em;
   }
 }
 body .footerMenu {
   background: #000;
 }
-@media screen and (min-width: 992px) {
-  body .footerMenu {
-    margin-top: 50px;
-  }
-}
 body .footerMenu > h2 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: lighter;
   color: #ffffff;
-  padding-left: 30px;
-  margin-bottom: 85px;
+  padding-left: 25px;
   position: relative;
-  top: 60px;
+  top: 35px;
 }
 body .footerMenu > ul {
-  margin-bottom: 0;
-  padding-bottom: 60px;
-  line-height: 2em;
+  padding-bottom: 25px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+body .footerMenu > ul > li {
+  font-size: 0.9em;
+  line-height: 0.5;
 }
 body .footerMenu > ul > li > a {
-  display: flex;
   color: #ffffff;
-  margin-top: 7px;
-}
-body .footerMenu > ul > li > a > i {
-  position: relative;
-  top: 5px;
 }
 body .footerMenu > ul > li > a > p.utensils {
-  padding-left: 27px;
+  margin: 10px 0;
+}
+body .footerMenu > ul > li > a > p.utensils > i {
+  margin-right: 20px;
 }
 body .footerMenu > ul > li > a > p.hands {
-  padding-left: 20px;
-  margin: 0;
+  margin: 10px 0;
 }
-body .footerMenu > ul > li > a > p {
-  margin: 0;
+body .footerMenu > ul > li > a > p.hands > i {
+  margin-right: 10px;
 }
 
 * {
@@ -1159,10 +939,6 @@ body > .mainMenu > section.restaurants > nav > a > figure > figcaption > i:hover
   body > .mainMenu > section.restaurants > nav > a > figure {
     margin: 20px 0;
   }
-}
-body > .footerMenu > ul > li > a > p.hands {
-  padding-left: 20px;
-  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

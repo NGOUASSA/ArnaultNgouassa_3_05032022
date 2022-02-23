@@ -34,49 +34,43 @@ a {
 %appetizer {
     &__plat {
         display: inline-block;
-        margin-left: 30px;
         font-size: 2em;
-        border-bottom: 4px solid #99e2d0;
+        border-bottom: 4px solid $colour-tertiary;
         padding: 3px;
         color: gray;
-        margin-top: 20px;
         width: 85px;
         @media screen and (min-width: 992px) {
-            margin-left: 30px;
-            margin-bottom: 105px;
         }
     }
 }
 
-
 /*** 2- ******************************* ***
         ***********************************/
 body {
-    margin: 0;
 
     /* HEADER */
 
     .headerMenu {
+        margin-top: 35px;
         > a {
+            position: relative;
             > i.fas.fa-arrow-left {
                 color: #000000;
                 font-size: 1.8em;
-                position: relative;
-                left: 40px;
-                bottom: 35px;
+                position: absolute;
+                left: 35px;
+                top: 10px;
                 @media screen and (min-width: 992px) {
                 }
             }
             > img {
                 height: 50px;
-                margin-left: 180px;
-                margin-top: 40px;
+                margin: 0 auto;
                 margin-bottom: 20px;
+                display: block;
                 @media screen and (min-width: 992px) {
-                    margin-left: 410px;                    
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
-                    margin-left: 315px;
                 }
             }
         }
@@ -92,509 +86,220 @@ body {
         }
     }
 
+
     /* MAIN */
 
     > .mainMenu {
-        margin-bottom: -60px;
-        padding-bottom: 135px;
         background: #f6f6f6;
         position: relative;
         border-radius: 50px 50px 0 0;
-        margin-top: -105px;
+        margin-top: -9em;
+        margin-bottom: -2em;
+        padding: 0 1.3em;
+        padding-bottom: 3em;
         @media screen and (min-width: 992px) {
             display: flex;
-            margin-top: -20px;
-            padding-bottom: 310px;
+            justify-content: space-between; 
+            margin-top: -1em;
+            padding-bottom: 15em;
         }
         @media screen and (min-width: 768px) and (max-width: 992px) {
-            margin-top: -240px;
         }
 
         /* SECTION 1 */
 
         .heart {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            font-family: "Shrikhand";
+            font-size: 3em;
+            padding-top: 25px;
+            margin-bottom: 0;
             @media screen and (min-width: 992px) {
                 position: absolute;
-                justify-content: flex-start;
-            }
-            &__h1 {
-                font-family: "Shrikhand";
-                font-size: 3em;
                 padding-top: 25px;
-                margin-left: 35px;
-                @media screen and (min-width: 992px) {
-                }
-                    @media screen and (min-width: 768px) and (max-width: 992px) {
-                    }
             }
-            &__i {
-                margin-top: 15px;
-                margin-right: 90px;
-                font-size: 2.5em;
-                &:hover {
-                    background: linear-gradient(#ff79da, #9356dc);
-                    background-clip: border-box;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-weight: 900 !important;
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+            }
+            .fa-heart {
+                font-size: 1em;
+                float: right;
+                margin-right: 30px;
+                margin-top: 10px;
+
+                &::before{position:absolute;}
+                &::after{
+                  content: "";
+                  position: relative;
+                  background: linear-gradient(#FF79DA, #9356DC);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  font-weight: 900;
+                  opacity: 0;
+                  transition: opacity 2s;
                 }
+                &:hover::after{opacity: 1;}
+
+
+
                 @media screen and (min-width: 992px) {
-                    padding-left: 550px;
+                    float: unset;
+                    padding-left: 9em;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
-                    margin-right: 105px;
+                    margin-right: 55px;
                 }
             }
         }
-        .appetizer {
-            @media screen and (min-width: 992px) {
-                width: 100%;
-                margin-top: 160px;
-                margin-left: 10px;
-            }
-            .menu {
-                @include appetizer(
-                    (
-                        /*color: red,*/
-                    )
-                );
-                @media screen and (min-width: 992px) {
-                    margin-top: 0;
+        .menu {
+            animation: 3s menu 1 forwards;
+            overflow: hidden;
+            @keyframes menu {
+                0% {
+                    opacity: 0;
+                    height: 0;
                 }
+                90% {opacity: .9;
+                    height: 400px;
+                }
+                100% {opacity: 1;
+                    height: 525px;
+                }
+            }
+            @media screen and (min-width: 992px) {
+                width: 32%;
+                margin-top: 10em;
+            }
+                @include appetizer((               ));
                 &__p {
                     width: 80px;
-                    display: inline-block;
-                    margin-left: 30px;
                     font-size: 2em;
-                    border-bottom: 4px solid #99e2d0;
-                    padding: 3px;
+                    border-bottom: 4px solid #99E2D0;
                     color: gray;
-                    margin-top: 20px;
+                    margin-top: 15px;
+                    @media screen and (min-width: 992px) {
+                    }
                 }
                 &__ul {
-                    position: relative;
-                    padding: 1px 1em;
-                    margin: -60px 10px;
                     cursor: pointer;
-                    overflow: hidden;
-                    margin-top: -65px;
-                    cursor: pointer;
-                    overflow: hidden;
-                        cursor: pointer;
-                        overflow: hidden;
-                        margin-top: -40px;
-                        cursor: pointer;
-                        overflow: hidden;
-                        @media screen and (min-width: 992px) {
-                            padding: 1px 0;
-                        }
-                        > li {
-                            background: #ffffff;
-                            height: 115px;
-                            border-radius: 20px;
-                            position: relative;
-                            padding-right: 30px;
-                            @media screen and (min-width: 992px) {
-                                margin-top: 30px;
-                            }
-                            > h2 {
-                                font-size: 2em;
-                                position: relative;
-                                left: 15px;
-                                top: 10px;
-                                line-height: 1.7em;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 1.1em;
-                                    line-height: 2em;
-                                    top: 20px;
-                                }
-                            }
-                            > p {
-                                font-size: 2.5em;
-                                margin-top: -20px;
-                                margin-left: 15px;
-                                color: grey;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 2.5em;                                
-                                }
-                                > span {
-                                    display: inline-block;
-                                    width: 88%;
-                                    text-overflow: ellipsis;
-                                    overflow: hidden;
-                                    white-space: nowrap;
-                                    font-size: 30px;
-                                    transition: width .5s;
-                                    @media screen and (min-width: 992px) {
-                                        font-size: 0.32em;
-                                        font-weight: bold;
-                                        width: 89%;
-                                        padding-top: 35px;
-                                    }
-                                }
-                                > b {
-                                    position: relative;
-                                    bottom: 5px;
-                                    color: #000;
-                                    font-size: 0.8em;
-                                    @media screen and (min-width: 992px) {
-                                        font-size: 15px;
-                                        left: 15px;
-                                        bottom: 2px;
-                                    }
-                                }
-                            }
-                            &::before {
-                                content: "";
-                                width: 0;
-                                position: absolute;
-                                right: 0;
-                                top: 0;
-                                bottom: 0;
-                                background: #99f2d0;
-                                transition: width 0.4s;
-                                border-radius: 0 20px 20px 0;
-                            }
-                            &::after {
-                                position: absolute;
-                                right: -10%;
-                                top: calc(40% - 1em / 2);
-                                transform: rotate(0deg);
-                                background: white;
-                                color: #99f2d0;
-                                border-radius: 50px;
-                                padding: 0.4em;
-                                font-family: "Font Awesome 5 Pro";
-                                content: "";
-                                transition: right 0.4s, transform 0.8s;
-                                @media screen and (min-width: 992px) {
-                                    right: -8%;
-                                }
-                            }
-                            &:hover {
-                                &::before {
-                                    width: 20%;
-                                }
-                                &::after {
-                                    right: 5%;
-                                    transform: rotate(360deg);
-                                }
-                                > p {
-                                    > span {
-                                        width: 70%;
-                                    }
-                                }
-                            }
-                        }
-                }
-            }
-        }
-
-        /* SECTION 2*/
-
-        > section.dish {
-            @media screen and (min-width: 992px) {
-                width: 100%;
-            }
-            .menu {
-                margin-top: -110px;
-                @include appetizer(
-                    (
-                        /*color: red,*/
-                    )
-                );
-                @media screen and (min-width: 992px) {
-                    margin-top: 0;
-                }
-                &__p {
-                    width: 80px;
-                    display: inline-block;
-                    margin-left: 30px;
-                    font-size: 2em;
-                    border-bottom: 4px solid #99e2d0;
-                    padding: 3px;
-                    color: gray;
-                    margin-top: 180px;
-                }
-                &__ul {
+                    padding: 0;
+                    @media screen and (min-width: 992px) {
+                    }
+                    > li >* {
+                        font-size: 1.7em;
+                        margin: 10px 0;
+                        line-height: 1.5em;
+                    }
+                    > li {
+                        background: #ffffff;
+                        border-radius: 20px;
                         position: relative;
-                        padding: 1px 1em;
-                        margin: -60px 10px;
-                        cursor: pointer;
-                        overflow: hidden;
-                        margin-top: -40px;
-                        cursor: pointer;
+                        margin-bottom: 30px;
                         overflow: hidden;
                         @media screen and (min-width: 992px) {
-                            padding: 1px 0;
+                            padding-right: 35px;
                         }
-                        > li {
-                            background: #ffffff;
-                            height: 115px;
-                            border-radius: 20px;
+                        > h2 {
                             position: relative;
-                            padding-right: 30px;
+                            left: 15px;
+                            top: 20px;
                             @media screen and (min-width: 992px) {
-                                margin-top: 30px;
-                            }
-                            > h2 {
-                                font-size: 2em;
-                                position: relative;
-                                left: 15px;
+                                font-size: 1.3em;
+                                line-height: 1em;
                                 top: 10px;
-                                line-height: 1.7em;
+                            }
+                        }
+                        > p {
+                            color: grey;
+                            @media screen and (min-width: 992px) {
+                                margin: 0;
+                            }
+                            > span {
+                                display: inline-block;
+                                width: 88%;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                font-size: 25px;
+                                transition: width 0.5s;
+                                margin-left: 20px;
+                                position: relative;
+                                top: 15px;
                                 @media screen and (min-width: 992px) {
-                                    font-size: 1.1em;
-                                    line-height: 2em;
-                                    top: 20px;
+                                    font-size: 0.55em;
+                                    font-weight: bold;
+                                    width: 89%;
+                                    top: 5px;
                                 }
                             }
-                            > p {
-                                font-size: 2.5em;
-                                margin-top: -20px;
-                                margin-left: 15px;
-                                color: grey;
+                            > b {
+                                position: relative;
+                                bottom: 5px;
+                                color: #000;
+                                font-size: 0.7em;
                                 @media screen and (min-width: 992px) {
-                                    font-size: 2.5em;                                
-                                }
-                                > span {
-                                    display: inline-block;
-                                    width: 88%;
-                                    text-overflow: ellipsis;
-                                    overflow: hidden;
-                                    white-space: nowrap;
-                                    font-size: 30px;
-                                    transition: width .5s;
-                                    @media screen and (min-width: 992px) {
-                                        font-size: 0.32em;
-                                        font-weight: bold;
-                                        width: 89%;
-                                        padding-top: 35px;
-                                    }
-                                }
-                                > b {
-                                    position: relative;
-                                    bottom: 5px;
-                                    color: #000;
-                                    font-size: 0.8em;
-                                    @media screen and (min-width: 992px) {
-                                        font-size: 15px;
-                                        left: 15px;
-                                        bottom: 2px;
-                                    }
+                                    position: absolute;
                                 }
                             }
+                        }
+                        &::before {
+                            content: "";
+                            width: 0;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: #99f2d0;
+                            transition: width 0.4s;
+                            border-radius: 0 20px 20px 0;
+                        }
+                        &::after {
+                            position: absolute;
+                            right: -10%;
+                            top: calc(40% - 0.1em);
+                            transform: rotate(0deg);
+                            background: white;
+                            color: #99f2d0;
+                            border-radius: 50px;
+                            padding: 0.4em;
+                            font-family: "Font Awesome 5 Pro";
+                            content: "\f00c";
+                            transition: right 0.4s, transform 0.8s;
+                            @media screen and (min-width: 992px) {
+                                right: -8%;
+                            }
+                        }
+                        &:hover {
                             &::before {
-                                content: "";
-                                width: 0;
-                                position: absolute;
-                                right: 0;
-                                top: 0;
-                                bottom: 0;
-                                background: #99f2d0;
-                                transition: width 0.4s;
-                                border-radius: 0 20px 20px 0;
+                                width: 20%;
                             }
                             &::after {
-                                position: absolute;
-                                right: -10%;
-                                top: calc(40% - 1em / 2);
-                                transform: rotate(0deg);
-                                background: white;
-                                color: #99f2d0;
-                                border-radius: 50px;
-                                padding: 0.4em;
-                                font-family: "Font Awesome 5 Pro";
-                                content: "";
-                                transition: right 0.4s, transform 0.8s;
-                                @media screen and (min-width: 992px) {
-                                    right: -8%;
-                                }
-                            }
-                            &:hover {
-                                &::before {
-                                    width: 20%;
-                                }
-                                &::after {
-                                    right: 5%;
-                                    transform: rotate(360deg);
-                                }
-                                > p {
-                                    > span {
-                                        width: 70%;
-                                    }
-                                }
-                            }
-                        }
-                }
-            }
-        }
-
-        /* SECTION 3 */
-
-        > section.desserts {
-            @media screen and (min-width: 992px) {
-                width: 100%;
-                margin-right: 10px;
-            }
-            .menu {
-                margin-top: -110px;
-                @include appetizer(
-                    (
-                        /*color: red,*/
-                    )
-                );
-                @media screen and (min-width: 992px) {
-                    margin-top: 0;
-                }
-                &__p {
-                    width: 80px;
-                    display: inline-block;
-                    margin-left: 30px;
-                    font-size: 2em;
-                    border-bottom: 4px solid #99e2d0;
-                    padding: 3px;
-                    color: gray;
-                    margin-top: 180px;
-                }
-                &__ul {
-                        position: relative;
-                        padding: 1px 1em;
-                        margin: -60px 10px;
-                        cursor: pointer;
-                        overflow: hidden;
-                        margin-top: -40px;
-                        cursor: pointer;
-                        overflow: hidden;
-                        @media screen and (min-width: 992px) {
-                            padding: 1px 0;
-                        }
-                        > li {
-                            background: #ffffff;
-                            height: 115px;
-                            border-radius: 20px;
-                            position: relative;
-                            padding-right: 30px;
-                            @media screen and (min-width: 992px) {
-                                margin-top: 30px;
-                            }
-                            > h2 {
-                                font-size: 2em;
-                                position: relative;
-                                left: 15px;
-                                top: 10px;
-                                line-height: 1.7em;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 1.1em;
-                                    line-height: 2em;
-                                    top: 20px;
-                                }
+                                right: 7%;
+                                transform: rotate(360deg);
                             }
                             > p {
-                                font-size: 2.5em;
-                                margin-top: -20px;
-                                margin-left: 15px;
-                                color: grey;
-                                @media screen and (min-width: 992px) {
-                                    font-size: 2.5em;                                
-                                }
                                 > span {
-                                    display: inline-block;
-                                    width: 88%;
-                                    text-overflow: ellipsis;
-                                    overflow: hidden;
-                                    white-space: nowrap;
-                                    font-size: 30px;
-                                    transition: width .5s;
-                                    @media screen and (min-width: 992px) {
-                                        font-size: 0.32em;
-                                        font-weight: bold;
-                                        width: 89%;
-                                        padding-top: 35px;
-                                    }
-                                }
-                                > b {
-                                    position: relative;
-                                    bottom: 5px;
-                                    color: #000;
-                                    font-size: 0.8em;
-                                    @media screen and (min-width: 992px) {
-                                        font-size: 15px;
-                                        left: 15px;
-                                        bottom: 2px;
-                                    }
-                                }
-                            }
-                            &::before {
-                                content: "";
-                                width: 0;
-                                position: absolute;
-                                right: 0;
-                                top: 0;
-                                bottom: 0;
-                                background: #99f2d0;
-                                transition: width 0.4s;
-                                border-radius: 0 20px 20px 0;
-                            }
-                            &::after {
-                                position: absolute;
-                                right: -10%;
-                                top: calc(40% - 1em / 2);
-                                transform: rotate(0deg);
-                                background: white;
-                                color: #99f2d0;
-                                border-radius: 50px;
-                                padding: 0.4em;
-                                font-family: "Font Awesome 5 Pro";
-                                content: "";
-                                transition: right 0.4s, transform 0.8s;
-                                @media screen and (min-width: 992px) {
-                                    right: -8%;
-                                }
-                            }
-                            &:hover {
-                                &::before {
-                                    width: 20%;
-                                }
-                                &::after {
-                                    right: 5%;
-                                    transform: rotate(360deg);
-                                }
-                                > p {
-                                    > span {
-                                        width: 70%;
-                                    }
+                                    width: 70%;
                                 }
                             }
                         }
+                    }
                 }
-            }
         }
         > button {
-            height: 90px;
-            width: 45%;
             border-radius: 60px;
+            padding: 25PX 80PX;
+            margin: 55px AUTO 30px;
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 135px;
             color: white;
-            background: linear-gradient(to top, #9356dc, #ff79da);
+            background: linear-gradient(to top, #9356DC, #FF79DA);
             font-size: 1.8em;
             border: none;
             cursor: pointer;
             @media screen and (min-width: 992px) {
-                width: 25%;
                 position: absolute;
-                left: 38%;
-                bottom: 4em;
+                bottom: 0;
+                margin: 135px 14.3em;
             }
             @media screen and (min-width: 768px) and (max-width: 992px) {
-                margin-left: 230px;
-                margin-top: 120px;
             }
         }
     }
@@ -604,40 +309,37 @@ body {
     .footerMenu {
         background: #000;
         @media screen and (min-width: 992px) {
-            margin-top: 50px;
         }
         > h2 {
             font-family: "Shrikhand", sans-serif;
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: lighter;
             color: #ffffff;
-            padding-left: 30px;
-            margin-bottom: 85px;
+            padding-left: 25px;
             position: relative;
-            top: 60px;
+            top: 35px;
         }
         > ul {
-            margin-bottom: 0;
-            padding-bottom: 60px;
-            line-height: 2em;
+            padding-bottom: 25px;
+            margin-top: 50px;
+            margin-left: -15px;
             > li {
+                font-size: 0.9em;
+                line-height: 0.5;
                 > a {
-                    display: flex;
                     color: #ffffff;
-                    margin-top: 7px;
-                    > i {
-                        position: relative;
-                        top: 5px;
-                    }
                     > p.utensils {
-                        padding-left: 27px;
+                        margin: 10px 0;
+                        ;
+                        > i {
+                            margin-right: 20px;
+                        }
                     }
                     > p.hands {
-                        padding-left: 20px;
-                        margin: 0;
-                    }
-                    > p {
-                        margin: 0;
+                        margin: 10px 0;
+                        > i {
+                            margin-right: 10px;
+                        }
                     }
                 }
             }

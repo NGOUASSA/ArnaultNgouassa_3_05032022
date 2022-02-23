@@ -18,7 +18,6 @@ h4 {
     box-sizing: border-box;
 }
 body {
-    margin: 0;
 
     /* HEADER */
 
@@ -28,7 +27,7 @@ body {
         > a {
             > img {
                 height: 50px;
-                margin: 40px 0 15px 31%;
+                margin: 30px 0 10px 31%;
                 @media screen and (min-width: 992px) {
                     margin-left: 37%;
                 }
@@ -54,7 +53,6 @@ body {
                 &__input {
                     font-weight: 600;
                     font-size: 1.4em;
-                    margin-bottom: 5px;
                 }
             }
         }
@@ -69,26 +67,28 @@ body {
                 &__h1 {
                     font-weight: bold;
                     font-size: 3em;
-                    margin-top: 65px;
-                    margin-bottom: 30px;
                     line-height: 1em;
+                    margin-top: 40px;
+                    margin-bottom: 0;
                 }
                 &__p {
-                    font-weight: bold;
-                    font-size: large;
-                    margin-top: 10px;
-                    line-height: 1.5em;
+                    font-weight: 300;
+                    font-size: 2em;
+                    line-height: 1em;
                 }
                 &__button {
-                    padding: 15px 20px;
+                    font-family: "roboto", sans-serif;
+                    padding: 20px 85px;
                     border-radius: 50px;
-                    margin-top: 35px;
-                    background: linear-gradient(to left, #9356dc, #ff79da);
+                    background: linear-gradient(#ff79da, #9356DC);
                     border: none;
                     color: white;
                     font-size: medium;
+                    box-shadow: 4px 4px 6px #bbb;
+                    transition: background 300ms;
                     &:hover {
-                        cursor: pointer;
+                        box-shadow: 6px 6px 8px rgb(61 60 64);
+                        opacity: 0.6;
                     }
                 }
             }
@@ -98,22 +98,19 @@ body {
     /* SECTION 2 */
 
     .mainHome {
-        border-radius: 25px 25px 0 0;
-        margin-top: -30px;
+        margin-bottom: -25px;
         &__sectionFunctioning {
             position: relative;
             bottom: 0px;
             .functioning {
                 &__h2 {
-                    margin: 110px 20px 50px 50px;
                     font-size: 2.2em;
+                    margin: 50px 0 30px 20px;
                     @media screen and (min-width: 992px) {
                         display: flex;
                         justify-content: space-around;
                     }
                     @media screen and (min-width: 768px) and (max-width: 992px) {
-                        margin-top: 115px;
-                        margin-bottom: 0;
                     }
                 }
                 &__ul {
@@ -128,13 +125,11 @@ body {
                         flex-flow: wrap;
                     }
                     > li {
-                        margin: 40px 0;
-                        margin: 40px 0;
                         border-radius: 20px;
                         background: #f6f6f6;
-                        margin-left: 15px;
                         padding: 20px;
                         box-shadow: 2px 2px 15px 2px #ccc;
+                        margin: 0 5px 25px 15px;
                         @media screen and (min-width: 992px) {
                             width: 30%;
                         }
@@ -149,7 +144,7 @@ body {
                             right: 35px;
                             color: white;
                             font-size: 1.2em;
-                            bottom: 10px;
+                            bottom: 5px;
                             @media screen and (min-width: 992px) {
                                 font-size: 1.2em;
                                 position: relative;
@@ -164,11 +159,12 @@ body {
                         }
                         > i {
                             font-size: 2em;
+                            margin-right: 25px;
                             @media screen and (min-width: 992px) {
                                 font-size: 2em;
                                 position: relative;
                                 top: 5px;
-                                left: 10px;
+                                left: -5px;
                             }
                             @media screen and (min-width: 768px) and (max-width: 992px) {
                                 position: relative;
@@ -180,7 +176,6 @@ body {
                         > h3 {
                             font-size: 1.6em;
                             display: inline-block;
-                            margin-left: 45px;
                             @media screen and (min-width: 992px) {
                                 font-size: 1em;
                                 position: relative;
@@ -189,7 +184,6 @@ body {
                             }
                             @media screen and (min-width: 768px) and (max-width: 992px) {
                                 font-size: 1.2em;
-                                margin-left: unset;
                                 position: relative;
                                 bottom: -5px;
                             }
@@ -211,9 +205,11 @@ body {
 
         &__sectionRestaurants {
             background: #f6f6f6;
-            padding: 138px 20px;
-            margin-top: 120px;
-            padding-bottom: 65px;
+            padding: 95px 20px;
+            padding-bottom: 3em;
+            margin-top: 70px;
+            position: relative;
+            position: relative;
             @media screen and (min-width: 992px) {
                 padding-top: 90px;
             }
@@ -225,22 +221,19 @@ body {
             .restaurants {
                 &__h2 {
                     position: absolute;
-                    margin-top: -50px;
                     font-size: 2.2em;
+                    margin-bottom: 7px;
+                    top: 25px;
                     @media screen and (min-width: 992px) {
-                        position: absolute;
-                        margin-top: -30px;
-                        margin-left: 20px;
+                        left: 35px;
                     }
                     @media screen and (min-width: 768px) and (max-width: 992px) {
                         position: absolute;
-                        margin-top: -50px;
                     }
                 }
                 &__ul {
                     display: flex;
                     flex-flow: column;
-                    margin-top: 55px;
                     padding: 0;
                     @media screen and (min-width: 992px) {
                         flex-flow: wrap;
@@ -250,6 +243,7 @@ body {
                     }
                     > .li {
                         position: relative;
+                        margin-top: 10px;
                         @media screen and (min-width: 992px) {
                             flex-basis: 50%;
                             padding: 20px;
@@ -266,15 +260,15 @@ body {
                             border-radius: 2px;
                             @media screen and (min-width: 992px) {
                                 right: 30px;
-                                top: 5px;
+                                top: 30px;
                             }
                         }
                         > .a {
                             text-decoration: none;
                             > .figure {
                                 background: white;
-                                margin: -10px 0;
                                 border-radius: 20px;
+                                margin: -5px;
                                 > .img {
                                     height: 300px;
                                     width: 100%;
@@ -282,45 +276,46 @@ body {
                                     border-radius: 20px 20px 0 0;
                                 }
                                 > .figcaption {
-                                    margin: 60px 0;
                                     > .h3 {
-                                        margin-left: 20px;
-                                        margin-bottom: -45px;
                                         color: #000000;
-                                        font-size: 2em;
+                                        font-size: 1.5em;
+                                        font-weight: bold;
+                                        margin: 10px;
                                         position: relative;
-                                        bottom: 40px;
+                                        top: 0;
+                                        left: 5px;
                                     }
-                                    > .i {
+                                    > .fa-heart {
                                         float: right;
                                         position: relative;
                                         bottom: 30px;
-                                        right: 20px;
+                                        right: 25px;
                                         font-size: 3em;
-                                        font-weight: 100 !important;
-                                        transition: font-weight 0.5s;
-                                        color: gray;
-                                        &:hover {
-                                            background: linear-gradient(#ff79da, #9356dc);
-                                            background-clip: border-box;
-                                            -webkit-background-clip: text;
-                                            -webkit-text-fill-color: transparent;
-                                            font-weight: 900 !important;
+                                        color: #000;
+                                        &::before{position:absolute;}
+                                        &::after{
+                                          content: "";
+                                          position: relative;
+                                          background: linear-gradient(#FF79DA, #9356DC);
+                                          -webkit-background-clip: text;
+                                          -webkit-text-fill-color: transparent;
+                                          font-weight: 900;
+                                          opacity: 0;
+                                          transition: opacity 2s;
                                         }
+                                        &:hover::after{opacity: 1;}
                                     }
                                     > .p {
-                                        padding-bottom: 26px;
-                                        margin-left: 20px;
-                                        margin-top: 20px;
-                                        font-size: 2em;
+                                        font-size: 1.5em;
                                         color: #000000;
+                                        margin: 20px 15px;
+                                        position: relative;
+                                        bottom: 10px;
                                     }
                                 }
                                 @media screen and (min-width: 992px) {
-                                    margin: -30px 0;
                                 }
                                 @media screen and (min-width: 768px) and (max-width: 992px) {
-                                    margin: -10px 0;
                                 }
                             }
                         }
@@ -330,47 +325,207 @@ body {
         }
     }
     /*FOOTER*/
-    > .footerHome {
+    
+    .footerHome {
         background: #000;
-        padding: 5px;
-        margin-top: 0px;
-        > h4 {
+        @media screen and (min-width: 992px) {
+        }
+        > h2 {
             font-family: "Shrikhand", sans-serif;
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: lighter;
             color: #ffffff;
-            padding-left: 30px;
-            margin-bottom: 20px;
+            padding-left: 25px;
             position: relative;
-            top: -30px;
+            top: 35px;
         }
         > ul {
-            list-style-type: none;
-            margin-left: 30px;
-            position: relative;
-            bottom: 20px;
+            padding-bottom: 25px;
+            margin-top: 50px;
+            margin-left: -15px;
             > li {
-                font-size: 1.7em;
+                font-size: 0.9em;
+                line-height: 0.5;
                 > a {
-                    display: flex;
                     color: #ffffff;
-                    margin-bottom: 10px;
-                    > i {
-                        font-size: 1.5em;
-                    }
                     > p.utensils {
-                        padding-left: 27px;
-                        margin: 5px;
+                        margin: 10px 0;
+                        ;
+                        > i {
+                            margin-right: 20px;
+                        }
                     }
                     > p.hands {
-                        padding-left: 20px;
-                        margin: 0;
-                    }
-                    > p {
-                        margin: 0;
+                        margin: 10px 0;
+                        > i {
+                            margin-right: 10px;
+                        }
                     }
                 }
             }
         }
+    }
+    .loader{
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        background: blueviolet;
+        animation: 3s loader 1 forwards;
+
+
+        $colors: 
+	#489D8A
+	#324650
+	#D34B4C
+	#E8A961;
+$size: 2em; /*change this to resize*/
+
+@function scale($i){
+	@return 1em * $i;
+}
+
+.c{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 5em;
+	width: scale(5);
+	li{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		margin: auto;
+		border-radius: 50%;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform-origin: center center;
+		animation: anim 1s ease-in-out infinite;
+		will-change: transform, filter;
+		&:nth-child(1){
+			width: scale(1);
+			height: scale(1);
+			&:after{
+				content:'';
+				display: block;
+				font-size: 25%;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				box-shadow: 
+					scale(1) 0 0 rgba(nth($colors, 1), .2),
+					-(scale(1)) 0 0 rgba(nth($colors, 2), .2),
+					0 scale(1) 0 rgba(nth($colors, 3), .2),
+					0 (-(scale(1))) 0 rgba(nth($colors, 4), .2);
+			}
+		}
+		&:nth-child(2){
+			animation-delay: .1s;
+			width: scale(2);
+			height: scale(2);
+			&:after{
+				content:'';
+				display: block;
+				font-size: 50%;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				box-shadow: 
+					scale(1.5) 0 0 rgba(nth($colors, 1), .4),
+					-(scale(1.5)) 0 0 rgba(nth($colors, 2), .4),
+					0 scale(1.5) 0 rgba(nth($colors, 3), .4),
+					0 (-(scale(1.5))) 0 rgba(nth($colors, 4), .4); 
+			}
+		}
+		&:nth-child(3){
+			animation-delay: .15s;
+			width: scale(3);
+			height: scale(3);
+			&:after{
+				content:'';
+				display: block;
+				font-size: 75%;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				box-shadow: 
+					scale(2) 0 0 rgba(nth($colors, 1), .6),
+					-(scale(2)) 0 0 rgba(nth($colors, 2), .6),
+					0 scale(2) 0 rgba(nth($colors, 3), .6),
+					0 (-(scale(2))) 0 rgba(nth($colors, 4), .6);
+			}
+		}
+		&:nth-child(4){
+			animation-delay: .2s;
+			width: scale(4);
+			height: scale(4);
+			&:after{
+				content:'';
+				display: block;
+				font-size: 100%;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				box-shadow: 
+					scale(2.5) 0 0 rgba(nth($colors, 1), .8),
+					-(scale(2.5)) 0 0 rgba(nth($colors, 2), .8),
+					0 scale(2.5) 0 rgba(nth($colors, 3), .8),
+					0 (-(scale(2.5))) 0 rgba(nth($colors, 4), .8);
+			}
+		}
+		&:nth-child(5){
+			animation-delay: .25s;
+			width: scale(5);
+			height: scale(5);
+			&:after{
+				content:'';
+				display: block;
+				font-size: 125%;
+				width: 1em;
+				height: 1em;
+				border-radius: 50%;
+				box-shadow: 
+					scale(3) 0 0 nth($colors, 1),
+					-(scale(3)) 0 0 nth($colors, 2),
+					0 scale(3) 0 nth($colors, 3),
+					0 (-(scale(3))) 0 nth($colors, 4);
+			}
+		}
+	}
+}
+@keyframes anim {
+	50%{
+		filter: blur(2px);
+	}
+	90%, 100%{ 
+		transform: rotate(1turn);
+		filter: blur(0);
+	}
+}
+
+@keyframes loader {
+	0%{opacity: 1;
+
+	}
+	90% {opacity: 0.9;
+
+    } 
+    
+    100%{ opacity: 0;
+        z-index: -1;
+
+	}
+}
+
+
     }
 }
