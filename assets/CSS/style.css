@@ -1,13 +1,109 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-/*@import "./layouts/header";
-@import "./layouts/nav";
+@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes anim {
+  50% {
+    filter: blur(2px);
+  }
+  90%, 100% {
+    transform: rotate(1turn);
+    filter: blur(0);
+  }
+}
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75%, 100% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header {
+  margin-top: 15px;
+}
+.header > a > i.fas.fa-arrow-left {
+  color: #000000;
+  font-size: 1.4em;
+  position: absolute;
+  left: 25px;
+  margin-top: 5px;
+}
+.header > a > img {
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
+}
+.footer {
+  background: #000;
+}
+.footer > h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  color: #ffffff;
+  padding-left: 25px;
+  position: relative;
+  top: 30px;
+}
+.footer > ul {
+  padding-bottom: 30px;
+  margin-top: 45px;
+  margin-left: -15px;
+}
+.footer > ul > li {
+  font-size: 0.9em;
+  line-height: 0.5;
+}
+.footer > ul > li > a {
+  color: #ffffff;
+}
+.footer > ul > li > a > p.utensils {
+  margin: 10px 0;
+}
+.footer > ul > li > a > p.utensils > i {
+  margin-right: 20px;
+}
+.footer > ul > li > a > p.hands {
+  margin: 10px 0;
+}
+.footer > ul > li > a > p.hands > i {
+  margin-right: 10px;
+}
+
+/*@import "./layouts/nav";
 @import "./layouts/container";
 @import "./layouts/form";*/
-@import url("https://fonts.googleapis.com/css?family=Shrikhand");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Shrikhand");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
 a,
 ul {
   list-style-type: none;
@@ -30,67 +126,50 @@ h4 {
 }
 
 body {
-  /* HEADER */
   /* NAV */
   /* SECTION 2 */
-  /*FOOTER*/
-}
-body .headerHome {
-  box-shadow: 0 0 10px 1px #808080;
-  position: relative;
-}
-body .headerHome > a > img {
-  height: 50px;
-  margin: 30px 0 10px 31%;
-}
-@media screen and (min-width: 992px) {
-  body .headerHome > a > img {
-    margin-left: 37%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  body .headerHome > a > img {
-    margin-left: 35%;
-  }
 }
 body .nav {
+  top: 10px;
   /* SECTION 1 */
 }
 body .nav__form {
   text-align: center;
   background: #ccc;
-  padding: 1.5em 0;
+  padding: 0.8em 0;
   padding-left: 85px;
 }
 body .nav__form .form__i {
-  font-size: xx-large;
+  font-size: x-large;
 }
 body .nav__form .form__input {
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 body .nav__section {
   text-align: center;
   background: #f6f6f6;
-  padding: 1px 0 55px;
+  padding: 1px 0 60px;
 }
 body .nav__section .reservation__h1 {
   font-weight: bold;
-  font-size: 3em;
+  font-size: 1.5em;
   line-height: 1em;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-bottom: 0;
 }
 body .nav__section .reservation__p {
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1em;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 body .nav__section .reservation__button {
   font-family: "roboto", sans-serif;
   padding: 20px 85px;
   border-radius: 50px;
-  background: linear-gradient(#ff79da, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
   font-size: medium;
@@ -110,7 +189,7 @@ body .mainHome__sectionFunctioning {
   bottom: 0px;
 }
 body .mainHome__sectionFunctioning .functioning__h2 {
-  font-size: 2.2em;
+  font-size: 1.4em;
   margin: 50px 0 30px 20px;
 }
 @media screen and (min-width: 992px) {
@@ -136,11 +215,10 @@ body .mainHome__sectionFunctioning .functioning__ul {
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li {
-  border-radius: 20px;
+  border-radius: 10px;
   background: #f6f6f6;
-  padding: 20px;
   box-shadow: 2px 2px 15px 2px #ccc;
-  margin: 0 5px 25px 15px;
+  margin: 0 0px 25px 12px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li {
@@ -153,13 +231,13 @@ body .mainHome__sectionFunctioning .functioning__ul > li {
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li > span {
-  background: #9356dc;
+  background: #9356DC;
   border-radius: 50px;
-  padding: 5px 10px;
+  padding: 5px 9px;
   position: relative;
-  right: 35px;
+  right: 12px;
   color: white;
-  font-size: 1.2em;
+  font-size: 0.8em;
   bottom: 5px;
 }
 @media screen and (min-width: 992px) {
@@ -168,18 +246,20 @@ body .mainHome__sectionFunctioning .functioning__ul > li > span {
     position: relative;
     top: 0px;
     padding: 5px 11px;
+    right: 16px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > span {
-    font-size: 1.5em;
-    padding: 3px 10px;
-    bottom: -5px;
+    font-size: 0.8em;
+    padding: 3px 7px;
+    bottom: 2px;
+    right: 11px;
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li > i {
-  font-size: 2em;
-  margin-right: 25px;
+  font-size: 1.5em;
+  margin-right: 15px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > i {
@@ -192,18 +272,15 @@ body .mainHome__sectionFunctioning .functioning__ul > li > i {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > i {
     position: relative;
-    right: 20px;
-    top: 10px;
-    font-size: 2em;
+    top: 2px;
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   display: inline-block;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
-    font-size: 1em;
     position: relative;
     right: 10px;
     top: 0px;
@@ -211,25 +288,23 @@ body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > h3 {
-    font-size: 1.2em;
     position: relative;
-    bottom: -5px;
+    bottom: -2px;
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li:hover {
   cursor: pointer;
   background: #eaeaea;
-  color: #9356dc;
+  color: #9356DC;
 }
 body .mainHome__sectionFunctioning .functioning__ul > li:hover > h3 {
   color: #000;
 }
 body .mainHome__sectionRestaurants {
   background: #f6f6f6;
-  padding: 95px 20px;
-  padding-bottom: 3em;
-  margin-top: 70px;
-  position: relative;
+  padding: 110px 20px;
+  padding-bottom: 1em;
+  margin-top: 50px;
   position: relative;
 }
 @media screen and (min-width: 992px) {
@@ -246,9 +321,9 @@ body .mainHome__sectionRestaurants {
 }
 body .mainHome__sectionRestaurants .restaurants__h2 {
   position: absolute;
-  font-size: 2.2em;
-  margin-bottom: 7px;
-  top: 25px;
+  font-size: 1.4em;
+  top: 40px;
+  left: 15px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__h2 {
@@ -277,7 +352,7 @@ body .mainHome__sectionRestaurants .restaurants__ul {
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li {
   position: relative;
-  margin-top: 10px;
+  margin-top: -15px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__ul > .li {
@@ -287,19 +362,24 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li {
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
   position: absolute;
-  background: #99e2d0;
+  background: #99E2D0;
   color: green;
   font-size: medium;
   padding: 4px 10px;
   font-weight: bold;
-  right: 10px;
-  top: 10px;
+  right: 15px;
+  top: 31px;
   border-radius: 2px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
     right: 30px;
-    top: 30px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body .mainHome__sectionRestaurants .restaurants__ul > .li > .span {
+    right: 30px;
   }
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a {
@@ -308,7 +388,7 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a {
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
   background: white;
   border-radius: 20px;
-  margin: -5px;
+  margin: 20px 0;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img {
   height: 300px;
@@ -318,7 +398,7 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img 
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .h3 {
   color: #000000;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   margin: 10px;
   position: relative;
@@ -328,197 +408,29 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figc
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart {
   float: right;
   position: relative;
-  bottom: 30px;
+  bottom: 25px;
   right: 25px;
-  font-size: 3em;
+  font-size: 1.8em;
   color: #000;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart::before {
-  position: absolute;
-}
-body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart::after {
   content: "\f004";
-  position: relative;
+}
+body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart:hover {
+  color: #FF79DA;
+  animation: 2s heart 1 forwards;
+  font-weight: bold;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  opacity: 0;
-  transition: opacity 2s;
-}
-body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart:hover::after {
-  opacity: 1;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .p {
-  font-size: 1.5em;
+  font-size: 1em;
   color: #000000;
   margin: 20px 15px;
   position: relative;
   bottom: 10px;
 }
-body .footerHome {
-  background: #000;
-}
-body .footerHome > h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 2em;
-  font-weight: lighter;
-  color: #ffffff;
-  padding-left: 25px;
-  position: relative;
-  top: 35px;
-}
-body .footerHome > ul {
-  padding-bottom: 25px;
-  margin-top: 50px;
-  margin-left: -15px;
-}
-body .footerHome > ul > li {
-  font-size: 0.9em;
-  line-height: 0.5;
-}
-body .footerHome > ul > li > a {
-  color: #ffffff;
-}
-body .footerHome > ul > li > a > p.utensils {
-  margin: 10px 0;
-}
-body .footerHome > ul > li > a > p.utensils > i {
-  margin-right: 20px;
-}
-body .footerHome > ul > li > a > p.hands {
-  margin: 10px 0;
-}
-body .footerHome > ul > li > a > p.hands > i {
-  margin-right: 10px;
-}
-body .loader {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  background: blueviolet;
-  animation: 3s loader 1 forwards;
-  /*change this to resize*/
-}
-body .loader .c {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  width: 5em;
-  width: 5em;
-}
-body .loader .c li {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-origin: center center;
-  animation: anim 1s ease-in-out infinite;
-  will-change: transform, filter;
-}
-body .loader .c li:nth-child(1) {
-  width: 1em;
-  height: 1em;
-}
-body .loader .c li:nth-child(1):after {
-  content: "";
-  display: block;
-  font-size: 25%;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  box-shadow: 1em 0 0 rgba(72, 157, 138, 0.2), -1em 0 0 rgba(50, 70, 80, 0.2), 0 1em 0 rgba(211, 75, 76, 0.2), 0 -1em 0 rgba(232, 169, 97, 0.2);
-}
-body .loader .c li:nth-child(2) {
-  animation-delay: 0.1s;
-  width: 2em;
-  height: 2em;
-}
-body .loader .c li:nth-child(2):after {
-  content: "";
-  display: block;
-  font-size: 50%;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  box-shadow: 1.5em 0 0 rgba(72, 157, 138, 0.4), -1.5em 0 0 rgba(50, 70, 80, 0.4), 0 1.5em 0 rgba(211, 75, 76, 0.4), 0 -1.5em 0 rgba(232, 169, 97, 0.4);
-}
-body .loader .c li:nth-child(3) {
-  animation-delay: 0.15s;
-  width: 3em;
-  height: 3em;
-}
-body .loader .c li:nth-child(3):after {
-  content: "";
-  display: block;
-  font-size: 75%;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  box-shadow: 2em 0 0 rgba(72, 157, 138, 0.6), -2em 0 0 rgba(50, 70, 80, 0.6), 0 2em 0 rgba(211, 75, 76, 0.6), 0 -2em 0 rgba(232, 169, 97, 0.6);
-}
-body .loader .c li:nth-child(4) {
-  animation-delay: 0.2s;
-  width: 4em;
-  height: 4em;
-}
-body .loader .c li:nth-child(4):after {
-  content: "";
-  display: block;
-  font-size: 100%;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  box-shadow: 2.5em 0 0 rgba(72, 157, 138, 0.8), -2.5em 0 0 rgba(50, 70, 80, 0.8), 0 2.5em 0 rgba(211, 75, 76, 0.8), 0 -2.5em 0 rgba(232, 169, 97, 0.8);
-}
-body .loader .c li:nth-child(5) {
-  animation-delay: 0.25s;
-  width: 5em;
-  height: 5em;
-}
-body .loader .c li:nth-child(5):after {
-  content: "";
-  display: block;
-  font-size: 125%;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  box-shadow: 3em 0 0 #489D8A, -3em 0 0 #324650, 0 3em 0 #D34B4C, 0 -3em 0 #E8A961;
-}
-@keyframes anim {
-  50% {
-    filter: blur(2px);
-  }
-  90%, 100% {
-    transform: rotate(1turn);
-    filter: blur(0);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
 a {
   list-style-type: none;
   text-decoration: none;
@@ -540,29 +452,8 @@ body > .mainMenu .menu__plat {
 /*** 2- ******************************* ***
         ***********************************/
 body {
-  /* HEADER */
   /* IMG */
   /* MAIN */
-  /* FOOTER */
-}
-body .headerMenu {
-  margin-top: 35px;
-}
-body .headerMenu > a {
-  position: relative;
-}
-body .headerMenu > a > i.fas.fa-arrow-left {
-  color: #000000;
-  font-size: 1.8em;
-  position: absolute;
-  left: 35px;
-  top: 10px;
-}
-body .headerMenu > a > img {
-  height: 50px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  display: block;
 }
 body > img {
   object-fit: cover;
@@ -573,9 +464,9 @@ body > .mainMenu {
   background: #f6f6f6;
   position: relative;
   border-radius: 50px 50px 0 0;
-  margin-top: -9em;
+  margin-top: -7.8em;
   margin-bottom: -2em;
-  padding: 0 1.3em;
+  padding: 0 0.6em;
   padding-bottom: 3em;
   /* SECTION 1 */
 }
@@ -589,65 +480,53 @@ body > .mainMenu {
 }
 body > .mainMenu .heart {
   font-family: "Shrikhand";
-  font-size: 3em;
-  padding-top: 25px;
+  font-size: 2em;
+  padding-top: 20px;
   margin-bottom: 0;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .heart {
     position: absolute;
     padding-top: 25px;
+    margin-left: 20px;
   }
 }
 body > .mainMenu .heart .fa-heart {
   font-size: 1em;
   float: right;
-  margin-right: 30px;
+  margin-right: 50px;
   margin-top: 10px;
 }
 body > .mainMenu .heart .fa-heart::before {
-  position: absolute;
+  content: "\f004";
 }
 body > .mainMenu .heart .fa-heart::after {
-  content: "\f004";
+  /*content: "";
   position: relative;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 2s;*/
 }
-body > .mainMenu .heart .fa-heart:hover::after {
-  opacity: 1;
+body > .mainMenu .heart .fa-heart:hover {
+  color: #ff79da;
+  animation: 2s heart 1 forwards;
+  font-weight: bold;
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .heart .fa-heart {
     float: unset;
-    padding-left: 9em;
+    padding-left: 20em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body > .mainMenu .heart .fa-heart {
-    margin-right: 55px;
-  }
-}
-body > .mainMenu .menu {
-  animation: 3s menu 1 forwards;
-  overflow: hidden;
-}
-@keyframes menu {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
-  90% {
-    opacity: 0.9;
-    height: 400px;
-  }
-  100% {
-    opacity: 1;
-    height: 525px;
+    margin-right: 75px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -657,43 +536,48 @@ body > .mainMenu .menu {
   }
 }
 body > .mainMenu .menu__p {
-  width: 80px;
-  font-size: 2em;
-  border-bottom: 4px solid #99E2D0;
+  width: 40px;
+  font-size: 1em;
+  border-bottom: 4px solid #99e2d0;
   color: gray;
   margin-top: 15px;
+  margin-left: 5px;
 }
 body > .mainMenu .menu__ul {
+  animation: menu 3s ease-in-out;
+  overflow: hidden;
   cursor: pointer;
   padding: 0;
 }
 body > .mainMenu .menu__ul > li > * {
-  font-size: 1.7em;
-  margin: 10px 0;
+  font-size: 1em;
+  margin: -5px 0;
   line-height: 1.5em;
 }
 body > .mainMenu .menu__ul > li {
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 10px;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
   overflow: hidden;
+  padding: 0.8em 0;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li {
     padding-right: 35px;
+    overflow: visible;
   }
 }
 body > .mainMenu .menu__ul > li > h2 {
   position: relative;
   left: 15px;
-  top: 20px;
+  top: 5px;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > h2 {
-    font-size: 1.3em;
+    font-size: 1em;
     line-height: 1em;
-    top: 10px;
+    top: 5px;
   }
 }
 body > .mainMenu .menu__ul > li > p {
@@ -710,29 +594,31 @@ body > .mainMenu .menu__ul > li > p > span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 25px;
+  font-size: 0.85em;
   transition: width 0.5s;
-  margin-left: 20px;
+  margin-left: 15px;
   position: relative;
-  top: 15px;
+  top: 10px;
+  color: #000;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > p > span {
-    font-size: 0.55em;
+    font-size: 0.8em;
     font-weight: bold;
     width: 89%;
-    top: 5px;
+    top: 10px;
   }
 }
 body > .mainMenu .menu__ul > li > p > b {
-  position: relative;
-  bottom: 5px;
   color: #000;
   font-size: 0.7em;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > p > b {
+    font-weight: bold;
     position: absolute;
+    margin-top: 10px;
+    font-size: 1.1em;
   }
 }
 body > .mainMenu .menu__ul > li::before {
@@ -749,7 +635,7 @@ body > .mainMenu .menu__ul > li::before {
 body > .mainMenu .menu__ul > li::after {
   position: absolute;
   right: -10%;
-  top: calc(40% - 0.1em);
+  top: calc(40% - 0.5em);
   transform: rotate(0deg);
   background: white;
   color: #99f2d0;
@@ -765,10 +651,11 @@ body > .mainMenu .menu__ul > li::after {
   }
 }
 body > .mainMenu .menu__ul > li:hover::before {
-  width: 20%;
+  width: 15%;
 }
 body > .mainMenu .menu__ul > li:hover::after {
-  right: 7%;
+  right: 5%;
+  transform: rotate(360deg);
   transform: rotate(360deg);
 }
 body > .mainMenu .menu__ul > li:hover > p > span {
@@ -776,11 +663,11 @@ body > .mainMenu .menu__ul > li:hover > p > span {
 }
 body > .mainMenu > button {
   border-radius: 60px;
-  padding: 25PX 80PX;
-  margin: 55px AUTO 30px;
+  padding: 5px 55px;
+  margin: 15px AUTO 0px;
   display: block;
   color: white;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(to top, #9356dc, #ff79da);
   font-size: 1.8em;
   border: none;
   cursor: pointer;
@@ -792,43 +679,6 @@ body > .mainMenu > button {
     margin: 135px 14.3em;
   }
 }
-body .footerMenu {
-  background: #000;
-}
-body .footerMenu > h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 2em;
-  font-weight: lighter;
-  color: #ffffff;
-  padding-left: 25px;
-  position: relative;
-  top: 35px;
-}
-body .footerMenu > ul {
-  padding-bottom: 25px;
-  margin-top: 50px;
-  margin-left: -15px;
-}
-body .footerMenu > ul > li {
-  font-size: 0.9em;
-  line-height: 0.5;
-}
-body .footerMenu > ul > li > a {
-  color: #ffffff;
-}
-body .footerMenu > ul > li > a > p.utensils {
-  margin: 10px 0;
-}
-body .footerMenu > ul > li > a > p.utensils > i {
-  margin-right: 20px;
-}
-body .footerMenu > ul > li > a > p.hands {
-  margin: 10px 0;
-}
-body .footerMenu > ul > li > a > p.hands > i {
-  margin-right: 10px;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -939,6 +789,113 @@ body > .mainMenu > section.restaurants > nav > a > figure > figcaption > i:hover
   body > .mainMenu > section.restaurants > nav > a > figure {
     margin: 20px 0;
   }
+}
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+  animation: 3s loader ease-in-out forwards;
+  z-index: 9999;
+  pointer-events: none;
+  /*change this to resize*/
+}
+.loader .c {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 5em;
+  width: 5em;
+}
+.loader .c li {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+  animation: anim 1s ease-in-out infinite;
+  will-change: transform, filter;
+}
+.loader .c li:nth-child(1) {
+  width: 1em;
+  height: 1em;
+}
+.loader .c li:nth-child(1):after {
+  content: "";
+  display: block;
+  font-size: 25%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 1em 0 0 rgba(72, 157, 138, 0.2), -1em 0 0 rgba(50, 70, 80, 0.2), 0 1em 0 rgba(211, 75, 76, 0.2), 0 -1em 0 rgba(232, 169, 97, 0.2);
+}
+.loader .c li:nth-child(2) {
+  animation-delay: 0.1s;
+  width: 2em;
+  height: 2em;
+}
+.loader .c li:nth-child(2):after {
+  content: "";
+  display: block;
+  font-size: 50%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 1.5em 0 0 rgba(72, 157, 138, 0.4), -1.5em 0 0 rgba(50, 70, 80, 0.4), 0 1.5em 0 rgba(211, 75, 76, 0.4), 0 -1.5em 0 rgba(232, 169, 97, 0.4);
+}
+.loader .c li:nth-child(3) {
+  animation-delay: 0.15s;
+  width: 3em;
+  height: 3em;
+}
+.loader .c li:nth-child(3):after {
+  content: "";
+  display: block;
+  font-size: 75%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 2em 0 0 rgba(72, 157, 138, 0.6), -2em 0 0 rgba(50, 70, 80, 0.6), 0 2em 0 rgba(211, 75, 76, 0.6), 0 -2em 0 rgba(232, 169, 97, 0.6);
+}
+.loader .c li:nth-child(4) {
+  animation-delay: 0.2s;
+  width: 4em;
+  height: 4em;
+}
+.loader .c li:nth-child(4):after {
+  content: "";
+  display: block;
+  font-size: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 2.5em 0 0 rgba(72, 157, 138, 0.8), -2.5em 0 0 rgba(50, 70, 80, 0.8), 0 2.5em 0 rgba(211, 75, 76, 0.8), 0 -2.5em 0 rgba(232, 169, 97, 0.8);
+}
+.loader .c li:nth-child(5) {
+  animation-delay: 0.25s;
+  width: 5em;
+  height: 5em;
+}
+.loader .c li:nth-child(5):after {
+  content: "";
+  display: block;
+  font-size: 125%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-shadow: 3em 0 0 #489d8a, -3em 0 0 #324650, 0 3em 0 #d34b4c, 0 -3em 0 #e8a961;
 }
 
 /*# sourceMappingURL=style.css.map */

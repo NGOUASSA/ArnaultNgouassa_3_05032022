@@ -19,40 +19,22 @@ h4 {
 }
 body {
 
-    /* HEADER */
-
-    .headerHome {
-        box-shadow: 0 0 10px 1px #808080;
-        position: relative;
-        > a {
-            > img {
-                height: 50px;
-                margin: 30px 0 10px 31%;
-                @media screen and (min-width: 992px) {
-                    margin-left: 37%;
-                }
-                @media screen and (min-width: 768px) and (max-width: 992px) {
-                    margin-left: 35%;
-                }
-            }
-        }
-    }
-
     /* NAV */
 
     .nav {
+        top: 10px;
         &__form {
             text-align: center;
             background: #ccc;
-            padding: 1.5em 0;
+            padding: 0.8em 0;
             padding-left: 85px;
             .form {
                 &__i {
-                    font-size: xx-large;
+                    font-size: x-large;
                 }
                 &__input {
                     font-weight: 600;
-                    font-size: 1.4em;
+                    font-size: 1.1em;
                 }
             }
         }
@@ -62,25 +44,27 @@ body {
         &__section {
             text-align: center;
             background: #f6f6f6;
-            padding: 1px 0 55px;
+            padding: 1px 0 60px;
             .reservation {
                 &__h1 {
                     font-weight: bold;
-                    font-size: 3em;
+                    font-size: 1.5em;
                     line-height: 1em;
-                    margin-top: 40px;
+                    margin-top: 45px;
                     margin-bottom: 0;
                 }
                 &__p {
                     font-weight: 300;
-                    font-size: 2em;
+                    font-size: 1.5em;
                     line-height: 1em;
+                    margin-top: 10px;
+                    margin-bottom: 35px;
                 }
                 &__button {
                     font-family: "roboto", sans-serif;
                     padding: 20px 85px;
                     border-radius: 50px;
-                    background: linear-gradient(#ff79da, #9356DC);
+                    background: linear-gradient($colour-secondary, $colour-primary);
                     border: none;
                     color: white;
                     font-size: medium;
@@ -104,7 +88,7 @@ body {
             bottom: 0px;
             .functioning {
                 &__h2 {
-                    font-size: 2.2em;
+                    font-size: 1.4em;
                     margin: 50px 0 30px 20px;
                     @media screen and (min-width: 992px) {
                         display: flex;
@@ -125,11 +109,10 @@ body {
                         flex-flow: wrap;
                     }
                     > li {
-                        border-radius: 20px;
+                        border-radius: 10px;
                         background: #f6f6f6;
-                        padding: 20px;
                         box-shadow: 2px 2px 15px 2px #ccc;
-                        margin: 0 5px 25px 15px;
+                        margin: 0 0px 25px 12px;
                         @media screen and (min-width: 992px) {
                             width: 30%;
                         }
@@ -137,29 +120,31 @@ body {
                             width: 45%;
                         }
                         > span {
-                            background: #9356dc;
+                            background: #9356DC;
                             border-radius: 50px;
-                            padding: 5px 10px;
+                            padding: 5px 9px;
                             position: relative;
-                            right: 35px;
+                            right: 12px;
                             color: white;
-                            font-size: 1.2em;
+                            font-size: 0.8em;
                             bottom: 5px;
                             @media screen and (min-width: 992px) {
                                 font-size: 1.2em;
                                 position: relative;
                                 top: 0px;
                                 padding: 5px 11px;
+                                right: 16px;
                             }
                             @media screen and (min-width: 768px) and (max-width: 992px) {
-                                font-size: 1.5em;
-                                padding: 3px 10px;
-                                bottom: -5px;
+                                font-size: 0.8em;
+                                padding: 3px 7px;
+                                bottom: 2px;
+                                right: 11px;
                             }
                         }
                         > i {
-                            font-size: 2em;
-                            margin-right: 25px;
+                            font-size: 1.5em;
+                            margin-right: 15px;
                             @media screen and (min-width: 992px) {
                                 font-size: 2em;
                                 position: relative;
@@ -168,30 +153,26 @@ body {
                             }
                             @media screen and (min-width: 768px) and (max-width: 992px) {
                                 position: relative;
-                                right: 20px;
-                                top: 10px;
-                                font-size: 2em;
+                                top: 2px;
                             }
                         }
                         > h3 {
-                            font-size: 1.6em;
+                            font-size: 1.2em;
                             display: inline-block;
                             @media screen and (min-width: 992px) {
-                                font-size: 1em;
                                 position: relative;
                                 right: 10px;
                                 top: 0px;
                             }
                             @media screen and (min-width: 768px) and (max-width: 992px) {
-                                font-size: 1.2em;
                                 position: relative;
-                                bottom: -5px;
+                                bottom: -2px;
                             }
                         }
                         &:hover {
                             cursor: pointer;
                             background: #eaeaea;
-                            color: #9356dc;
+                            color: $colour-primary;
                             > h3 {
                                 color: #000;
                             }
@@ -205,10 +186,9 @@ body {
 
         &__sectionRestaurants {
             background: #f6f6f6;
-            padding: 95px 20px;
-            padding-bottom: 3em;
-            margin-top: 70px;
-            position: relative;
+            padding: 110px 20px;
+            padding-bottom: 1em;
+            margin-top: 50px;
             position: relative;
             @media screen and (min-width: 992px) {
                 padding-top: 90px;
@@ -221,9 +201,9 @@ body {
             .restaurants {
                 &__h2 {
                     position: absolute;
-                    font-size: 2.2em;
-                    margin-bottom: 7px;
-                    top: 25px;
+                    font-size: 1.4em;
+                    top: 40px;
+                    left: 15px;
                     @media screen and (min-width: 992px) {
                         left: 35px;
                     }
@@ -243,24 +223,27 @@ body {
                     }
                     > .li {
                         position: relative;
-                        margin-top: 10px;
+                        margin-top: -15px;
                         @media screen and (min-width: 992px) {
                             flex-basis: 50%;
                             padding: 20px;
                         }
                         > .span {
                             position: absolute;
-                            background: #99e2d0;
+                            background: #99E2D0;
                             color: green;
                             font-size: medium;
                             padding: 4px 10px;
                             font-weight: bold;
-                            right: 10px;
-                            top: 10px;
+                            right: 15px;
+                            top: 31px;
                             border-radius: 2px;
                             @media screen and (min-width: 992px) {
                                 right: 30px;
-                                top: 30px;
+                                margin-top: 20px;
+                            }
+                            @media screen and (min-width: 768px) and (max-width: 992px) {
+                                right: 30px;
                             }
                         }
                         > .a {
@@ -268,7 +251,7 @@ body {
                             > .figure {
                                 background: white;
                                 border-radius: 20px;
-                                margin: -5px;
+                                margin: 20px 0;
                                 > .img {
                                     height: 300px;
                                     width: 100%;
@@ -278,7 +261,7 @@ body {
                                 > .figcaption {
                                     > .h3 {
                                         color: #000000;
-                                        font-size: 1.5em;
+                                        font-size: 1.2em;
                                         font-weight: bold;
                                         margin: 10px;
                                         position: relative;
@@ -288,25 +271,26 @@ body {
                                     > .fa-heart {
                                         float: right;
                                         position: relative;
-                                        bottom: 30px;
+                                        bottom: 25px;
                                         right: 25px;
-                                        font-size: 3em;
+                                        font-size: 1.8em;
                                         color: #000;
-                                        &::before{position:absolute;}
-                                        &::after{
-                                          content: "";
-                                          position: relative;
-                                          background: linear-gradient(#FF79DA, #9356DC);
-                                          -webkit-background-clip: text;
-                                          -webkit-text-fill-color: transparent;
-                                          font-weight: 900;
-                                          opacity: 0;
-                                          transition: opacity 2s;
+                                        &::before {
+                                            content: "";
                                         }
-                                        &:hover::after{opacity: 1;}
+                                        &::after {
+                                        }
+                                        &:hover {
+                                            color: $colour-secondary;
+                                            animation: 2s heart 1 forwards;
+                                            font-weight: bold;
+                                            background: linear-gradient($colour-secondary, $colour-primary);
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                        }
                                     }
                                     > .p {
-                                        font-size: 1.5em;
+                                        font-size: 1em;
                                         color: #000000;
                                         margin: 20px 15px;
                                         position: relative;
@@ -324,208 +308,5 @@ body {
             }
         }
     }
-    /*FOOTER*/
-    
-    .footerHome {
-        background: #000;
-        @media screen and (min-width: 992px) {
-        }
-        > h2 {
-            font-family: "Shrikhand", sans-serif;
-            font-size: 2em;
-            font-weight: lighter;
-            color: #ffffff;
-            padding-left: 25px;
-            position: relative;
-            top: 35px;
-        }
-        > ul {
-            padding-bottom: 25px;
-            margin-top: 50px;
-            margin-left: -15px;
-            > li {
-                font-size: 0.9em;
-                line-height: 0.5;
-                > a {
-                    color: #ffffff;
-                    > p.utensils {
-                        margin: 10px 0;
-                        ;
-                        > i {
-                            margin-right: 20px;
-                        }
-                    }
-                    > p.hands {
-                        margin: 10px 0;
-                        > i {
-                            margin-right: 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .loader{
 
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        background: blueviolet;
-        animation: 3s loader 1 forwards;
-
-
-        $colors: 
-	#489D8A
-	#324650
-	#D34B4C
-	#E8A961;
-$size: 2em; /*change this to resize*/
-
-@function scale($i){
-	@return 1em * $i;
-}
-
-.c{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	width: 5em;
-	width: scale(5);
-	li{
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		top: 0;
-		margin: auto;
-		border-radius: 50%;
-		box-sizing: border-box;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		transform-origin: center center;
-		animation: anim 1s ease-in-out infinite;
-		will-change: transform, filter;
-		&:nth-child(1){
-			width: scale(1);
-			height: scale(1);
-			&:after{
-				content:'';
-				display: block;
-				font-size: 25%;
-				width: 1em;
-				height: 1em;
-				border-radius: 50%;
-				box-shadow: 
-					scale(1) 0 0 rgba(nth($colors, 1), .2),
-					-(scale(1)) 0 0 rgba(nth($colors, 2), .2),
-					0 scale(1) 0 rgba(nth($colors, 3), .2),
-					0 (-(scale(1))) 0 rgba(nth($colors, 4), .2);
-			}
-		}
-		&:nth-child(2){
-			animation-delay: .1s;
-			width: scale(2);
-			height: scale(2);
-			&:after{
-				content:'';
-				display: block;
-				font-size: 50%;
-				width: 1em;
-				height: 1em;
-				border-radius: 50%;
-				box-shadow: 
-					scale(1.5) 0 0 rgba(nth($colors, 1), .4),
-					-(scale(1.5)) 0 0 rgba(nth($colors, 2), .4),
-					0 scale(1.5) 0 rgba(nth($colors, 3), .4),
-					0 (-(scale(1.5))) 0 rgba(nth($colors, 4), .4); 
-			}
-		}
-		&:nth-child(3){
-			animation-delay: .15s;
-			width: scale(3);
-			height: scale(3);
-			&:after{
-				content:'';
-				display: block;
-				font-size: 75%;
-				width: 1em;
-				height: 1em;
-				border-radius: 50%;
-				box-shadow: 
-					scale(2) 0 0 rgba(nth($colors, 1), .6),
-					-(scale(2)) 0 0 rgba(nth($colors, 2), .6),
-					0 scale(2) 0 rgba(nth($colors, 3), .6),
-					0 (-(scale(2))) 0 rgba(nth($colors, 4), .6);
-			}
-		}
-		&:nth-child(4){
-			animation-delay: .2s;
-			width: scale(4);
-			height: scale(4);
-			&:after{
-				content:'';
-				display: block;
-				font-size: 100%;
-				width: 1em;
-				height: 1em;
-				border-radius: 50%;
-				box-shadow: 
-					scale(2.5) 0 0 rgba(nth($colors, 1), .8),
-					-(scale(2.5)) 0 0 rgba(nth($colors, 2), .8),
-					0 scale(2.5) 0 rgba(nth($colors, 3), .8),
-					0 (-(scale(2.5))) 0 rgba(nth($colors, 4), .8);
-			}
-		}
-		&:nth-child(5){
-			animation-delay: .25s;
-			width: scale(5);
-			height: scale(5);
-			&:after{
-				content:'';
-				display: block;
-				font-size: 125%;
-				width: 1em;
-				height: 1em;
-				border-radius: 50%;
-				box-shadow: 
-					scale(3) 0 0 nth($colors, 1),
-					-(scale(3)) 0 0 nth($colors, 2),
-					0 scale(3) 0 nth($colors, 3),
-					0 (-(scale(3))) 0 nth($colors, 4);
-			}
-		}
-	}
-}
-@keyframes anim {
-	50%{
-		filter: blur(2px);
-	}
-	90%, 100%{ 
-		transform: rotate(1turn);
-		filter: blur(0);
-	}
-}
-
-@keyframes loader {
-	0%{opacity: 1;
-
-	}
-	90% {opacity: 0.9;
-
-    } 
-    
-    100%{ opacity: 0;
-        z-index: -1;
-
-	}
-}
-
-
-    }
 }

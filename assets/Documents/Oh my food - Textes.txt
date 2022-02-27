@@ -1,4 +1,7 @@
 ﻿*******************************************
+*******************************************
+*******************************************
+
 À la française
 
 Entrées
@@ -14,6 +17,8 @@ Soupe à l'oignon
 Revisitée
 20€
 
+*******************************************
+
 Plats
 Coquilles Saint-Jacques
 Accompagnées d'une purée de panais
@@ -27,6 +32,8 @@ Pigeonneau d’Ille-et-Vilaine
 Sur son lit de gnocchis aux légumes
 44€
 
+*******************************************
+
 Desserts
 Pétales de violettes glacés
 Et purée de noisettes
@@ -39,6 +46,8 @@ Revisité
 Millefeuille croustillant
 Myrtilles et pâte d’amande
 23€
+*******************************************
+*******************************************
 *******************************************
 
 La note enchantée
@@ -59,6 +68,8 @@ Mariné aux zestes d'orange
 Foie gras de canard cuit entier
 Confiture de figue et pain toasté
 35€
+
+*******************************************
         
 Plats
 Noix de coquilles Saint-Jacques
@@ -72,6 +83,8 @@ Purée de patate douce
 Mijoté de queue de boeuf 
 Et riz sauvage aux zestes de citron
 44€
+
+*******************************************
 
 Desserts
 Macaron noisette et chocolat
@@ -89,6 +102,8 @@ Déstructurée
 ---
 
 *******************************************
+*******************************************
+*******************************************
 
 La palette du goût
 
@@ -105,6 +120,8 @@ Oeuf au plat
 Assaisonné à la truffe sur lit de caviar
 20€
 
+*******************************************
+
 
 Plats
 Filet de boeuf aux herbes
@@ -118,6 +135,8 @@ Parmentier de queue de boeuf
 Filet de turbot
 Aux agrumes
 44€
+
+*******************************************
         
 Desserts
 Paris-Brest
@@ -135,6 +154,8 @@ Au piment d'Espelette et à la truffe noire
 ---    
 
 *********************************************
+*******************************************
+*******************************************
  
 
 Le délice des sens
@@ -151,6 +172,8 @@ Et sa farandole de petits légumes
 Velouté de cèpes 
 Aux truffes
 20€
+
+*******************************************
         
 Plats
 Poulet rôti aux herbes de Provence 
@@ -164,6 +187,8 @@ Et ses légumes de saison
 Côte de boeuf Angus 
 Et sa purée de panais
 44€
+
+*******************************************
 
 Desserts
 Farandole de desserts

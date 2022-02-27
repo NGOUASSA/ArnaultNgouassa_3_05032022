@@ -1,0 +1,38 @@
+.footer {
+    background: #000;
+    @media screen and (min-width: 992px) {
+    }
+    > h2 {
+        font-family: "Shrikhand", sans-serif;
+        font-size: 1.3em;
+        font-weight: lighter;
+        color: #ffffff;
+        padding-left: 25px;
+        position: relative;
+        top: 30px;
+    }
+    > ul {
+        padding-bottom: 30px;
+        margin-top: 45px;
+        margin-left: -15px;
+        > li {
+            font-size: 0.9em;
+            line-height: 0.5;
+            > a {
+                color: #ffffff;
+                > p.utensils {
+                    margin: 10px 0;
+                    > i {
+                        margin-right: 20px;
+                    }
+                }
+                > p.hands {
+                    margin: 10px 0;
+                    > i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

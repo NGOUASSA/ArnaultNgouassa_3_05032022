@@ -1,0 +1,280 @@
+//@import url("https://fonts.googleapis.com/css?family=Shrikhand");
+//@import url("https://fonts.googleapis.com/css?family=Roboto");
+//@import "main.scss";
+
+h1 {
+}
+
+p,
+h3,
+h4,
+span {
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* 1-  ******************************/
+
+@mixin appetizer(
+    $appetizer: (
+        color: gray,
+    )
+) {
+    &__plat {
+        @extend %appetizer__plat;
+        color: map-get($appetizer, color);
+    }
+}
+%appetizer {
+    &__plat {
+        display: inline-block;
+        font-size: 2em;
+        border-bottom: 4px solid $colour-tertiary;
+        padding: 3px;
+        color: gray;
+        width: 85px;
+        @media screen and (min-width: 992px) {
+        }
+    }
+}
+
+/*** 2- ******************************* ***
+        ***********************************/
+body {
+
+    /* IMG */
+
+    > img {
+        object-fit: cover;
+        height: 500px;
+        width: 100%;
+        @media screen and (min-width: 992px) {
+        }
+    }
+
+    /* MAIN */
+
+    > .mainMenu {
+        background: #f6f6f6;
+        position: relative;
+        border-radius: 50px 50px 0 0;
+        margin-top: -7.8em;
+        margin-bottom: -2em;
+        padding: 0 0.6em;
+        padding-bottom: 3em;
+        @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: -1em;
+            padding-bottom: 15em;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        }
+
+        /* SECTION 1 */
+
+        .heart {
+            font-family: "Shrikhand";
+            font-size: 2em;
+            padding-top: 20px;
+            margin-bottom: 0;
+            @media screen and (min-width: 992px) {
+                position: absolute;
+                padding-top: 25px;
+                margin-left: 20px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+            }
+            .fa-heart {
+                font-size: 1em;
+                float: right;
+                margin-right: 50px;
+                margin-top: 10px;
+                &::before {
+                    //position:absolute;
+                    content: "";
+                }
+                &::after {
+                    /*content: "";
+                  position: relative;
+                  background: linear-gradient(#FF79DA, #9356DC);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  font-weight: 900;
+                  opacity: 0;
+                  transition: opacity 2s;*/
+                }
+                &:hover {
+                    color: #ff79da;
+                    animation: 2s heart 1 forwards;
+                    font-weight: bold;
+                    background: linear-gradient(#ff79da, #9356dc);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                @media screen and (min-width: 992px) {
+                    float: unset;
+                    padding-left: 20em;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    margin-right: 75px;
+                }
+            }
+        }
+        .menu {
+            @media screen and (min-width: 992px) {
+                width: 32%;
+                margin-top: 10em;
+            }
+            @include appetizer(());
+            &__p {
+                width: 40px;
+                font-size: 1em;
+                border-bottom: 4px solid #99e2d0;
+                color: gray;
+                margin-top: 15px;
+                margin-left: 5px;
+                @media screen and (min-width: 992px) {
+                }
+            }
+            &__ul {
+                animation: menu 3s ease-in-out;
+                overflow: hidden;
+                cursor: pointer;
+                padding: 0;
+                @media screen and (min-width: 992px) {
+                }
+                > li > * {
+                    font-size: 1em;
+                    margin: -5px 0;
+                    line-height: 1.5em;
+                }
+                > li {
+                    background: #ffffff;
+                    border-radius: 10px;
+                    position: relative;
+                    margin-bottom: 13px;
+                    overflow: hidden;
+                    padding: 0.8em 0;
+                    @media screen and (min-width: 992px) {
+                        padding-right: 35px;
+                        overflow: visible;
+                    }
+                    > h2 {
+                        position: relative;
+                        left: 15px;
+                        top: 5px;
+                        @media screen and (min-width: 992px) {
+                            font-size: 1em;
+                            line-height: 1em;
+                            top: 5px;
+                        }
+                    }
+                    > p {
+                        color: grey;
+                        @media screen and (min-width: 992px) {
+                            margin: 0;
+                        }
+                        > span {
+                            display: inline-block;
+                            width: 88%;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            font-size: 0.85em;
+                            transition: width 0.5s;
+                            margin-left: 15px;
+                            position: relative;
+                            top: 10px;
+                            color: #000;
+                            @media screen and (min-width: 992px) {
+                                font-size: 0.8em;
+                                font-weight: bold;
+                                width: 89%;
+                                top: 10px;
+                            }
+                        }
+                        > b {
+                            color: #000;
+                            font-size: 0.7em;
+                            @media screen and (min-width: 992px) {
+                                font-weight: bold;
+                                position: absolute;
+                                margin-top: 10px;
+                                font-size: 1.1em;
+                            }
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        width: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        background: #99f2d0;
+                        transition: width 0.4s;
+                        border-radius: 0 20px 20px 0;
+                    }
+                    &::after {
+                        position: absolute;
+                        right: -10%;
+                        top: calc(40% - 0.5em);
+                        transform: rotate(0deg);
+                        background: white;
+                        color: #99f2d0;
+                        border-radius: 50px;
+                        padding: 0.4em;
+                        font-family: "Font Awesome 5 Pro";
+                        content: "\f00c";
+                        transition: right 0.4s, transform 0.8s;
+                        @media screen and (min-width: 992px) {
+                            right: -8%;
+                        }
+                    }
+                    &:hover {
+                        &::before {
+                            width: 15%;
+                        }
+                        &::after {
+                            right: 5%;
+                            transform: rotate(360deg);
+                            transform: rotate(360deg);
+                        }
+                        > p {
+                            > span {
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > button {
+            border-radius: 60px;
+            padding: 5px 55px;
+            margin: 15px AUTO 0px;
+            display: block;
+            color: white;
+            background: linear-gradient(to top, #9356dc, #ff79da);
+            font-size: 1.8em;
+            border: none;
+            cursor: pointer;
+
+            @media screen and (min-width: 992px) {
+                position: absolute;
+                bottom: 0;
+                margin: 135px 14.3em;
+            }
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+            }
+        }
+    }
+}
