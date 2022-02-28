@@ -1,7 +1,3 @@
-//@import url("https://fonts.googleapis.com/css?family=Shrikhand");
-//@import url("https://fonts.googleapis.com/css?family=Roboto");
-//@import "main.scss";
-
 h1 {
 }
 
@@ -19,7 +15,6 @@ a {
 * {
     box-sizing: border-box;
 }
-/* 1-  ******************************/
 
 @mixin appetizer(
     $appetizer: (
@@ -33,19 +28,17 @@ a {
 }
 %appetizer {
     &__plat {
+        color: gray;
         display: inline-block;
         font-size: 2em;
         border-bottom: 4px solid $colour-tertiary;
         padding: 3px;
-        color: gray;
         width: 85px;
         @media screen and (min-width: 992px) {
         }
     }
 }
 
-/*** 2- ******************************* ***
-        ***********************************/
 body {
 
     /* IMG */
@@ -83,6 +76,7 @@ body {
             font-family: "Shrikhand";
             font-size: 2em;
             padding-top: 20px;
+            padding-left: 10px;
             margin-bottom: 0;
             @media screen and (min-width: 992px) {
                 position: absolute;
@@ -92,36 +86,24 @@ body {
             @media screen and (min-width: 768px) and (max-width: 992px) {
             }
             .fa-heart {
-                font-size: 1em;
                 float: right;
+                transition: all linear 1s;
                 margin-right: 50px;
                 margin-top: 10px;
                 &::before {
-                    //position:absolute;
                     content: "";
                 }
-                &::after {
-                    /*content: "";
-                  position: relative;
-                  background: linear-gradient(#FF79DA, #9356DC);
-                  -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                  font-weight: 900;
-                  opacity: 0;
-                  transition: opacity 2s;*/
-                }
                 &:hover {
-                    color: #ff79da;
-                    animation: 2s heart 1 forwards;
-                    font-weight: bold;
-                    background: linear-gradient(#ff79da, #9356dc);
+                    color: $colour-secondary;
+                    background: linear-gradient($colour-secondary, $colour-primary);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    font-weight: 700;
                 }
 
                 @media screen and (min-width: 992px) {
                     float: unset;
-                    padding-left: 20em;
+                    margin-left: 20em;
                 }
                 @media screen and (min-width: 768px) and (max-width: 992px) {
                     margin-right: 75px;
@@ -135,10 +117,10 @@ body {
             }
             @include appetizer(());
             &__p {
+                color: gray;
                 width: 40px;
                 font-size: 1em;
                 border-bottom: 4px solid #99e2d0;
-                color: gray;
                 margin-top: 15px;
                 margin-left: 5px;
                 @media screen and (min-width: 992px) {
@@ -158,19 +140,21 @@ body {
                 }
                 > li {
                     background: #ffffff;
-                    border-radius: 10px;
-                    position: relative;
-                    margin-bottom: 13px;
+                    background: #ffffff;
                     overflow: hidden;
+                    position: relative;
+                    border-radius: 20px;
+                    margin-bottom: 13px;
                     padding: 0.8em 0;
                     @media screen and (min-width: 992px) {
-                        padding-right: 35px;
                         overflow: visible;
+                        padding-right: 35px;
                     }
                     > h2 {
                         position: relative;
                         left: 15px;
                         top: 5px;
+                        font-size: 1.1em;
                         @media screen and (min-width: 992px) {
                             font-size: 1em;
                             line-height: 1em;
@@ -184,26 +168,25 @@ body {
                         }
                         > span {
                             display: inline-block;
-                            width: 88%;
                             text-overflow: ellipsis;
                             overflow: hidden;
                             white-space: nowrap;
-                            font-size: 0.85em;
+                            position: relative;
+                            color: #000;
+                            font-size: 1.05em;
                             transition: width 0.5s;
                             margin-left: 15px;
-                            position: relative;
                             top: 10px;
-                            color: #000;
+                            width: 88%;
                             @media screen and (min-width: 992px) {
-                                font-size: 0.8em;
                                 font-weight: bold;
+                                font-size: 0.8em;
                                 width: 89%;
                                 top: 10px;
                             }
                         }
                         > b {
                             color: #000;
-                            font-size: 0.7em;
                             @media screen and (min-width: 992px) {
                                 font-weight: bold;
                                 position: absolute;
@@ -214,27 +197,27 @@ body {
                     }
                     &::before {
                         content: "";
-                        width: 0;
+                        background: #99f2d0;
                         position: absolute;
+                        width: 0;
                         right: 0;
                         top: 0;
                         bottom: 0;
-                        background: #99f2d0;
                         transition: width 0.4s;
                         border-radius: 0 20px 20px 0;
                     }
                     &::after {
+                        font-family: "Font Awesome 5 Pro";
+                        content: "\f00c";
                         position: absolute;
+                        color: #99f2d0;
+                        transition: right 0.4s, transform 0.8s;
                         right: -10%;
                         top: calc(40% - 0.5em);
                         transform: rotate(0deg);
                         background: white;
-                        color: #99f2d0;
                         border-radius: 50px;
                         padding: 0.4em;
-                        font-family: "Font Awesome 5 Pro";
-                        content: "\f00c";
-                        transition: right 0.4s, transform 0.8s;
                         @media screen and (min-width: 992px) {
                             right: -8%;
                         }
@@ -244,9 +227,9 @@ body {
                             width: 15%;
                         }
                         &::after {
+                            transform: rotate(360deg);
+                            transform: rotate(360deg);
                             right: 5%;
-                            transform: rotate(360deg);
-                            transform: rotate(360deg);
                         }
                         > p {
                             > span {
@@ -258,20 +241,26 @@ body {
             }
         }
         > button {
-            border-radius: 60px;
-            padding: 5px 55px;
-            margin: 15px AUTO 0px;
-            display: block;
-            color: white;
-            background: linear-gradient(to top, #9356dc, #ff79da);
-            font-size: 1.8em;
+            font-family: "roboto", sans-serif;
+            background: linear-gradient(#FF79DA, #9356DC);
             border: none;
+            color: white;
+            font-size: medium;
             cursor: pointer;
-
+            display: block;
+            transition: background 1s;
+            padding: 20px 85px;
+            border-radius: 50px;
+            box-shadow: 4px 4px 6px #bbb;
+            margin: 0 auto;
+            &:hover {
+                box-shadow: 6px 6px 8px #3d3c40;
+                filter: brightness(1.3);
+            }
             @media screen and (min-width: 992px) {
                 position: absolute;
                 bottom: 0;
-                margin: 135px 14.3em;
+                margin: 135px 25.3em;
             }
             @media screen and (min-width: 768px) and (max-width: 992px) {
             }

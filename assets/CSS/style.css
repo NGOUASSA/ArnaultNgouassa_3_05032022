@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
@@ -26,9 +25,15 @@
 @keyframes menu {
   0% {
     opacity: 0;
+    height: 300px;
+  }
+  50% {
+    opacity: 0.5;
+    height: 243px;
   }
   100% {
     opacity: 1;
+    height: 243px;
   }
 }
 @keyframes heart {
@@ -48,17 +53,35 @@
     opacity: 1;
   }
 }
-.header {
-  margin-top: 15px;
+.headerHome {
+  padding: 15px;
+  box-shadow: 0 0 10px 1px #808080;
+  position: relative;
 }
-.header > a > i.fas.fa-arrow-left {
+.headerHome > a > i.fas.fa-arrow-left {
   color: #000000;
   font-size: 1.4em;
   position: absolute;
   left: 25px;
   margin-top: 5px;
 }
-.header > a > img {
+.headerHome > a > img {
+  height: 35px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: block;
+}
+.headerMenus {
+  padding: 15px;
+}
+.headerMenus > a > i.fas.fa-arrow-left {
+  color: #000000;
+  font-size: 1.4em;
+  position: absolute;
+  left: 25px;
+  margin-top: 5px;
+}
+.headerMenus > a > img {
   height: 35px;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -167,18 +190,21 @@ body .nav__section .reservation__p {
 }
 body .nav__section .reservation__button {
   font-family: "roboto", sans-serif;
-  padding: 20px 85px;
-  border-radius: 50px;
+  display: block;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   color: white;
   font-size: medium;
+  transition: background 1s;
+  padding: 20px 85px;
   box-shadow: 4px 4px 6px #bbb;
-  transition: background 300ms;
+  margin: 0 auto;
+  border-radius: 50px;
+  cursor: pointer;
 }
 body .nav__section .reservation__button:hover {
   box-shadow: 6px 6px 8px #3d3c40;
-  opacity: 0.6;
+  filter: brightness(1.3);
 }
 body .mainHome {
   margin-bottom: -25px;
@@ -215,10 +241,10 @@ body .mainHome__sectionFunctioning .functioning__ul {
   }
 }
 body .mainHome__sectionFunctioning .functioning__ul > li {
-  border-radius: 10px;
   background: #f6f6f6;
   box-shadow: 2px 2px 15px 2px #ccc;
   margin: 0 0px 25px 12px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li {
@@ -232,18 +258,18 @@ body .mainHome__sectionFunctioning .functioning__ul > li {
 }
 body .mainHome__sectionFunctioning .functioning__ul > li > span {
   background: #9356DC;
-  border-radius: 50px;
+  color: white;
   padding: 5px 9px;
   position: relative;
   right: 12px;
-  color: white;
   font-size: 0.8em;
   bottom: 5px;
+  border-radius: 50px;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > span {
-    font-size: 1.2em;
     position: relative;
+    font-size: 1.2em;
     top: 0px;
     padding: 5px 11px;
     right: 16px;
@@ -263,8 +289,8 @@ body .mainHome__sectionFunctioning .functioning__ul > li > i {
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li > i {
-    font-size: 2em;
     position: relative;
+    font-size: 2em;
     top: 5px;
     left: -5px;
   }
@@ -302,10 +328,10 @@ body .mainHome__sectionFunctioning .functioning__ul > li:hover > h3 {
 }
 body .mainHome__sectionRestaurants {
   background: #f6f6f6;
+  position: relative;
   padding: 110px 20px;
   padding-bottom: 1em;
   margin-top: 50px;
-  position: relative;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants {
@@ -398,20 +424,21 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img 
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .h3 {
   color: #000000;
-  font-size: 1.2em;
   font-weight: bold;
-  margin: 10px;
+  font-size: 1.2em;
   position: relative;
+  margin: 10px;
   top: 0;
   left: 5px;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart {
   float: right;
+  color: #000;
   position: relative;
   bottom: 25px;
   right: 25px;
   font-size: 1.8em;
-  color: #000;
+  transition: all linear 1s;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart::before {
   content: "\f004";
@@ -419,14 +446,14 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figc
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart:hover {
   color: #FF79DA;
   animation: 2s heart 1 forwards;
-  font-weight: bold;
+  font-weight: 700;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .p {
-  font-size: 1em;
   color: #000000;
+  font-size: 1em;
   margin: 20px 15px;
   position: relative;
   bottom: 10px;
@@ -440,17 +467,14 @@ a {
   box-sizing: border-box;
 }
 
-/* 1-  ******************************/
 body > .mainMenu .menu__plat {
+  color: gray;
   display: inline-block;
   font-size: 2em;
   border-bottom: 4px solid #99E2D0;
   padding: 3px;
-  color: gray;
   width: 85px;
 }
-/*** 2- ******************************* ***
-        ***********************************/
 body {
   /* IMG */
   /* MAIN */
@@ -482,6 +506,7 @@ body > .mainMenu .heart {
   font-family: "Shrikhand";
   font-size: 2em;
   padding-top: 20px;
+  padding-left: 10px;
   margin-bottom: 0;
 }
 @media screen and (min-width: 992px) {
@@ -492,36 +517,25 @@ body > .mainMenu .heart {
   }
 }
 body > .mainMenu .heart .fa-heart {
-  font-size: 1em;
   float: right;
+  transition: all linear 1s;
   margin-right: 50px;
   margin-top: 10px;
 }
 body > .mainMenu .heart .fa-heart::before {
   content: "\f004";
 }
-body > .mainMenu .heart .fa-heart::after {
-  /*content: "";
-  position: relative;
+body > .mainMenu .heart .fa-heart:hover {
+  color: #FF79DA;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 900;
-  opacity: 0;
-  transition: opacity 2s;*/
-}
-body > .mainMenu .heart .fa-heart:hover {
-  color: #ff79da;
-  animation: 2s heart 1 forwards;
-  font-weight: bold;
-  background: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .heart .fa-heart {
     float: unset;
-    padding-left: 20em;
+    margin-left: 20em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -536,10 +550,10 @@ body > .mainMenu .heart .fa-heart:hover {
   }
 }
 body > .mainMenu .menu__p {
+  color: gray;
   width: 40px;
   font-size: 1em;
   border-bottom: 4px solid #99e2d0;
-  color: gray;
   margin-top: 15px;
   margin-left: 5px;
 }
@@ -556,22 +570,24 @@ body > .mainMenu .menu__ul > li > * {
 }
 body > .mainMenu .menu__ul > li {
   background: #ffffff;
-  border-radius: 10px;
-  position: relative;
-  margin-bottom: 13px;
+  background: #ffffff;
   overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 13px;
   padding: 0.8em 0;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li {
-    padding-right: 35px;
     overflow: visible;
+    padding-right: 35px;
   }
 }
 body > .mainMenu .menu__ul > li > h2 {
   position: relative;
   left: 15px;
   top: 5px;
+  font-size: 1.1em;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > h2 {
@@ -590,28 +606,27 @@ body > .mainMenu .menu__ul > li > p {
 }
 body > .mainMenu .menu__ul > li > p > span {
   display: inline-block;
-  width: 88%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 0.85em;
+  position: relative;
+  color: #000;
+  font-size: 1.05em;
   transition: width 0.5s;
   margin-left: 15px;
-  position: relative;
   top: 10px;
-  color: #000;
+  width: 88%;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > p > span {
-    font-size: 0.8em;
     font-weight: bold;
+    font-size: 0.8em;
     width: 89%;
     top: 10px;
   }
 }
 body > .mainMenu .menu__ul > li > p > b {
   color: #000;
-  font-size: 0.7em;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > p > b {
@@ -623,27 +638,27 @@ body > .mainMenu .menu__ul > li > p > b {
 }
 body > .mainMenu .menu__ul > li::before {
   content: "";
-  width: 0;
+  background: #99f2d0;
   position: absolute;
+  width: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  background: #99f2d0;
   transition: width 0.4s;
   border-radius: 0 20px 20px 0;
 }
 body > .mainMenu .menu__ul > li::after {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f00c";
   position: absolute;
+  color: #99f2d0;
+  transition: right 0.4s, transform 0.8s;
   right: -10%;
   top: calc(40% - 0.5em);
   transform: rotate(0deg);
   background: white;
-  color: #99f2d0;
   border-radius: 50px;
   padding: 0.4em;
-  font-family: "Font Awesome 5 Pro";
-  content: "\f00c";
-  transition: right 0.4s, transform 0.8s;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li::after {
@@ -654,29 +669,36 @@ body > .mainMenu .menu__ul > li:hover::before {
   width: 15%;
 }
 body > .mainMenu .menu__ul > li:hover::after {
+  transform: rotate(360deg);
+  transform: rotate(360deg);
   right: 5%;
-  transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 body > .mainMenu .menu__ul > li:hover > p > span {
   width: 70%;
 }
 body > .mainMenu > button {
-  border-radius: 60px;
-  padding: 5px 55px;
-  margin: 15px AUTO 0px;
-  display: block;
-  color: white;
-  background: linear-gradient(to top, #9356dc, #ff79da);
-  font-size: 1.8em;
+  font-family: "roboto", sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
   border: none;
+  color: white;
+  font-size: medium;
   cursor: pointer;
+  display: block;
+  transition: background 1s;
+  padding: 20px 85px;
+  border-radius: 50px;
+  box-shadow: 4px 4px 6px #bbb;
+  margin: 0 auto;
+}
+body > .mainMenu > button:hover {
+  box-shadow: 6px 6px 8px #3d3c40;
+  filter: brightness(1.3);
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu > button {
     position: absolute;
     bottom: 0;
-    margin: 135px 14.3em;
+    margin: 135px 25.3em;
   }
 }
 * {
