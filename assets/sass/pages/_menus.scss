@@ -87,7 +87,7 @@ body {
             }
             .fa-heart {
                 float: right;
-                transition: all linear 1s;
+                transition: all 1s;
                 margin-right: 50px;
                 margin-top: 10px;
                 &::before {
@@ -248,7 +248,7 @@ body {
             font-size: medium;
             cursor: pointer;
             display: block;
-            transition: background 1s;
+            transition: all 1s; 
             padding: 20px 85px;
             border-radius: 50px;
             box-shadow: 4px 4px 6px #bbb;

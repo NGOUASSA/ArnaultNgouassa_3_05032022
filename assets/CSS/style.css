@@ -55,7 +55,7 @@
 }
 .headerHome {
   padding: 15px;
-  box-shadow: 0 0 10px 1px #808080;
+  box-shadow: 0 0 10px 3px #211818;
   position: relative;
 }
 .headerHome > a > i.fas.fa-arrow-left {
@@ -195,7 +195,7 @@ body .nav__section .reservation__button {
   border: none;
   color: white;
   font-size: medium;
-  transition: background 1s;
+  transition: all 1s;
   padding: 20px 85px;
   box-shadow: 4px 4px 6px #bbb;
   margin: 0 auto;
@@ -245,6 +245,7 @@ body .mainHome__sectionFunctioning .functioning__ul > li {
   box-shadow: 2px 2px 15px 2px #ccc;
   margin: 0 0px 25px 12px;
   border-radius: 10px;
+  transition: all 1s;
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionFunctioning .functioning__ul > li {
@@ -438,14 +439,13 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figc
   bottom: 25px;
   right: 25px;
   font-size: 1.8em;
-  transition: all linear 1s;
+  transition: all 1s;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart::before {
   content: "\f004";
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .figcaption > .fa-heart:hover {
   color: #FF79DA;
-  animation: 2s heart 1 forwards;
   font-weight: 700;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
@@ -518,7 +518,7 @@ body > .mainMenu .heart {
 }
 body > .mainMenu .heart .fa-heart {
   float: right;
-  transition: all linear 1s;
+  transition: all 1s;
   margin-right: 50px;
   margin-top: 10px;
 }
@@ -684,7 +684,7 @@ body > .mainMenu > button {
   font-size: medium;
   cursor: pointer;
   display: block;
-  transition: background 1s;
+  transition: all 1s;
   padding: 20px 85px;
   border-radius: 50px;
   box-shadow: 4px 4px 6px #bbb;

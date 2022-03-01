@@ -67,7 +67,7 @@ body {
                     border: none;
                     color: white;
                     font-size: medium;
-                    transition: background 1s;
+                    transition: all 1s;
                     padding: 20px 85px;
                     box-shadow: 4px 4px 6px #bbb;
                     margin: 0 auto;
@@ -116,6 +116,7 @@ body {
                         box-shadow: 2px 2px 15px 2px #ccc;
                         margin: 0 0px 25px 12px;
                         border-radius: 10px;
+                        transition: all 1s;
                         @media screen and (min-width: 992px) {
                             width: 30%;
                         }
@@ -278,7 +279,7 @@ body {
                                         bottom: 25px;
                                         right: 25px;
                                         font-size: 1.8em;
-                                        transition: all linear 1s;
+                                        transition: all 1s;
                                         &::before {
                                             content: "";
                                         }
@@ -286,7 +287,6 @@ body {
                                         }
                                         &:hover {
                                             color: $colour-secondary;
-                                            animation: 2s heart 1 forwards;
                                             font-weight: 700;
                                             background: linear-gradient($colour-secondary, $colour-primary);
                                             -webkit-background-clip: text;
