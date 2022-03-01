@@ -354,7 +354,8 @@ body .mainHome__sectionRestaurants .restaurants__h2 {
 }
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__h2 {
-    left: 35px;
+    left: 45px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -370,6 +371,7 @@ body .mainHome__sectionRestaurants .restaurants__ul {
 @media screen and (min-width: 992px) {
   body .mainHome__sectionRestaurants .restaurants__ul {
     flex-flow: wrap;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -416,6 +418,7 @@ body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure {
   background: white;
   border-radius: 20px;
   margin: 20px 0;
+  box-shadow: 2px 2px 8px #919090;
 }
 body .mainHome__sectionRestaurants .restaurants__ul > .li > .a > .figure > .img {
   height: 300px;
@@ -698,7 +701,7 @@ body > .mainMenu > button:hover {
   body > .mainMenu > button {
     position: absolute;
     bottom: 0;
-    margin: 135px 25.3em;
+    margin: 135px 28em;
   }
 }
 * {
