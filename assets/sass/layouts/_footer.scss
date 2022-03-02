@@ -2,7 +2,7 @@
     background: #000;
     @media screen and (min-width: 992px) {
     }
-    > h2 {
+    > h3 {
         font-family: "Shrikhand", sans-serif;
         font-size: 1.3em;
         font-weight: lighter;
@@ -15,6 +15,7 @@
         padding-bottom: 30px;
         margin-top: 45px;
         margin-left: -15px;
+        margin-bottom: 0;
         > li {
             font-size: 0.9em;
             line-height: 0.5;
