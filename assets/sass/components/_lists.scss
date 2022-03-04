@@ -1,0 +1,96 @@
+
+.functioning {
+    &__h3 {
+        font-size: 1.4em;
+        margin: 50px 0 30px 20px;
+        @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: space-around;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+        }
+    }
+    &__ul {
+        padding: 0 20px;
+        @media screen and (min-width: 992px) {
+            display: flex;
+            justify-content: space-around;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+        > li {
+            background: #f6f6f6;
+            box-shadow: 2px 2px 15px 2px #ccc;
+            margin: 0 0px 25px 12px;
+            border-radius: 10px;
+            transition: all 1s;
+            @media screen and (min-width: 992px) {
+                width: 30%;
+            }
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                width: 45%;
+            }
+            > span {
+                background: #9356DC;
+                color: white;
+                padding: 5px 9px;
+                position: relative;
+                right: 12px;
+                font-size: 0.8em;
+                bottom: 5px;
+                border-radius: 50px;
+                @media screen and (min-width: 992px) {
+                    position: relative;
+                    font-size: 1.2em;
+                    top: 0px;
+                    padding: 5px 11px;
+                    right: 16px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    font-size: 0.8em;
+                    padding: 3px 7px;
+                    bottom: 2px;
+                    right: 11px;
+                }
+            }
+            > i {
+                font-size: 1.5em;
+                margin-right: 15px;
+                @media screen and (min-width: 992px) {
+                    position: relative;
+                    font-size: 2em;
+                    top: 5px;
+                    left: -5px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    position: relative;
+                    top: 2px;
+                }
+            }
+            > h4 {
+                font-size: 1.2em;
+                display: inline-block;
+                @media screen and (min-width: 992px) {
+                    position: relative;
+                    right: 10px;
+                    top: 0px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    position: relative;
+                    bottom: -2px;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                background: #eaeaea;
+                color: $colour-primary;
+                > h4 {
+                    color: #000;
+                }
+            }
+        }
+    }
+}

@@ -4,22 +4,27 @@
 @import "./utils/extensions";
 @import "./utils/keyframes";
 
-//@import "./base/base";
-//@import "./base/typography";
+@import "./base/base";
+@import "./base/typography";
 
-//@import "./components/buttons";
+@import "./components/titles";
+@import "./components/menus";
+@import "./components/forms";
+@import "./components/lists";
+@import "./components/cards";
+@import "./components/jumbotrons";
+@import "./components/buttons";
+@import "./components/icons";
+@import "./components/loaders";
 
-@import "./layouts/headerHome";
-@import "./layouts/headerMenus";
-@import "./layouts/footer";
-/*@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";*/
+@import "./layouts/headers";
+@import "./layouts/navs";
+@import "./layouts/mains";
+@import "./layouts/footers";
 
+@import "./pages/all";
 @import "./pages/home";
 @import "./pages/menus";
-@import "./pages/all";
-@import "./pages/loader";
 
 
 

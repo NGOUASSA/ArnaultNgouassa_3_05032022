@@ -1,0 +1,29 @@
+.heart{
+    width:95%;
+    font-family: "Shrikhand";
+    font-size: 2em;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 0;
+    @media screen and (min-width: 992px) {
+        position: absolute;
+        padding-top: 25px;
+        margin-left: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+    }
+    .fa-heart {
+        @extend %icon_heart;
+        float: right;
+        transition: all 1s;
+        position: relative;
+        right: 25px;
+
+        @media screen and (min-width: 992px) {
+            
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            margin-right: 75px;
+        }
+    }
+}

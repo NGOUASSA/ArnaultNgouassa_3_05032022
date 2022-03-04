@@ -1,0 +1,113 @@
+
+.restaurants {
+    background: #f6f6f6;
+    position: relative;
+    padding: 110px 20px;
+    padding-bottom: 2em;
+    margin-top: 65px;
+    @media screen and (min-width: 992px) {
+        padding-top: 90px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        flex-flow: wrap;
+        justify-content: space-between;
+        padding-top: 90px;
+    }
+
+    &__h3 {
+        position: absolute;
+        font-size: 1.4em;
+        top: 40px;
+        left: 15px;
+        @media screen and (min-width: 992px) {
+            left: 45px;
+            margin-top: 25px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            position: absolute;
+        }
+    }
+    &__ul {
+        display: flex;
+        flex-flow: column;
+        padding: 0;
+        margin-top: 0;
+        @media screen and (min-width: 992px) {
+            flex-flow: wrap;
+            margin-top: 0;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            width: 100%;
+        }
+        > .li {
+            position: relative;
+            margin-top: -15px;
+            @media screen and (min-width: 992px) {
+                flex-basis: 50%;
+                padding: 20px;
+            }
+            > .span {
+                position: absolute;
+                background: #99E2D0;
+                color: green;
+                font-size: medium;
+                padding: 4px 10px;
+                font-weight: bold;
+                right: 15px;
+                top: 31px;
+                border-radius: 2px;
+                @media screen and (min-width: 992px) {
+                    right: 30px;
+                    margin-top: 20px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 992px) {
+                    right: 30px;
+                }
+            }
+            > .a {
+                text-decoration: none;
+                > .figure {
+                    background: white;
+                    border-radius: 20px;
+                    margin: 20px 0;
+                    box-shadow: 2px 2px 8px #919090;
+                    > .img {
+                        height: 300px;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 20px 20px 0 0;
+                    }
+                    > .figcaption {
+                        > .h4 {
+                            color: #000000;
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            position: relative;
+                            margin: 10px;
+                            top: 0;
+                            left: 5px;
+                        }
+                        > .fa-heart {
+                            @extend %icon_heart;
+                            float: right;
+                            position: relative;
+                            bottom: 25px;
+                            right: 25px;
+                        }
+                        > .p {
+                            color: #000000;
+                            font-size: 1em;
+                            margin: 20px 15px;
+                            position: relative;
+                            bottom: 10px;
+                        }
+                    }
+                    @media screen and (min-width: 992px) {
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 992px) {
+                    }
+                }
+            }
+        }
+    }
+}

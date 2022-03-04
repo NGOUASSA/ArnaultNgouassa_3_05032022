@@ -1,0 +1,24 @@
+body>nav{
+
+}
+
+
+//PAGE D'ACCUEIL
+.nav {
+    top: 10px;
+    &__form {
+        text-align: center;
+        background: #ccc;
+        padding: 0.8em 0;
+        padding-left: 85px;
+        @extend .form;
+    }
+
+
+    &__section {
+        text-align: center;
+        background: #f6f6f6;
+        padding: 1px 0 60px;
+        @extend .reservation;
+    }
+}

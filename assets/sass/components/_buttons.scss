@@ -1,0 +1,16 @@
+%button{
+    font-family: "roboto", sans-serif;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    transition: all 1s;
+    padding: 20px 40px;
+    box-shadow: 4px 4px 6px #bbb;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.1em;
+    cursor:pointer;
+    &:hover {
+        box-shadow: 6px 6px 8px #3d3c40;
+        filter: brightness(1.3);
+    }
+}

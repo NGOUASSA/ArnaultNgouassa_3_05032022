@@ -1,0 +1,13 @@
+
+.form {
+    &__i {
+        padding-right: 1em;
+        font-size: x-large;
+    }
+    &__input {
+        font-weight: 600;
+        font-size: 1.1em;
+        border: none;
+        background: transparent;
+    }
+}
