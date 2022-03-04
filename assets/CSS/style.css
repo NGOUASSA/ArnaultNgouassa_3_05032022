@@ -513,6 +513,7 @@ body > .mainMenu .heart {
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .heart {
+    width: 97%;
     position: absolute;
     padding-top: 25px;
     margin-left: 20px;
@@ -521,7 +522,7 @@ body > .mainMenu .heart {
 body > .mainMenu .heart .fa-heart {
   float: right;
   transition: all 1s;
-  margin-right: 50px;
+  margin-right: 45px;
   margin-top: 10px;
 }
 body > .mainMenu .heart .fa-heart::before {
@@ -536,12 +537,13 @@ body > .mainMenu .heart .fa-heart:hover {
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .heart .fa-heart {
-    margin-right: -25em;
+    position: relative;
+    left: 10px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body > .mainMenu .heart .fa-heart {
-    margin-right: 75px;
+    margin-right: 70px;
   }
 }
 @media screen and (min-width: 992px) {
