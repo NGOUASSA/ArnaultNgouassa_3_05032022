@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     background: linear-gradient($colour-secondary, $colour-primary);
-    animation: 3s loader ease-in-out forwards;
+    animation: 1s loader ease-in-out forwards;
     z-index: 9999;
     pointer-events: none;
 

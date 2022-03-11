@@ -483,14 +483,14 @@ body {
 }
 body > img {
   object-fit: cover;
-  height: 500px;
+  height: 250px;
   width: 100%;
 }
 body > .mainMenu {
   background: #f6f6f6;
   position: relative;
   border-radius: 50px 50px 0 0;
-  margin-top: -7.8em;
+  margin-top: -4em;
   margin-bottom: -2em;
   padding: 0 0.6em;
   padding-bottom: 4em;
@@ -561,7 +561,7 @@ body > .mainMenu .menu__p {
   margin-left: 5px;
 }
 body > .mainMenu .menu__ul {
-  animation: menu 3s ease-in-out;
+  animation: menu 1s ease-in-out;
   cursor: pointer;
   padding: 0;
   margin-bottom: 40px;
@@ -572,9 +572,10 @@ body > .mainMenu .menu__ul {
   }
 }
 body > .mainMenu .menu__ul > li > * {
-  font-size: 1em;
+  font-size: 0.8em;
   margin: -5px 0;
   line-height: 1.5em;
+  position: relative;
 }
 body > .mainMenu .menu__ul > li {
   background: #ffffff;
@@ -594,8 +595,8 @@ body > .mainMenu .menu__ul > li {
 body > .mainMenu .menu__ul > li > h2 {
   position: relative;
   left: 15px;
-  top: 5px;
-  font-size: 1.1em;
+  top: 0;
+  font-size: 1.05em;
 }
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > h2 {
@@ -619,10 +620,10 @@ body > .mainMenu .menu__ul > li > p > span {
   white-space: nowrap;
   position: relative;
   color: #000;
-  font-size: 1.05em;
+  font-size: 1.2em;
   transition: width 0.5s;
   margin-left: 15px;
-  top: 10px;
+  top: 5px;
   width: 88%;
 }
 @media screen and (min-width: 992px) {
@@ -829,7 +830,7 @@ body > .mainMenu > section.restaurants > nav > a > figure > figcaption > i:hover
   display: flex;
   justify-content: center;
   background: linear-gradient(#FF79DA, #9356DC);
-  animation: 3s loader ease-in-out forwards;
+  animation: 1s loader ease-in-out forwards;
   z-index: 9999;
   pointer-events: none;
   /*change this to resize*/
