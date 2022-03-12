@@ -629,7 +629,7 @@ body > .mainMenu .menu__ul > li > p > span {
 @media screen and (min-width: 992px) {
   body > .mainMenu .menu__ul > li > p > span {
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: 1.2em;
     width: 89%;
     top: 10px;
   }
